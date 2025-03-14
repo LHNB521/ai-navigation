@@ -1,5 +1,5 @@
 import type { Website } from "@/types/navigation"
-import { navigationData } from "@/data/navigation-data"
+import { navigationData } from "@/data/bak"
 
 // Simple fuzzy search function
 export function fuzzySearch(query: string, text: string): boolean {
