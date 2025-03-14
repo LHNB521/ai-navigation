@@ -15,7 +15,7 @@ export default function Home() {
   const sidebarRef = useRef<HTMLDivElement>(null)
   const router = useRouter()
 
-  // Auto-collapse sidebar on mobile
+  // 在移动设备上自动折叠侧边栏
   useEffect(() => {
     if (isMobile) {
       setSidebarOpen(false)
@@ -24,7 +24,7 @@ export default function Home() {
     }
   }, [isMobile])
 
-  // Close sidebar when clicking outside on mobile
+  // 在移动设备上，点击侧边栏外部时关闭侧边栏
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (isMobile && sidebarOpen && sidebarRef.current && !sidebarRef.current.contains(event.target as Node)) {
@@ -48,7 +48,7 @@ export default function Home() {
       element.scrollIntoView({ behavior: "smooth" })
     }
 
-    // Auto close sidebar after selection on mobile
+    // 在移动设备上选择后自动关闭侧边栏
     if (isMobile) {
       setSidebarOpen(false)
     }
@@ -80,16 +80,15 @@ export default function Home() {
         </div>
       </header>
       <main className="flex flex-1 overflow-hidden relative">
-        {/* Backdrop for mobile */}
+        {/* 移动设备背景 */}
         {isMobile && sidebarOpen && <div className="fixed inset-0 bg-black/50 z-10" aria-hidden="true" />}
 
-        {/* Sidebar */}
+        {/* 侧边栏 */}
         <aside
           ref={sidebarRef}
           className={`
             ${isMobile ? "fixed left-0 top-16 bottom-0 z-20" : "relative"}
             ${sidebarOpen ? (isMobile ? "w-64" : "w-64") : isMobile ? "-translate-x-full" : "w-16"}
-            border-r bg-background overflow-y-auto transition-all duration-300 ease-in-out
           `}
         >
           <SidebarNavigation
@@ -99,12 +98,12 @@ export default function Home() {
           />
         </aside>
 
-        {/* Main content */}
+        {/* 主内容 */}
         <div className={`flex-1 overflow-y-auto ${isMobile && sidebarOpen ? "ml-0" : ""}`}>
           <ContentSection />
         </div>
       </main>
-      {/* Floating search button for mobile */}
+      {/* 移动设备搜索按钮 */}
       {isMobile && (
         <div className="fixed bottom-4 left-4 z-30 md:hidden">
           <Button size="icon" className="h-12 w-12 rounded-full shadow-lg" onClick={() => router.push("/search")}>
@@ -114,7 +113,7 @@ export default function Home() {
         </div>
       )}
 
-      {/* Add the FloatingActions component here */}
+      {/* 添加 FloatingActions 组件 */}
       <FloatingActions />
     </div>
   )

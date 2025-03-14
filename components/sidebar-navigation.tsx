@@ -19,7 +19,7 @@ export default function SidebarNavigation({
   const [expandedCategories, setExpandedCategories] = useState<Record<string, boolean>>(
     navigationData.reduce(
       (acc, category) => {
-        acc[category.id] = true
+        acc[category.id] = false
         return acc
       },
       {} as Record<string, boolean>,
@@ -28,7 +28,7 @@ export default function SidebarNavigation({
 
   const toggleCategory = (categoryId: string) => {
     if (collapsed) {
-      // If sidebar is collapsed, clicking a category should expand the sidebar
+      // 如果侧边栏折叠，点击分类应该展开侧边栏
       return
     }
 
@@ -49,7 +49,7 @@ export default function SidebarNavigation({
   return (
     <div className="w-full h-full overflow-auto">
       <div className={cn("p-4", collapsed && "p-2")}>
-        {!collapsed && <h2 className="text-xl font-bold mb-4">网站导航</h2>}
+        {!collapsed && <h2 className="text-xl font-bold mb-4">AI工具导航</h2>}
         <nav>
           <ul className="space-y-1">
             {navigationData.map((category) => {
