@@ -1,0 +1,852 @@
+[
+  [
+    {
+      "id": "fish speech",
+      "name": "fish speech",
+      "url": "https://fish.audio/?ref=feizhuke.com",
+      "description": "fish speech,部署,整合包,教程,模型,tts,安装,微调,AI语音合成工具",
+      "icon": ""
+    },
+    {
+      "id": "ToucanTTS",
+      "name": "ToucanTTS",
+      "url": "https://github.com/DigitalPhonetics/IMS-Toucan",
+      "description": "ToucanTTS,支持多达7000种语言！颠覆性的免费文本转语音工具",
+      "icon": ""
+    },
+    {
+      "id": "chattts",
+      "name": "chattts",
+      "url": "https://github.com/2noise/ChatTTS",
+      "description": "chattts,一个专为对话场景设计的语音生成模型",
+      "icon": ""
+    },
+    {
+      "id": "wellsaid labs",
+      "name": "wellsaid labs",
+      "url": "https://www.wellsaidlabs.com/?via=yisheng",
+      "description": "wellsaid labs,企业级的ai语音生成器,将文本转换为自然流畅的人类声音",
+      "icon": ""
+    },
+    {
+      "id": "GPT-SoVITS",
+      "name": "GPT-SoVITS",
+      "url": "https://github.com/RVC-Boss/GPT-SoVITS",
+      "description": "GPT-SoVITS,强大的本地语音克隆工具! 下载,模型,整合包,教程,在线,github,webui,api",
+      "icon": ""
+    },
+    {
+      "id": "OpenVoice",
+      "name": "OpenVoice",
+      "url": "https://github.com/myshell-ai/OpenVoicec",
+      "description": "OpenVoice,免费开源的AI语音克隆项目",
+      "icon": ""
+    },
+    {
+      "id": "Descript",
+      "name": "Descript",
+      "url": "https://www.descript.com/?ref=feizhuke.com",
+      "description": "Descript,一站式ai视频,音频编辑工具,播客录制,屏幕录制",
+      "icon": ""
+    },
+    {
+      "id": "bandlab",
+      "name": "bandlab",
+      "url": "https://www.bandlab.com",
+      "description": "bandlab,音乐创作,数字音频工作站,社交平台,免费ai音频分离工具",
+      "icon": ""
+    },
+    {
+      "id": "Adobe Podcast",
+      "name": "Adobe Podcast",
+      "url": "https://podcast.adobe.com",
+      "description": "Adobe Podcast,Adobe推出的在线AI音频录制和编辑工具",
+      "icon": ""
+    },
+    {
+      "id": "uberduck",
+      "name": "uberduck",
+      "url": "https://uberduck.ai",
+      "description": "uberduck ai,优步鸭ai唱歌软件,语音合成器",
+      "icon": ""
+    },
+    {
+      "id": "通义听悟",
+      "name": "通义听悟",
+      "url": "https://tingwu.aliyun.com/u/faKXE3J30J300cJ3",
+      "description": "通义听悟,基于阿里云AI大模型,每天自动获得自动两小时听转写时长",
+      "icon": ""
+    },
+    {
+      "id": "Murf AI",
+      "name": "Murf AI",
+      "url": "https://get.murf.ai/1li7rpuslml1",
+      "description": "Murf AI,多功能的AI语音生成器，人工智能真人声音克隆工具软件",
+      "icon": ""
+    },
+    {
+      "id": "fakeyou",
+      "name": "fakeyou",
+      "url": "https://fakeyou.com",
+      "description": "fakeyou,音频生成AI,名人文字转语音工具",
+      "icon": ""
+    },
+    {
+      "id": "IBM Watson ai",
+      "name": "IBM Watson ai",
+      "url": "https://www.ibm.com/cloud/watson-text-to-speech",
+      "description": "IBM Watson,文字转语音ai自动剪辑",
+      "icon": ""
+    },
+    {
+      "id": "riffusion",
+      "name": "riffusion",
+      "url": "https://www.riffusion.com",
+      "description": "riffusion,ai生成频谱图并制作音乐",
+      "icon": ""
+    },
+    {
+      "id": "网易天音",
+      "name": "网易天音",
+      "url": "https://tianyin.music.163.com",
+      "description": "网易天音,一站式AI音乐创作平台",
+      "icon": ""
+    },
+    {
+      "id": "Jasper ai",
+      "name": "Jasper ai",
+      "url": "https://www.jasper.ai",
+      "description": "Jasper ai,人工智能AI文章内容写作助手,ai绘画,聊天机器人,语音",
+      "icon": ""
+    },
+    {
+      "id": "easy peasy ai",
+      "name": "easy peasy ai",
+      "url": "https://easy-peasy.ai/?via=yisheng",
+      "description": "Easy-Peasy.AI,ai人工智能写作,绘画,音频转录工具网站",
+      "icon": ""
+    },
+    {
+      "id": "synthesys AI",
+      "name": "synthesys AI",
+      "url": "https://synthesys.io",
+      "description": "synthesys ,synthesys.io 虚拟人出镜讲解,AI文字转配音和视频生成器",
+      "icon": ""
+    },
+    {
+      "id": "fliki",
+      "name": "fliki",
+      "url": "https://fliki.ai",
+      "description": "Fliki,人工智能ai文本转视频配音工具",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "Sonantic",
+      "name": "Sonantic",
+      "url": "https://app.sonantic.io",
+      "description": "Sonantic,ai语音合成,让电影和游戏配音制作变得快捷而成本低廉",
+      "icon": ""
+    },
+    {
+      "id": "Listnr",
+      "name": "Listnr",
+      "url": "https://listnr.ai",
+      "description": "Listnr,轻松生成逼真的AI拟人配音,声音克隆",
+      "icon": ""
+    },
+    {
+      "id": "Replica Studios",
+      "name": "Replica Studios",
+      "url": "https://www.replicastudios.com/?ref=feizhuke.com",
+      "description": "Replica Studios官网,高质量游戏,多媒体配音旁白合成工具",
+      "icon": ""
+    },
+    {
+      "id": "Filme",
+      "name": "Filme",
+      "url": "https://filme.imyfone.com/voice-recorder",
+      "description": "Filme,AI语音克隆,ai文字转语音生成器",
+      "icon": ""
+    },
+    {
+      "id": "FineVoice",
+      "name": "FineVoice",
+      "url": "https://www.fineshare.com",
+      "description": "FineVoice,ai语音增强,变声器,语音生成",
+      "icon": ""
+    },
+    {
+      "id": "VALL-E",
+      "name": "VALL-E",
+      "url": "https://www.microsoft.com/en-us/research/project/vall-e-x/vall-e",
+      "description": "VALL-E, 微软出品神器,ai 3秒钟克隆你的声音,配音",
+      "icon": ""
+    },
+    {
+      "id": "Audyo",
+      "name": "Audyo",
+      "url": "https://www.audyo.ai",
+      "description": "Audyo,文本到语音的AI语音转换器,高质量逼真语音生成",
+      "icon": ""
+    },
+    {
+      "id": "spakfly",
+      "name": "spakfly",
+      "url": "https://spakfly.com",
+      "description": "spakfly,文本转语音软件,将任何文本转换成逼真的、听起来像人的画外音",
+      "icon": ""
+    },
+    {
+      "id": "Beepbooply",
+      "name": "Beepbooply",
+      "url": "https://beepbooply.com",
+      "description": "Beepbooply,ai语音生成,配音,超过900种声音,文案转语音",
+      "icon": ""
+    },
+    {
+      "id": "play.ht",
+      "name": "play.ht",
+      "url": "https://play.ht",
+      "description": "play.ht,强大的AI语音合成和文本转语音（TTS）工具",
+      "icon": ""
+    },
+    {
+      "id": "Blogcast",
+      "name": "Blogcast",
+      "url": "https://blogcast.host",
+      "description": "Blogcast,ai文字转语音服务,为博客文章、网页文章等提供文字转语音支持",
+      "icon": ""
+    },
+    {
+      "id": "Ai Sofiya",
+      "name": "Ai Sofiya",
+      "url": "https://aisofiya.com",
+      "description": "Ai Sofiya,社媒创建广告的超级Ai工具,语音生成器",
+      "icon": ""
+    },
+    {
+      "id": "TTS-Vue",
+      "name": "TTS-Vue",
+      "url": "https://github.com/LokerL/tts-vue",
+      "description": "TTS-Vue,开源免费的微软语音合成工具,ai配音软件",
+      "icon": ""
+    },
+    {
+      "id": "Narration Box",
+      "name": "Narration Box",
+      "url": "https://narrationbox.com",
+      "description": "Narration Box,ai语音合成服务,创建画外音、旁白、有声读物、音频页面、播客等",
+      "icon": ""
+    },
+    {
+      "id": "TTS-Voice-Wizard",
+      "name": "TTS-Voice-Wizard",
+      "url": "https://github.com/VRCWizard/TTS-Voice-Wizard",
+      "description": "TTS-Voice-Wizard,ai文本语音互转工具",
+      "icon": ""
+    },
+    {
+      "id": "SpeechEasy",
+      "name": "SpeechEasy",
+      "url": "https://www.speecheasyapp.com",
+      "description": "SpeechEasy,ai语音合成,从文本生成高质量、易于理解的音频",
+      "icon": ""
+    },
+    {
+      "id": "lovo.ai",
+      "name": "lovo.ai",
+      "url": "https://lovo.ai",
+      "description": "lovo.ai,AI配音,声音克隆&amp;文本到语音平台",
+      "icon": ""
+    },
+    {
+      "id": "elevenlabs",
+      "name": "elevenlabs",
+      "url": "elevenlabs.io/?from=epdbg9ggvd1400",
+      "description": "ElevenLabs ai,在线AI语音合成工具,28种语言,原汁原味的口音",
+      "icon": ""
+    },
+    {
+      "id": "呱呱有声",
+      "name": "呱呱有声",
+      "url": "https://www.gstudios.com.cn",
+      "description": "呱呱有声,录音宝,邀请码,制作平台客户端,在线有声书制作AI配音工具",
+      "icon": ""
+    },
+    {
+      "id": "vits",
+      "name": "vits",
+      "url": "https://github.com/jaywalnut310/vits",
+      "description": "vits模型下载,语音合成训练,教程,github",
+      "icon": ""
+    },
+    {
+      "id": "rvc变声器",
+      "name": "rvc变声器",
+      "url": "https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI",
+      "description": "rvc变声器,模型下载分享,基于VITS语音合成系统,ai实时声音变换",
+      "icon": ""
+    },
+    {
+      "id": "微软配音",
+      "name": "微软配音",
+      "url": "https://azure.microsoft.com/zh-cn/products/cognitive-services/text-to-speech?ref=feizhuke.com",
+      "description": "微软配音,微软tts ai文字转语音合成助手工具软件",
+      "icon": ""
+    },
+    {
+      "id": "制片帮",
+      "name": "制片帮",
+      "url": "https://www.zhipianbang.com/page/spread.html?spread=aa0223efc847",
+      "description": "制片帮,悦音配音,音分轨,人声提取,无水印下载,视频素材网站",
+      "icon": ""
+    },
+    {
+      "id": "悦音配音",
+      "name": "悦音配音",
+      "url": "https://yueyin.zhipianbang.com/page/spread.html?spread=aa0223efc847",
+      "description": "悦音配音,AI软件配音媲美真人感,音轨分离,真人配音,ai主播",
+      "icon": ""
+    },
+    {
+      "id": "魔音工坊",
+      "name": "魔音工坊",
+      "url": "https://www.moyin.com/?ref=feizhuke.com",
+      "description": "魔音工坊,ai免费配音网站,配音工厂,文字转成语音工具软件",
+      "icon": ""
+    },
+    {
+      "id": "uberduck",
+      "name": "uberduck",
+      "url": "https://uberduck.ai",
+      "description": "uberduck ai,优步鸭ai唱歌软件,语音合成器",
+      "icon": ""
+    },
+    {
+      "id": "讯飞智作",
+      "name": "讯飞智作",
+      "url": "https://peiyin.xunfei.cn",
+      "description": "讯飞智作,科大讯飞ai配音软件,讯飞文字转语音网站",
+      "icon": ""
+    },
+    {
+      "id": "MarketingBlocks ai",
+      "name": "MarketingBlocks ai",
+      "url": "https://hey.marketingblocks.ai",
+      "description": "MarketingBlocks ai,你的AI营销助理,帮助快速写各类文案",
+      "icon": ""
+    },
+    {
+      "id": "fliki",
+      "name": "fliki",
+      "url": "https://fliki.ai",
+      "description": "Fliki,人工智能ai文本转视频配音工具",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "TurboScribe",
+      "name": "TurboScribe",
+      "url": "https://turboscribe.ai/?ref=feizhuke.com",
+      "description": "TurboScribe,ai转录音频、视频以及 YouTube 内容，保持高准确性和多语言功能",
+      "icon": ""
+    },
+    {
+      "id": "FineVoice",
+      "name": "FineVoice",
+      "url": "https://www.fineshare.com",
+      "description": "FineVoice,ai语音增强,变声器,语音生成",
+      "icon": ""
+    },
+    {
+      "id": "TTS-Voice-Wizard",
+      "name": "TTS-Voice-Wizard",
+      "url": "https://github.com/VRCWizard/TTS-Voice-Wizard",
+      "description": "TTS-Voice-Wizard,ai文本语音互转工具",
+      "icon": ""
+    },
+    {
+      "id": "讯飞听见",
+      "name": "讯飞听见",
+      "url": "https://www.iflyrec.com/?ref=feizhuke.com",
+      "description": "讯飞听见,语音,音频,录音,视频转文字工具,同传,字幕,会议,电脑版app下载,翻译",
+      "icon": ""
+    },
+    {
+      "id": "whisper",
+      "name": "whisper",
+      "url": "https://openai.com/research/whisper?ref=feizhuke.com",
+      "description": "whisper,github,openai推出的自动语音辨识模型",
+      "icon": ""
+    },
+    {
+      "id": "otter",
+      "name": "otter",
+      "url": "https://otter.ai/?ref=feizhuke.com",
+      "description": "otter ai,免费多人语音识别和音频转录文字工具,翻译,听写,app",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "Speaking AI",
+      "name": "Speaking AI",
+      "url": "https://speaking.ai",
+      "description": "Speaking AI,自然的情感进行对话并实现零样本语音克隆",
+      "icon": ""
+    },
+    {
+      "id": "reecho ai",
+      "name": "reecho ai",
+      "url": "https://www.reecho.ai",
+      "description": "reecho ai,超拟真语音合成与瞬时克隆平台! 专注于5秒瞬时语音克隆和超拟真语音合成的创新产品",
+      "icon": ""
+    },
+    {
+      "id": "mockingbird",
+      "name": "mockingbird",
+      "url": "https://github.com/babysor/MockingBird",
+      "description": "mockingbird,5秒内ai克隆你的声音并生成任意语音内容",
+      "icon": ""
+    },
+    {
+      "id": "Listnr",
+      "name": "Listnr",
+      "url": "https://listnr.ai",
+      "description": "Listnr,轻松生成逼真的AI拟人配音,声音克隆",
+      "icon": ""
+    },
+    {
+      "id": "Rask Ai",
+      "name": "Rask Ai",
+      "url": "https://app.rask.ai/?utm_source=affilate&via=yisheng",
+      "description": "Rask Ai,一站式本地化视频翻译工具,语音对嘴型,声音克隆,自动生成字幕",
+      "icon": ""
+    },
+    {
+      "id": "kitsai",
+      "name": "kitsai",
+      "url": "https://www.app.kits.ai/?via=moyu",
+      "description": "kitsai,ai声音克隆,音乐,训练模型,文字转语音,声音分离器",
+      "icon": ""
+    },
+    {
+      "id": "Filme",
+      "name": "Filme",
+      "url": "https://filme.imyfone.com/voice-recorder",
+      "description": "Filme,AI语音克隆,ai文字转语音生成器",
+      "icon": ""
+    },
+    {
+      "id": "VALL-E",
+      "name": "VALL-E",
+      "url": "https://www.microsoft.com/en-us/research/project/vall-e-x/vall-e",
+      "description": "VALL-E, 微软出品神器,ai 3秒钟克隆你的声音,配音",
+      "icon": ""
+    },
+    {
+      "id": "lovo.ai",
+      "name": "lovo.ai",
+      "url": "https://lovo.ai",
+      "description": "lovo.ai,AI配音,声音克隆&amp;文本到语音平台",
+      "icon": ""
+    },
+    {
+      "id": "魔音工坊",
+      "name": "魔音工坊",
+      "url": "https://www.moyin.com/?ref=feizhuke.com",
+      "description": "魔音工坊,ai免费配音网站,配音工厂,文字转成语音工具软件",
+      "icon": ""
+    },
+    {
+      "id": "uberduck",
+      "name": "uberduck",
+      "url": "https://uberduck.ai",
+      "description": "uberduck ai,优步鸭ai唱歌软件,语音合成器",
+      "icon": ""
+    },
+    {
+      "id": "Murf AI",
+      "name": "Murf AI",
+      "url": "https://get.murf.ai/1li7rpuslml1",
+      "description": "Murf AI,多功能的AI语音生成器，人工智能真人声音克隆工具软件",
+      "icon": ""
+    },
+    {
+      "id": "fakeyou",
+      "name": "fakeyou",
+      "url": "https://fakeyou.com",
+      "description": "fakeyou,音频生成AI,名人文字转语音工具",
+      "icon": ""
+    },
+    {
+      "id": "resemble ai",
+      "name": "resemble ai",
+      "url": "https://www.resemble.ai",
+      "description": "resemble ai,5秒克隆你的声音,并生成任何内容",
+      "icon": ""
+    },
+    {
+      "id": "MarketingBlocks ai",
+      "name": "MarketingBlocks ai",
+      "url": "https://hey.marketingblocks.ai",
+      "description": "MarketingBlocks ai,你的AI营销助理,帮助快速写各类文案",
+      "icon": ""
+    },
+    {
+      "id": "SoundView-免费ai视频翻译",
+      "name": "SoundView-免费ai视频翻译",
+      "url": "https://soundviewai.com/invitation?inviteCode=H64MhexbT&from=feizhu",
+      "description": "SoundView,ai短视频本地化场景音色创作平台,可进行多语种视频翻译、配音、创作",
+      "icon": ""
+    },
+    {
+      "id": "elai.io",
+      "name": "elai.io",
+      "url": "https://elai.io/?via=moyu",
+      "description": "elai.io,ai视频生成软件工具,数字虚拟人,文字,ppt生成视频,声音克隆",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "lalal.ai",
+      "name": "lalal.ai",
+      "url": "https://www.lalal.ai/zh-hans",
+      "description": "lalal.ai,啦啦爱音频分离人声和音乐网站",
+      "icon": ""
+    },
+    {
+      "id": "Ultimate Vocal Remover",
+      "name": "Ultimate Vocal Remover",
+      "url": "https://ultimatevocalremover.com",
+      "description": "Ultimate Vocal Remover,uvr免费在线ai人声分离网站,人声提取软件工具神器",
+      "icon": ""
+    },
+    {
+      "id": "vocal remover",
+      "name": "vocal remover",
+      "url": "https://vocalremover.org/zh",
+      "description": "vocal remover,免费在线ai人声分离网站,人声提取软件工具神器",
+      "icon": ""
+    },
+    {
+      "id": "TME Studio",
+      "name": "TME Studio",
+      "url": "https://y.qq.com/tme_studio/index.html#",
+      "description": "TME Studio,腾讯音乐推出的一款创新的智能音乐创作助手",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "Adobe Podcast",
+      "name": "Adobe Podcast",
+      "url": "https://podcast.adobe.com",
+      "description": "Adobe Podcast,Adobe推出的在线AI音频录制和编辑工具",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "FineVoice",
+      "name": "FineVoice",
+      "url": "https://www.fineshare.com",
+      "description": "FineVoice,ai语音增强,变声器,语音生成",
+      "icon": ""
+    },
+    {
+      "id": "大饼ai变声器",
+      "name": "大饼ai变声器",
+      "url": "https://dubbing.tech/?ref=feizhuke.com",
+      "description": "大饼ai变声器,dubbing,专业在线实时变声软件,音色转换工具,文本转语音",
+      "icon": ""
+    },
+    {
+      "id": "大饼ai变声器",
+      "name": "大饼ai变声器",
+      "url": "https://dubbing.tech/?ref=feizhuke.com",
+      "description": "大饼ai变声器,dubbing,实时变声软件,音色转换工具,文本转语音",
+      "icon": ""
+    },
+    {
+      "id": "voicemod",
+      "name": "voicemod",
+      "url": "https://www.voicemod.net/zh",
+      "description": "voicemod,实时的AI变声器,音乐生成",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "Krisp",
+      "name": "Krisp",
+      "url": "https://krisp.ai",
+      "description": "Krisp,ai智能降噪工具,借助人工智能驱动的降噪、转录、会议笔记和录音功能",
+      "icon": ""
+    },
+    {
+      "id": "Adobe Podcast",
+      "name": "Adobe Podcast",
+      "url": "https://podcast.adobe.com",
+      "description": "Adobe Podcast,Adobe推出的在线AI音频录制和编辑工具",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "天谱乐ai",
+      "name": "天谱乐ai",
+      "url": "https://www.tianpuyue.cn/?ref=feizhuke.com",
+      "description": "天谱乐ai,全球首个多模态配乐大模型,文本、图片和视频等多种输入方式生成音乐",
+      "icon": ""
+    },
+    {
+      "id": "音疯ai",
+      "name": "音疯ai",
+      "url": "https://www.yinfeng.cn",
+      "description": "音疯ai,昆仑万维推出的能够一键生成动听音乐的AI音乐创作平台",
+      "icon": ""
+    },
+    {
+      "id": "Melodio",
+      "name": "Melodio",
+      "url": "https://apps.apple.com/rs/app/melodio-vibe-your-moment/id6504763479",
+      "description": "Melodio,昆仑万维发布的全球首个AI流媒体音乐平台",
+      "icon": ""
+    },
+    {
+      "id": "海绵音乐",
+      "name": "海绵音乐",
+      "url": "https://www.haimian.com",
+      "description": "海绵音乐,抖音推出的ai音乐app下载",
+      "icon": ""
+    },
+    {
+      "id": "Musicfy",
+      "name": "Musicfy",
+      "url": "https://create.musicfy.lol/?ref=moyu",
+      "description": "Musicfy,在线的AI音乐生成网站",
+      "icon": ""
+    },
+    {
+      "id": "musicgen",
+      "name": "musicgen",
+      "url": "https://musicgen.com",
+      "description": "musicgen官网下载,meta发布的开源音乐生成模型,简单可控",
+      "icon": ""
+    },
+    {
+      "id": "Udio ai",
+      "name": "Udio ai",
+      "url": "https://www.udio.com/?ref=feizhuke.com",
+      "description": "udio官网, 免费的ai音乐创作生成工具,支持生成多种风格音乐 ! 注意: (需要科-xue⬆@网-访问)",
+      "icon": ""
+    },
+    {
+      "id": "Stable Audio",
+      "name": "Stable Audio",
+      "url": "https://www.stableaudio.com/?ref=feizhuke.com",
+      "description": "stable audio,比suno更强的免费ai音乐生成工具软件",
+      "icon": ""
+    },
+    {
+      "id": "suno ai",
+      "name": "suno ai",
+      "url": "https://app.suno.ai",
+      "description": "suno ai,免费高品质人工智能音乐创作神器",
+      "icon": ""
+    },
+    {
+      "id": "Ecrett Music",
+      "name": "Ecrett Music",
+      "url": "https://ecrettmusic.com",
+      "description": "Ecrett Music,AI音乐作曲创作软件",
+      "icon": ""
+    },
+    {
+      "id": "aimi.fm",
+      "name": "aimi.fm",
+      "url": "https://www.aimi.fm",
+      "description": "aimi.fm,基于AI的音乐生成作曲平台",
+      "icon": ""
+    },
+    {
+      "id": "Amper Music",
+      "name": "Amper Music",
+      "url": "https://ampermusic.com/?ref=feizhuke.com",
+      "description": "Amper Music,强大的人工智能AI音乐作曲创作工具",
+      "icon": ""
+    },
+    {
+      "id": "kitsai",
+      "name": "kitsai",
+      "url": "https://www.app.kits.ai/?via=moyu",
+      "description": "kitsai,ai声音克隆,音乐,训练模型,文字转语音,声音分离器",
+      "icon": ""
+    },
+    {
+      "id": "tuneflow",
+      "name": "tuneflow",
+      "url": "https://www.tuneflow.com/editor",
+      "description": "tuneflow,新一代智能音乐创作工具,ai音乐软件",
+      "icon": ""
+    },
+    {
+      "id": "Boomy",
+      "name": "Boomy",
+      "url": "https://boomy.com",
+      "description": "Boomy,在线ai音乐创作生成工具,几秒钟内创建自己的原创音乐",
+      "icon": ""
+    },
+    {
+      "id": "bgm猫",
+      "name": "bgm猫",
+      "url": "https://bgmcat.com/home?ref=feizhuke.com",
+      "description": "bgm猫,ai一键生成视频/播客配乐和片头音乐",
+      "icon": ""
+    },
+    {
+      "id": "BeatBot",
+      "name": "BeatBot",
+      "url": "https://beatbot.fm/?ref=feizhuke.com",
+      "description": "BeatBot,ai音乐生成,输入文本提示快速生成歌曲和音乐",
+      "icon": ""
+    },
+    {
+      "id": "Jukebox",
+      "name": "Jukebox",
+      "url": "https://openai.com/research/jukebox",
+      "description": "Jukebox,OpenAI发布的自动点唱机,在音乐类型和风格范围内生成音乐",
+      "icon": ""
+    },
+    {
+      "id": "Mubert",
+      "name": "Mubert",
+      "url": "https://mubert.com/render/pricing?via=yisheng",
+      "description": "Mubert ai,文字生成bgm背景音乐软件工具网站",
+      "icon": ""
+    },
+    {
+      "id": "vocaloid",
+      "name": "vocaloid",
+      "url": "https://www.vocaloid.com/en/?ref=feizhuke.com",
+      "description": "vocaloid官网,ai人工智能合成...",
+      "icon": ""
+    },
+    {
+      "id": "ACE Studio",
+      "name": "ACE Studio",
+      "url": "https://ace-studio.timedomain.cn/?ref=feizhuke.com",
+      "description": "ACE Studio,ace虚拟歌姬,虚拟歌手音乐合成软件app",
+      "icon": ""
+    },
+    {
+      "id": "TME Studio",
+      "name": "TME Studio",
+      "url": "https://y.qq.com/tme_studio/index.html#",
+      "description": "TME Studio,腾讯音乐推出的一款创新的智能音乐创作助手",
+      "icon": ""
+    },
+    {
+      "id": "voicemod",
+      "name": "voicemod",
+      "url": "https://www.voicemod.net/zh",
+      "description": "voicemod,实时的AI变声器,音乐生成",
+      "icon": ""
+    },
+    {
+      "id": "soundraw",
+      "name": "soundraw",
+      "url": "https://soundraw.io",
+      "description": "soundraw,ai音乐作曲生成器自由定制,创作",
+      "icon": ""
+    },
+    {
+      "id": "soundful",
+      "name": "soundful",
+      "url": "https://soundful.com",
+      "description": "soundful,ai音乐制作软件,一键生成免版权的背景音乐",
+      "icon": ""
+    },
+    {
+      "id": "AIVA",
+      "name": "AIVA",
+      "url": "https://aiva.ai",
+      "description": "AIVA ai,ai作曲,音乐创作软件,人工智能虚拟歌手",
+      "icon": ""
+    },
+    {
+      "id": "musiclm",
+      "name": "musiclm",
+      "url": "https://aitestkitchen.withgoogle.com/experiments/music-lm",
+      "description": "musiclm,google出品输入文本即可生成保保真音频音乐的ai工具",
+      "icon": ""
+    },
+    {
+      "id": "网易天音",
+      "name": "网易天音",
+      "url": "https://tianyin.music.163.com",
+      "description": "网易天音,一站式AI音乐创作平台",
+      "icon": ""
+    },
+    {
+      "id": "海螺ai",
+      "name": "海螺ai",
+      "url": "https://hailuoai.com",
+      "description": "海螺ai,MiniMax推出的一款多模态AI生产力工具,写作,识图,音乐,视频",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "vocaloid",
+      "name": "vocaloid",
+      "url": "https://www.vocaloid.com/en/?ref=feizhuke.com",
+      "description": "vocaloid官网,ai人工智能合成...",
+      "icon": ""
+    },
+    {
+      "id": "ACE Studio",
+      "name": "ACE Studio",
+      "url": "https://ace-studio.timedomain.cn/?ref=feizhuke.com",
+      "description": "ACE Studio,ace虚拟歌姬,虚拟歌手音乐合成软件app",
+      "icon": ""
+    },
+    {
+      "id": "AIVA",
+      "name": "AIVA",
+      "url": "https://aiva.ai",
+      "description": "AIVA ai,ai作曲,音乐创作软件,人工智能虚拟歌手",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "网易天音",
+      "name": "网易天音",
+      "url": "https://tianyin.music.163.com",
+      "description": "网易天音,一站式AI音乐创作平台",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "TME Studio",
+      "name": "TME Studio",
+      "url": "https://y.qq.com/tme_studio/index.html#",
+      "description": "TME Studio,腾讯音乐推出的一款创新的智能音乐创作助手",
+      "icon": ""
+    },
+    {
+      "id": "soundraw",
+      "name": "soundraw",
+      "url": "https://soundraw.io",
+      "description": "soundraw,ai音乐作曲生成器自由定制,创作",
+      "icon": ""
+    }
+  ]
+]

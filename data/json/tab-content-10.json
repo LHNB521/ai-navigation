@@ -1,0 +1,346 @@
+[
+  [
+    {
+      "id": "Remove.photos",
+      "name": "Remove.photos",
+      "url": "https://remove.photos/?ref=feizhuke.com",
+      "description": "Remove.photos,你的全能在线ai图片编辑助手,一键抠图,消除笔,图片增强",
+      "icon": ""
+    },
+    {
+      "id": "batch tools",
+      "name": "batch tools",
+      "url": "https://www.batchtool.com/zh?ref=feizhuke.com",
+      "description": "batch tools ai,完全免费的在线AI图片处理工具,批量去除背景和移除物体功能",
+      "icon": ""
+    },
+    {
+      "id": "insMind",
+      "name": "insMind",
+      "url": "https://www.insmind.com/?ref=feizhuke.com",
+      "description": "insMind,AI驱动的照片编辑器，一站式AI照片编辑和设计处理工具！",
+      "icon": ""
+    },
+    {
+      "id": "Reshot AI",
+      "name": "Reshot AI",
+      "url": "https://www.reshot.ai",
+      "description": "Reshot AI,轻松实现面部编辑，打造完美照片的智能工具",
+      "icon": ""
+    },
+    {
+      "id": "goenhance ai",
+      "name": "goenhance ai",
+      "url": "https://www.goenhance.ai/?aff=moyu",
+      "description": "goenhance ai,全能的AI视频制作平台,换脸,转绘,角色动画,图片高清放大",
+      "icon": ""
+    },
+    {
+      "id": "topaz photo ai",
+      "name": "topaz photo ai",
+      "url": "https://www.topazlabs.com/topaz-photo-ai",
+      "description": "topaz photo ai,非常强大的ai图片进行增强工具",
+      "icon": ""
+    },
+    {
+      "id": "Pic copilot",
+      "name": "Pic copilot",
+      "url": "https://www.piccopilot.com/home/zh",
+      "description": "Pic copilot,ai商品图,商品背景图生成,图片翻译,模特换肤,基于10亿+营销图训练",
+      "icon": ""
+    },
+    {
+      "id": "krea ai",
+      "name": "krea ai",
+      "url": "https://www.krea.ai/?ref=feizhuke.com",
+      "description": "krea ai,人工智能图片增强/制图工具,换脸,重新上色,图像扩展等!",
+      "icon": ""
+    },
+    {
+      "id": "imagestool",
+      "name": "imagestool",
+      "url": "https://imagestool.com/zh_CN",
+      "description": "imagestool,免费在线图片处理网站,图片格式转换,加水印,压缩,gif工具,视频转gif",
+      "icon": ""
+    },
+    {
+      "id": "PixFix",
+      "name": "PixFix",
+      "url": "https://zh.pixfix.com",
+      "description": "PixFix,免费图片修复工具,在线网页版",
+      "icon": ""
+    },
+    {
+      "id": "美图云修",
+      "name": "美图云修",
+      "url": "https://yunxiu.meitu.com/home",
+      "description": "美图云修,一站式美图ai修图软件解决方案,商业摄影行业领先的影楼智能软件",
+      "icon": ""
+    },
+    {
+      "id": "mokker",
+      "name": "mokker",
+      "url": "https://mokker.ai",
+      "description": "mokker ai换背景网站,适用于一键生成商品图,产品图",
+      "icon": ""
+    },
+    {
+      "id": "ps ai",
+      "name": "ps ai",
+      "url": "https://www.adobe.com/products/photoshop/ai.html",
+      "description": "ps ai beta版下载,photoshop ai官网",
+      "icon": ""
+    },
+    {
+      "id": "Affinity",
+      "name": "Affinity",
+      "url": "https://affinity.serif.com/zh-cn",
+      "description": "Affinity,Affinity Photo,Designer, Publisher,大大提高后期修图,设计,出版工作的效率的神器",
+      "icon": ""
+    },
+    {
+      "id": "luminar neo",
+      "name": "luminar neo",
+      "url": "https://r.brandreward.com?key=d51b416788b6ee70eb0c381c06efc9f1&url=https://skylum.com/hans",
+      "description": "luminar neo官网中文,luminar ai,强大的人工智能修图工具",
+      "icon": ""
+    },
+    {
+      "id": "Pixelcut ai",
+      "name": "Pixelcut ai",
+      "url": "https://create.pixelcut.ai/?ref=feizhuke.com",
+      "description": "Pixelcut,ai图片编辑器,人工智能一键去背景,去除物体,图片增强,产品图",
+      "icon": ""
+    },
+    {
+      "id": "MewXAI星月熊",
+      "name": "MewXAI星月熊",
+      "url": "https://qr.mewx.art/?ref=feizhuke.com",
+      "description": "MewXAI星月熊,ai艺术二维码和艺术字生成",
+      "icon": ""
+    },
+    {
+      "id": "Stable Doodle",
+      "name": "Stable Doodle",
+      "url": "https://clipdrop.co/stable-doodle?ref=feizhuke.com",
+      "description": "Stable Doodle,Stability AI推出的草图转换为动态图像的工具",
+      "icon": ""
+    },
+    {
+      "id": "Recompressor",
+      "name": "Recompressor",
+      "url": "https://zh.recompressor.com/?ref=feizhuke.com",
+      "description": "Recompressor,免费的在线ai图片压缩工具",
+      "icon": ""
+    },
+    {
+      "id": "Scribble Diffusion",
+      "name": "Scribble Diffusion",
+      "url": "https://scribblediffusion.com/?ref=feizhuke.com",
+      "description": "scribble diffusion,免费开源涂鸦AI绘画工具,线稿上色",
+      "icon": ""
+    },
+    {
+      "id": "magicstudio",
+      "name": "magicstudio",
+      "url": "https://magicstudio.com/?via=yisheng",
+      "description": "magicstudio,AI图片编辑设计工具,ai产品图,去水印,物体,抠图去背景,文生图",
+      "icon": ""
+    },
+    {
+      "id": "Petalica paint",
+      "name": "Petalica paint",
+      "url": "https://petalica.com/?ref=feizhuke.com",
+      "description": "Petalica paint,ai线稿自动上色服务",
+      "icon": ""
+    },
+    {
+      "id": "Elements of AI",
+      "name": "Elements of AI",
+      "url": "https://www.elementsofai.com/?ref=feizhuke.com",
+      "description": "Elements of AI,免费在线ai课程学习网站",
+      "icon": ""
+    },
+    {
+      "id": "稿定ps",
+      "name": "稿定ps",
+      "url": "https://ps.gaoding.com/#/?ref=feizhuke.com",
+      "description": "稿定ps,在线ps网页版,专业精简的在线ps图片处理软件",
+      "icon": ""
+    },
+    {
+      "id": "Photopea",
+      "name": "Photopea",
+      "url": "https://www.photopea.com/?ref=feizhuke.com",
+      "description": "Photopea官网,中文版,在线ps网页版,完美替代Photoshop",
+      "icon": ""
+    },
+    {
+      "id": "pixlr",
+      "name": "pixlr",
+      "url": "https://pixlr.com/cn/?ref=feizhuke.com",
+      "description": "pixlr,优质在线图片处理软件,抠图去背景工具,照片移除物体魔术橡皮擦,ai绘画",
+      "icon": ""
+    },
+    {
+      "id": "Squoosh",
+      "name": "Squoosh",
+      "url": "https://squoosh.app/?ref=feizhuke.com",
+      "description": "Squoosh,Google 推出的在线图片压缩网站",
+      "icon": ""
+    },
+    {
+      "id": "tinypng",
+      "name": "tinypng",
+      "url": "https://tinypng.com/?ref=feizhuke.com",
+      "description": "tinypng,熊猫压缩网站,在线图片压缩工具,支持jpg,png,webp",
+      "icon": ""
+    },
+    {
+      "id": "Pixian",
+      "name": "Pixian",
+      "url": "https://pixian.ai?atk=jc3s2ac319",
+      "description": "Pixian.ai,免费在线AI抠图智能工具,一键去除图片背景",
+      "icon": ""
+    },
+    {
+      "id": "cutout pro",
+      "name": "cutout pro",
+      "url": "https://www.cutout.pro/zh-CN?ref=feizhuke.com",
+      "description": "cutout pro,全能型的ai图片视频处理工具网站,图片增强,视频抠图软件",
+      "icon": ""
+    },
+    {
+      "id": "hama",
+      "name": "hama",
+      "url": "https://www.hama.app/zh?ref=feizhuke.com",
+      "description": "hama,魔术橡皮擦,图片AI处理工具去水印,去背景,抹除物体",
+      "icon": ""
+    },
+    {
+      "id": "FocoClipping",
+      "name": "FocoClipping",
+      "url": "https://www.fococlipping.com",
+      "description": "FocoClipping,免费在线ai抠图工具网站,人工智能一键快速去除背景",
+      "icon": ""
+    },
+    {
+      "id": "magic eraser",
+      "name": "magic eraser",
+      "url": "https://magicstudio.com/zh/magiceraserhttps://magicstudio.com/zh/magiceraser?via=yisheng",
+      "description": "magic eraser,ai魔术橡皮擦,在线极速无痕修图工具,帮你轻松抹除图片多余物体",
+      "icon": ""
+    },
+    {
+      "id": "Vectorizer",
+      "name": "Vectorizer",
+      "url": "https://vectorizer.ai?atk=jc3s2ac319",
+      "description": "Vectorizer ai,在线AI JPEG和PNG位图转换为SVG矢量图像",
+      "icon": ""
+    },
+    {
+      "id": "waifu2x",
+      "name": "waifu2x",
+      "url": "https://waifu2x.io",
+      "description": "waifu2x,下载,怎么用,网页版,ai人工智能的无损图片放大工具网站",
+      "icon": ""
+    },
+    {
+      "id": "bigjpg",
+      "name": "bigjpg",
+      "url": "https://bigjpg.com/zh",
+      "description": "bigpig,免费在线图片无损放大网站,ai人工智能照片放大",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "tinywow",
+      "name": "tinywow",
+      "url": "https://tinywow.com/?ref=feizhuke.com",
+      "description": "tinywow,在线转换网站,pdf工具箱,200+ 免费工具，PDF转换、AI写作、图片生成，一站搞定！",
+      "icon": ""
+    },
+    {
+      "id": "online convert",
+      "name": "online convert",
+      "url": "https://cn.onlineconvert.com",
+      "description": "online convert,在线文件转换器,视频,音乐,图片,文档,pdf,word,ppt等",
+      "icon": ""
+    },
+    {
+      "id": "Zamzar",
+      "name": "Zamzar",
+      "url": "https://www.zamzar.com",
+      "description": "Zamzar,在线转运工具,支持文档,图片,视频,音频等",
+      "icon": ""
+    },
+    {
+      "id": "CloudConvert",
+      "name": "CloudConvert",
+      "url": "https://cloudconvert.com",
+      "description": "cloudconvert,云转换,在线文件转换工具,支持超过200种文件格式",
+      "icon": ""
+    },
+    {
+      "id": "convertio",
+      "name": "convertio",
+      "url": "https://convertio.co/zh",
+      "description": "convertio,免费在线文件转换平台,支持超过 300 种格式,图片,视频,音频,电子书,字体等",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "稿定ps",
+      "name": "稿定ps",
+      "url": "https://ps.gaoding.com/#/?ref=feizhuke.com",
+      "description": "稿定ps,在线ps网页版,专业精简的在线ps图片处理软件",
+      "icon": ""
+    },
+    {
+      "id": "Photopea",
+      "name": "Photopea",
+      "url": "https://www.photopea.com/?ref=feizhuke.com",
+      "description": "Photopea官网,中文版,在线ps网页版,完美替代Photoshop",
+      "icon": ""
+    },
+    {
+      "id": "pixlr",
+      "name": "pixlr",
+      "url": "https://pixlr.com/cn/?ref=feizhuke.com",
+      "description": "pixlr,优质在线图片处理软件,抠图去背景工具,照片移除物体魔术橡皮擦,ai绘画",
+      "icon": ""
+    },
+    {
+      "id": "magic eraser",
+      "name": "magic eraser",
+      "url": "https://magicstudio.com/zh/magiceraserhttps://magicstudio.com/zh/magiceraser?via=yisheng",
+      "description": "magic eraser,ai魔术橡皮擦,在线极速无痕修图工具,帮你轻松抹除图片多余物体",
+      "icon": ""
+    },
+    {
+      "id": "美图设计室",
+      "name": "美图设计室",
+      "url": "https://design.meitu.com/?ref=feizhuke.com",
+      "description": "美图设计室,AI平面设计,电商,图片编辑,抠图,海报ppt,物体消除,logo,文生图,变清晰,拼图",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "轻闪pdf",
+      "name": "轻闪pdf",
+      "url": "https://lightpdf.cn/?ref=feizhuke.com",
+      "description": "轻闪pdf,网页版,破解版,在线pdf转换工具,下载",
+      "icon": ""
+    },
+    {
+      "id": "tinywow",
+      "name": "tinywow",
+      "url": "https://tinywow.com/?ref=feizhuke.com",
+      "description": "tinywow,在线转换网站,pdf工具箱,200+ 免费工具，PDF转换、AI写作、图片生成，一站搞定！",
+      "icon": ""
+    }
+  ]
+]

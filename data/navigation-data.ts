@@ -1,5 +1,6 @@
 import type { Category } from "@/types/navigation"
 import { Code, BookOpen, Coffee, ShoppingCart, Film, Music, Gamepad2, Newspaper } from "lucide-react"
+import json2 from './json/tab-content-2.json'
 
 export const navigationData: Category[] = [
   {
@@ -16,17 +17,17 @@ export const navigationData: Category[] = [
       {
         "id": "ai-writing",
         "name": "AI写作工具",
-        "websites": []
+        "websites": json2[0]
       },
       {
         "id": "ai论文工具",
         "name": "AI论文工具",
-        "websites": []
+        "websites": json2[1]
       },
       {
         "id": "ai论文写作",
         "name": "AI论文写作",
-        "websites": []
+        "websites": json2[2]
       },
       {
         "id": "ai内容检测",

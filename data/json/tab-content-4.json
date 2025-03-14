@@ -1,0 +1,979 @@
+[
+  [
+    {
+      "id": "韵动ai-数字人/声音克隆",
+      "name": "韵动ai-数字人/声音克隆",
+      "url": "https://www.tellchen.com/#/pages/login/reg?code=dTnrdH",
+      "description": "韵动a,ai数字人,声音克隆,自动生成文章,零基础素人小白如何通过Ai变现",
+      "icon": ""
+    },
+    {
+      "id": "星火绘镜-免费ai视频生成",
+      "name": "星火绘镜-免费ai视频生成",
+      "url": "https://feizhuke.com/xhhj",
+      "description": "超强AI视频创作平台，分镜自动拆分，画面一键生成。支持短剧、MV、预告片多题材，描述及创作，短视频轻松生成。-星火绘镜",
+      "icon": ""
+    },
+    {
+      "id": "白日梦ai-免费视频生成",
+      "name": "白日梦ai-免费视频生成",
+      "url": "https://feizhuke.com/bairimeng",
+      "description": "超强! ai漫画小说推文,支持文生视频、动态画面、AI角色生成等功能，并能保持人物和场景的一致性!最长可生成6分钟的视频!",
+      "icon": ""
+    },
+    {
+      "id": "linkfox-免费ai视频/图片模特",
+      "name": "linkfox-免费ai视频/图片模特",
+      "url": "https://feizhuke.com/linkfox",
+      "description": "免费ai视频生成,ai模特,ai商品图,视频,ai换衣,一键换色,ai换背景,电商专用,百万卖家的选择-linkfox",
+      "icon": ""
+    },
+    {
+      "id": "绘蛙-免费ai视频图片模特",
+      "name": "绘蛙-免费ai视频图片模特",
+      "url": "https://feizhuke.com/huiwa",
+      "description": "智能图片,ai视频生成,文案创作平台，并且拥有海量虛拟模特可选择,Al生成商拍图和种草文案!",
+      "icon": ""
+    },
+    {
+      "id": "heygen-最强ai数字人",
+      "name": "heygen-最强ai数字人",
+      "url": "https://heygen.com/?sid=rewardful&via=yisheng",
+      "description": "heygen,ai数字人,视频生成器,视频翻译,虚拟人主播! (需-要魔-法-打-开)",
+      "icon": ""
+    },
+    {
+      "id": "有言-免费ai视频生成",
+      "name": "有言-免费ai视频生成",
+      "url": "https://feizhuke.com/youyan",
+      "description": "一站式aigc视频创作平台!上千个高质量的3D虚拟人角色可供选择,无需真人出镜! 文生3d视频,动画,场景,语音,超写实3d虚拟人角色,aigc个性化造人...",
+      "icon": ""
+    },
+    {
+      "id": "revid ai",
+      "name": "revid ai",
+      "url": "https://www.revid.ai?aff=6Ol4v",
+      "description": "revid ai,超强全面的AI视频生成工具",
+      "icon": ""
+    },
+    {
+      "id": "vidnoz",
+      "name": "vidnoz",
+      "url": "https://www.vidnoz.com/?ref=feizhuke.com",
+      "description": "vidnoz,一款免费的多功能AI视频生成器,语音克隆,照片说话,跳舞,换脸",
+      "icon": ""
+    },
+    {
+      "id": "hailuo ai",
+      "name": "hailuo ai",
+      "url": "https://hailuoai.video/?ref=feizhuke.com",
+      "description": "hailuo ai,海螺ai海外版,文字图片生成视频",
+      "icon": ""
+    },
+    {
+      "id": "海螺ai",
+      "name": "海螺ai",
+      "url": "https://hailuoai.com",
+      "description": "海螺ai,MiniMax推出的一款多模态AI生产力工具,写作,识图,音乐,视频",
+      "icon": ""
+    },
+    {
+      "id": "可灵ai",
+      "name": "可灵ai",
+      "url": "https://kling.kuaishou.com/?ref=feizhuke.com",
+      "description": "快手可灵ai,可灵大模型申请教程,文生视频,图生视频工具",
+      "icon": ""
+    },
+    {
+      "id": "即梦ai",
+      "name": "即梦ai",
+      "url": "https://feizhuke.com/jimeng",
+      "description": "即梦ai,dreamina抖音出品的ai视频生成,绘画工具",
+      "icon": ""
+    },
+    {
+      "id": "通义视频生成",
+      "name": "通义视频生成",
+      "url": "https://tongyi.aliyun.com/wanxiang/wanxvideo",
+      "description": "通义视频生成,通义千问国风文生视频,图生视频大模型",
+      "icon": ""
+    },
+    {
+      "id": "BasedLabs",
+      "name": "BasedLabs",
+      "url": "https://www.basedlabs.ai/?via=moyu",
+      "description": "BasedLabs,强大的一站式AI生图,AI视频,换脸,表情迁移网站",
+      "icon": ""
+    },
+    {
+      "id": "skyreels",
+      "name": "skyreels",
+      "url": "https://skyreels.ai",
+      "description": "skyreels,昆仑万维发布全球首款AI短剧平台",
+      "icon": ""
+    },
+    {
+      "id": "Stable Video Diffusion",
+      "name": "Stable Video Diffusion",
+      "url": "https://www.stablevideo.com",
+      "description": "免费ai生成视频本地部署,Stable Video Diffusion,svd视频生成本地部署安装配置,有哪些功能,使用教程",
+      "icon": ""
+    },
+    {
+      "id": "Steve AI",
+      "name": "Steve AI",
+      "url": "https://www.steve.ai/?ref=feizhuke.com",
+      "description": "Steve AI,将文本、博客、网页或音频内容快速转化为高质量的视频和动画",
+      "icon": ""
+    },
+    {
+      "id": "Sora",
+      "name": "Sora",
+      "url": "https://openai.com/sora",
+      "description": "OpenAI Sora,模型体验内测申请入口,文生视频软件工具app免费下载地址",
+      "icon": ""
+    },
+    {
+      "id": "pixverse",
+      "name": "pixverse",
+      "url": "https://pixverse.ai",
+      "description": "pixverse,免费多模态AI视频生成工具,制作令人叹为观止的视频",
+      "icon": ""
+    },
+    {
+      "id": "Morph Studio",
+      "name": "Morph Studio",
+      "url": "https://www.morphstudio.com",
+      "description": "Morph Studio,免费ai文本生成高质量视频工具",
+      "icon": ""
+    },
+    {
+      "id": "pika labs",
+      "name": "pika labs",
+      "url": "https://pika.art/?ref=feizhuke.com",
+      "description": "pika labs,注册下载使用教程,文本生成视频ai工具pikalabs",
+      "icon": ""
+    },
+    {
+      "id": "vmake",
+      "name": "vmake",
+      "url": "https://vmake.ai/zh-CN",
+      "description": "vmake,AI照片和视频编辑器生成,增强,去背景,去水印,ai模特,物体消除,商品图",
+      "icon": ""
+    },
+    {
+      "id": "‌Pollo AI‌‌",
+      "name": "‌Pollo AI‌‌",
+      "url": "https://pollo.ai?ref=ztawotj",
+      "description": "‌Pollo AI‌‌,由AI驱动的视频生成平台,可通过文本提示、图像或现有视频来创建",
+      "icon": ""
+    },
+    {
+      "id": "闪剪",
+      "name": "闪剪",
+      "url": "https://shanjian.tv/?inviteId=6474bca22a69a1003b1c78e0",
+      "description": "闪剪,AI虚拟数字人,智能剪辑神器,图文,直播一键成片",
+      "icon": ""
+    },
+    {
+      "id": "MagicAvatar",
+      "name": "MagicAvatar",
+      "url": "https://github.com/magic-research/magic-avatar",
+      "description": "MagicAvatar,多模态框架,生成和动画化一个虚拟人物",
+      "icon": ""
+    },
+    {
+      "id": "MagicEdit",
+      "name": "MagicEdit",
+      "url": "https://github.com/magic-research/magic-edit",
+      "description": "MagicEdit,字节跳动开发的高保真度和时间连贯性的视频编辑工具",
+      "icon": ""
+    },
+    {
+      "id": "NeverEnds",
+      "name": "NeverEnds",
+      "url": "https://neverends.life",
+      "description": "NeverEnds,强大的ai文字图片生成视频创作工具",
+      "icon": ""
+    },
+    {
+      "id": "RoboNeo",
+      "name": "RoboNeo",
+      "url": "https://xiuxiu.meitu.com/?ref=feizhuke.com",
+      "description": "RoboNeo,美图AI助手,帮助你修图,修视频,做设计和画画,视觉领域的Copilot",
+      "icon": ""
+    },
+    {
+      "id": "开拍",
+      "name": "开拍",
+      "url": "https://pro.meitu.com/apps/action.html?ref=feizhuke.com",
+      "description": "开拍app,美图出品的ai口播视频工具",
+      "icon": ""
+    },
+    {
+      "id": "艺映Al",
+      "name": "艺映Al",
+      "url": "https://www.artink.art/zh",
+      "description": "艺映Al,强大又易上手的Al视频创作工具,文图生视频、转动漫软件工具在线",
+      "icon": ""
+    },
+    {
+      "id": "wink studio",
+      "name": "wink studio",
+      "url": "https://wink.meitu.com/?ref=feizhuke.com",
+      "description": "wink studio,美图推出的AI视频编辑工具,让你像修图的一样修视频",
+      "icon": ""
+    },
+    {
+      "id": "Gen-2",
+      "name": "Gen-2",
+      "url": "https://research.runwayml.com/gen2",
+      "description": "runway gen2,Runway最新推出的AI文字转视频生成模型",
+      "icon": ""
+    },
+    {
+      "id": "kaiber ai",
+      "name": "kaiber ai",
+      "url": "https://kaiber.ai?referrer_id=bb7bdd8d-1bdd-4cce-987b-389b320b5904",
+      "description": "kaiber ai,在线AI视频生成制作平台",
+      "icon": ""
+    },
+    {
+      "id": "YoutubeDigest",
+      "name": "YoutubeDigest",
+      "url": "https://www.youtubedigest.app",
+      "description": "YoutubeDigest,使用ChatGPT对YouTube油管视频进行摘要总结",
+      "icon": ""
+    },
+    {
+      "id": "topaz",
+      "name": "topaz",
+      "url": "https://www.topazlabs.com",
+      "description": "topaz,topazlab,专门开发数字图像视频处理软件和插件",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "快剪辑",
+      "name": "快剪辑",
+      "url": "https://kuai.360.cn/home.html?ref=feizhuke.com",
+      "description": "快剪辑,电脑版下载,360推出的一个ai视频剪辑软件",
+      "icon": ""
+    },
+    {
+      "id": "度加剪辑",
+      "name": "度加剪辑",
+      "url": "https://ducut.baidu.com/?ref=feizhuke.com",
+      "description": "度加剪辑,创作工具电脑版,网页pc版,app下载",
+      "icon": ""
+    },
+    {
+      "id": "pictory ai",
+      "name": "pictory ai",
+      "url": "https://pictory.ai?ref=yisheng67",
+      "description": "pictory ai,基于人工智能的视频制作工具,文本生成,修改视频",
+      "icon": ""
+    },
+    {
+      "id": "鬼手剪辑",
+      "name": "鬼手剪辑",
+      "url": "https://jollytoday.com/index/cn",
+      "description": "鬼手剪辑,ghostcut,AI视频剪辑工具,视频翻译、字幕翻译和视频去字幕",
+      "icon": ""
+    },
+    {
+      "id": "opus clip",
+      "name": "opus clip",
+      "url": "https://clip.opus.pro/r?code=K0JU6Z07",
+      "description": "opus clip,短视频创作者的神器,AI自动剪辑工具,长视频分成多个短视频",
+      "icon": ""
+    },
+    {
+      "id": "百度智能创作",
+      "name": "百度智能创作",
+      "url": "https://ai.baidu.com/creativity/index?ref=feizhuke.com",
+      "description": "百度智能创作平台,百度ai智能写作工具入口,ai写作,绘画,文生图,图转视频,剪辑,主播",
+      "icon": ""
+    },
+    {
+      "id": "MarketingBlocks ai",
+      "name": "MarketingBlocks ai",
+      "url": "https://hey.marketingblocks.ai",
+      "description": "MarketingBlocks ai,你的AI营销助理,帮助快速写各类文案",
+      "icon": ""
+    },
+    {
+      "id": "Gen-2",
+      "name": "Gen-2",
+      "url": "https://research.runwayml.com/gen2",
+      "description": "runway gen2,Runway最新推出的AI文字转视频生成模型",
+      "icon": ""
+    },
+    {
+      "id": "kaiber ai",
+      "name": "kaiber ai",
+      "url": "https://kaiber.ai?referrer_id=bb7bdd8d-1bdd-4cce-987b-389b320b5904",
+      "description": "kaiber ai,在线AI视频生成制作平台",
+      "icon": ""
+    },
+    {
+      "id": "Synthesys",
+      "name": "Synthesys",
+      "url": "https://synthesys.io",
+      "description": "Synthesys,ai虚拟人出镜讲解,文字转语音视频工具",
+      "icon": ""
+    },
+    {
+      "id": "Rephrase ai",
+      "name": "Rephrase ai",
+      "url": "https://www.rephrase.ai",
+      "description": "Rephrase ai,ai文字自动转换为视频平台工具",
+      "icon": ""
+    },
+    {
+      "id": "Lumen5",
+      "name": "Lumen5",
+      "url": "https://lumen5.com",
+      "description": "Lumen5官网,ai文字转视频工具...",
+      "icon": ""
+    },
+    {
+      "id": "Synthesia",
+      "name": "Synthesia",
+      "url": "https://www.synthesia.io",
+      "description": "Synthesia,ai文字生成视频网站",
+      "icon": ""
+    },
+    {
+      "id": "腾讯智影",
+      "name": "腾讯智影",
+      "url": "https://zenvideo.qq.com/?ref=feizhuke.com",
+      "description": "腾讯智影,在线视频创作平台,ai文字自动生成视频,虚拟数字人,视频去背景",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "韵动ai-数字人/声音克隆",
+      "name": "韵动ai-数字人/声音克隆",
+      "url": "https://www.tellchen.com/#/pages/login/reg?code=dTnrdH",
+      "description": "韵动a,ai数字人,声音克隆,自动生成文章,零基础素人小白如何通过Ai变现",
+      "icon": ""
+    },
+    {
+      "id": "DeepReel",
+      "name": "DeepReel",
+      "url": "https://www.deepreel.com/?ref=feizhuke.com",
+      "description": "DeepReel,能够将文本转化为具有工作室水准的视频,ai数字人",
+      "icon": ""
+    },
+    {
+      "id": "必剪studio",
+      "name": "必剪studio",
+      "url": "https://member.bilibili.com/york/bilibili-studio/unlogin",
+      "description": "必剪studio,B站推出的一款免费数字分身定制工具",
+      "icon": ""
+    },
+    {
+      "id": "有言-免费ai视频生成",
+      "name": "有言-免费ai视频生成",
+      "url": "https://feizhuke.com/youyan",
+      "description": "免费AI视频创作,ai数字人,1200+免费3D数字人,一站式视频工具,ai视频,动画,文生文,镜头-有言数字人",
+      "icon": ""
+    },
+    {
+      "id": "有言数字人-免费ai数字人",
+      "name": "有言数字人-免费ai数字人",
+      "url": "https://feizhuke.com/youyan",
+      "description": "免费ai虚拟数字人,免费AI视频创作,1200+免费3D数字人,一站式视频工具,ai视频,动画,文生文,镜头-有言数字人",
+      "icon": ""
+    },
+    {
+      "id": "蝉镜-免费ai数字人",
+      "name": "蝉镜-免费ai数字人",
+      "url": "https://feizhuke.com/chanjing",
+      "description": "蝉镜ai,免费在线ai数字人,视频创作平台",
+      "icon": ""
+    },
+    {
+      "id": "heygen ai",
+      "name": "heygen ai",
+      "url": "https://heygen.com/?sid=rewardful&via=yisheng",
+      "description": "heygen,人工智能ai数字人,虚拟人,模特,主播,照片动起来,声音克隆,文字转语音视频",
+      "icon": ""
+    },
+    {
+      "id": "SadTalker",
+      "name": "SadTalker",
+      "url": "https://github.com/OpenTalker/SadTalker",
+      "description": "SadTalker,ai虚拟数字人,一张图片、一段音频，合成面部说这段语音的视频",
+      "icon": ""
+    },
+    {
+      "id": "dreamavatar",
+      "name": "dreamavatar",
+      "url": "https://www.dreamavatar.com/?ref=feizhuke.com",
+      "description": "dreamavatar官网,美图旗下AI数字人主播,虚拟人生成工具",
+      "icon": ""
+    },
+    {
+      "id": "Gan.ai",
+      "name": "Gan.ai",
+      "url": "https://gan.ai",
+      "description": "Gan.ai,仅需两分钟即可定制个性化的虚拟数字人真人视频",
+      "icon": ""
+    },
+    {
+      "id": "奇妙问",
+      "name": "奇妙问",
+      "url": "https://ai.weta365.com",
+      "description": "奇妙问,ai虚拟数字人平台,开启数字人3.0时代",
+      "icon": ""
+    },
+    {
+      "id": "工作数字人",
+      "name": "工作数字人",
+      "url": "https://workbrain.cn",
+      "description": "工作数字人,明途工作数字人workchat，开创工作领域数智应用",
+      "icon": ""
+    },
+    {
+      "id": "万兴播爆",
+      "name": "万兴播爆",
+      "url": "https://feizhuke.com/wanxing",
+      "description": "万兴播爆,视频创作神器,AI数字人,场景化模板,多语言配音,智能脚本等功能",
+      "icon": ""
+    },
+    {
+      "id": "LiveReacting",
+      "name": "LiveReacting",
+      "url": "https://www.livereacting.com",
+      "description": "LiveReacting,使直播更具互动性和吸引力的ai工具",
+      "icon": ""
+    },
+    {
+      "id": "来画",
+      "name": "来画",
+      "url": "https://www.laihua.com/?ref=feizhuke.com",
+      "description": "来画动画,ai虚拟数字人,智能创作平台",
+      "icon": ""
+    },
+    {
+      "id": "SpiritMe",
+      "name": "SpiritMe",
+      "url": "https://spiritme.tech",
+      "description": "SpiritMe,利用动作捕捉技术,通过数字化身创建个性化视频ai工具",
+      "icon": ""
+    },
+    {
+      "id": "Colossyan",
+      "name": "Colossyan",
+      "url": "https://www.colossyan.com/?via=moyu",
+      "description": "Colossyan,在线ai数字人,虚拟主播软件工具网站",
+      "icon": ""
+    },
+    {
+      "id": "曦灵数字人",
+      "name": "曦灵数字人",
+      "url": "https://cloud.baidu.com/product/baidudigitalhumanlivestream.html",
+      "description": "百度智能云曦灵数字人,直播、短视频等领域,高度个性化定制",
+      "icon": ""
+    },
+    {
+      "id": "腾讯云智能数智人",
+      "name": "腾讯云智能数智人",
+      "url": "https://cloud.tencent.com/product/ivh",
+      "description": "腾讯云智能数智人,ai虚拟数字,虚拟主播直播,短视频",
+      "icon": ""
+    },
+    {
+      "id": "火山引擎数字人",
+      "name": "火山引擎数字人",
+      "url": "https://www.volcengine.com/product/avatar",
+      "description": "火山引擎数字人,ai虚拟主播软件,智能播报、直播、交互型等多种数字人产品方案",
+      "icon": ""
+    },
+    {
+      "id": "华为云AI数字人",
+      "name": "华为云AI数字人",
+      "url": "https://www.huaweicloud.com/product/cbs/digitalhuman.html",
+      "description": "华为云AI数字人,基于文本或语音驱动数字人,行业播报、电商直播等场景",
+      "icon": ""
+    },
+    {
+      "id": "阿里云数字人",
+      "name": "阿里云数字人",
+      "url": "https://www.aliyun.com/product/ai/avatar",
+      "description": "阿里云数字人,ai虚拟主播,直播平台,人工智能",
+      "icon": ""
+    },
+    {
+      "id": "闪剪",
+      "name": "闪剪",
+      "url": "https://shanjian.tv/?inviteId=6474bca22a69a1003b1c78e0",
+      "description": "闪剪,AI虚拟数字人,智能剪辑神器,图文,直播一键成片",
+      "icon": ""
+    },
+    {
+      "id": "twinsync",
+      "name": "twinsync",
+      "url": "https://twinsync.xyz/?ref=feizhuke.com",
+      "description": "twinsync,ai虚拟数字人,主播,口播软件工具",
+      "icon": ""
+    },
+    {
+      "id": "51数字人",
+      "name": "51数字人",
+      "url": "https://51szr.com",
+      "description": "51数字人,使用AI虚拟人替代真人直播与短视频,10倍降本增效",
+      "icon": ""
+    },
+    {
+      "id": "硅基智能",
+      "name": "硅基智能",
+      "url": "https://www.guiji.ai",
+      "description": "硅基智能官网,虚拟数字人,AIGC赛道视频、直播内容生成领域的先行者",
+      "icon": ""
+    },
+    {
+      "id": "奇妙元",
+      "name": "奇妙元",
+      "url": "https://weta365.com/conduct",
+      "description": "奇妙元,ai虚拟数字人平台,短视频,直播虚拟主播",
+      "icon": ""
+    },
+    {
+      "id": "中科相生",
+      "name": "中科相生",
+      "url": "https://studio.sam-sara.cn",
+      "description": "中科相生,ai数字人,虚拟人,声音克隆照片一键换脸工具网站",
+      "icon": ""
+    },
+    {
+      "id": "跃迁引擎",
+      "name": "跃迁引擎",
+      "url": "https://www.warpengine.cc/?ref=feizhuke.com",
+      "description": "跃迁引擎,ai虚拟数字人,虚拟主播",
+      "icon": ""
+    },
+    {
+      "id": "创视元",
+      "name": "创视元",
+      "url": "https://speaker.nnkosmos.com",
+      "description": "创视元,ai虚拟数字人,3d数字人,声音克隆,虚拟主播",
+      "icon": ""
+    },
+    {
+      "id": "怪兽ai数字人",
+      "name": "怪兽ai数字人",
+      "url": "https://www.guaishouai.com/?ref=feizhuke.com",
+      "description": "怪兽ai数字人官网,虚拟数字人短视频,直播,形象/声音克隆",
+      "icon": ""
+    },
+    {
+      "id": "D-ID",
+      "name": "D-ID",
+      "url": "https://studio.d-id.com",
+      "description": "D-ID,ai真人口播视频生成工具,ai虚拟人,数字人,主播",
+      "icon": ""
+    },
+    {
+      "id": "elai.io",
+      "name": "elai.io",
+      "url": "https://elai.io/?via=moyu",
+      "description": "elai.io,ai视频生成软件工具,数字虚拟人,文字,ppt生成视频,声音克隆",
+      "icon": ""
+    },
+    {
+      "id": "Synthesia",
+      "name": "Synthesia",
+      "url": "https://www.synthesia.io",
+      "description": "Synthesia,ai文字生成视频网站",
+      "icon": ""
+    },
+    {
+      "id": "腾讯智影",
+      "name": "腾讯智影",
+      "url": "https://zenvideo.qq.com/?ref=feizhuke.com",
+      "description": "腾讯智影,在线视频创作平台,ai文字自动生成视频,虚拟数字人,视频去背景",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "OneStory",
+      "name": "OneStory",
+      "url": "https://onestory.art",
+      "description": "OneStory,AI故事生成助手,影视分镜、网文图片、游戏漫画",
+      "icon": ""
+    },
+    {
+      "id": "摩笔天书",
+      "name": "摩笔天书",
+      "url": "https://tianshu.mthreads.com",
+      "description": "摩笔天书,ai一键生成并自动合成图文绘本故事和视频绘本故事",
+      "icon": ""
+    },
+    {
+      "id": "阿贝智能",
+      "name": "阿贝智能",
+      "url": "https://feizhuke.com/abeiai",
+      "description": "阿贝智能,免费ai绘本创作平台,睡前故事,有声书平台",
+      "icon": ""
+    },
+    {
+      "id": "奇布塔",
+      "name": "奇布塔",
+      "url": "https://chapta.com",
+      "description": "奇布塔,ai有声绘本创作工具chapta,为儿童内容创作设计",
+      "icon": ""
+    },
+    {
+      "id": "艾绘",
+      "name": "艾绘",
+      "url": "https://www.aiyou.art",
+      "description": "艾绘,一站式Ai绘本创作平台,智能生成绘本，高自由度编辑",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "Roop Unleashed",
+      "name": "Roop Unleashed",
+      "url": "https://github.com/C0untFloyd/roop-unleashed?ref=feizhuke.com",
+      "description": "Roop Unleashed,功能强大的开源ai换脸工具",
+      "icon": ""
+    },
+    {
+      "id": "akool",
+      "name": "akool",
+      "url": "https://akool.com/?via=moyu",
+      "description": "akool,ai换脸,视频翻译,生成,虚拟数字人主播,照片说话,全球领先的人工智能平台",
+      "icon": ""
+    },
+    {
+      "id": "goenhance ai",
+      "name": "goenhance ai",
+      "url": "https://www.goenhance.ai/?aff=moyu",
+      "description": "goenhance ai,全能的AI视频制作平台,换脸,转绘,角色动画,图片高清放大",
+      "icon": ""
+    },
+    {
+      "id": "Remaker ai",
+      "name": "Remaker ai",
+      "url": "https://remaker.ai/cn",
+      "description": "Remaker ai,在线ai图片视频换脸,说话照片,视频背景去除,声音克隆,动态头像,写真",
+      "icon": ""
+    },
+    {
+      "id": "famousface",
+      "name": "famousface",
+      "url": "https://www.famousface.app",
+      "description": "famousface,在线Al换脸工具软件,将头像换成歌手、艺术家、名人",
+      "icon": ""
+    },
+    {
+      "id": "Swapface",
+      "name": "Swapface",
+      "url": "https://swapface.org",
+      "description": "Swapface ,实时且超逼真的ai视频换脸工貝",
+      "icon": ""
+    },
+    {
+      "id": "FaceSwapper",
+      "name": "FaceSwapper",
+      "url": "https://faceswapper.ai/zh-tw/?ref=momoyu",
+      "description": "FaceSwapper,在线免费的AI视频换脸换衣服工具",
+      "icon": ""
+    },
+    {
+      "id": "deepswapper",
+      "name": "deepswapper",
+      "url": "https://www.deepswapper.com",
+      "description": "deepswapper,在线的AI换脸工具,免费无限制使用",
+      "icon": ""
+    },
+    {
+      "id": "deepface live",
+      "name": "deepface live",
+      "url": "https://github.com/iperov/DeepFaceLive",
+      "description": "deepface live,AI直播实时换脸工具,高质量、逼真的人脸换脸效果",
+      "icon": ""
+    },
+    {
+      "id": "Deep Live Cam",
+      "name": "Deep Live Cam",
+      "url": "https://github.com/hacksider/Deep-Live-Cam",
+      "description": "Deep Live Cam,开源的Al实时视频换脸软件",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "Realibox",
+      "name": "Realibox",
+      "url": "https://www.realibox.com/?ref=feizhuke.com",
+      "description": "Realibox,一站式3D设计与协作平台件,国产照片级GPU渲染器",
+      "icon": ""
+    },
+    {
+      "id": "Reallusion",
+      "name": "Reallusion",
+      "url": "https://www.reallusion.com",
+      "description": "Reallusion,2d,3d虚拟数字角色与动画创作的平台",
+      "icon": ""
+    },
+    {
+      "id": "imagine 3d ai",
+      "name": "imagine 3d ai",
+      "url": "https://lumalabs.ai/dashboard/imagine",
+      "description": "imagine 3d ai,Luma AI 推出的文本到3D模型生成工具",
+      "icon": ""
+    },
+    {
+      "id": "灵动无限",
+      "name": "灵动无限",
+      "url": "https://www.aigc3d.com/?ref=feizhuke.com",
+      "description": "灵动无限,灵魔ai,基于AIGC的批量化、跨平台在线 3D模型的智能生成工具",
+      "icon": ""
+    },
+    {
+      "id": "GET3D",
+      "name": "GET3D",
+      "url": "https://nv-tlabs.github.io/GET3D",
+      "description": "GET3D,输入文字或语音, ai生成一个3D场景",
+      "icon": ""
+    },
+    {
+      "id": "Scenario",
+      "name": "Scenario",
+      "url": "https://www.scenario.com",
+      "description": "Scenario, ai人工智能构建3d游戏场景",
+      "icon": ""
+    },
+    {
+      "id": "DeepMotion",
+      "name": "DeepMotion",
+      "url": "https://www.deepmotion.com",
+      "description": "DeepMotion,ai视频动作捕捉,实时身体追踪,应用于游戏、增强/虚拟现实",
+      "icon": ""
+    },
+    {
+      "id": "kinetix",
+      "name": "kinetix",
+      "url": "https://www.kinetix.tech",
+      "description": "kinetix,AI建模,将视频转为动画建模,免费的动作捕捉解决方案",
+      "icon": ""
+    },
+    {
+      "id": "Pixela.ai",
+      "name": "Pixela.ai",
+      "url": "https://pixela.ai",
+      "description": "Pixela.ai,AI驱动的3D游戏纹理图片生成工具",
+      "icon": ""
+    },
+    {
+      "id": "Luma AI",
+      "name": "Luma AI",
+      "url": "https://lumalabs.ai",
+      "description": "Luma AI,基于NeRF,文字,图片,视频都可ai生成3D模型",
+      "icon": ""
+    },
+    {
+      "id": "Spline AI",
+      "name": "Spline AI",
+      "url": "https://spline.design/ai",
+      "description": "Spline AI,一款在线ai 3d设计软件",
+      "icon": ""
+    },
+    {
+      "id": "3dfy Prompt",
+      "name": "3dfy Prompt",
+      "url": "https://app.3dfy.ai",
+      "description": "3dfy Prompt,3dfy.ai推出了3D模型平台",
+      "icon": ""
+    },
+    {
+      "id": "Mirage",
+      "name": "Mirage",
+      "url": "https://www.mirageml.com",
+      "description": "Mirage,ai 3d视频创作工具",
+      "icon": ""
+    },
+    {
+      "id": "promethean ai",
+      "name": "promethean ai",
+      "url": "https://www.prometheanai.com",
+      "description": "promethean ai,自动创建CG场景,与艺术家合作的人工智能,建立虚拟世界",
+      "icon": ""
+    },
+    {
+      "id": "Ponzu",
+      "name": "Ponzu",
+      "url": "https://www.ponzu.gg",
+      "description": "Ponzu,人工智能ai文本生成3D纹理的工具",
+      "icon": ""
+    },
+    {
+      "id": "g3d ai",
+      "name": "g3d ai",
+      "url": "https://g3d.ai",
+      "description": "g3d ai,{Jedi}, AI驱动的3D资产创建工具",
+      "icon": ""
+    },
+    {
+      "id": "Masterpiece Studio",
+      "name": "Masterpiece Studio",
+      "url": "https://masterpiecestudio.com",
+      "description": "Masterpiece Studio,首个ai人工智能文本到3D生成器",
+      "icon": ""
+    },
+    {
+      "id": "kaedim",
+      "name": "kaedim",
+      "url": "https://www.kaedim3d.com",
+      "description": "kaedim,ai 3d建模网站,帮助用户在几分钟内创建3D模型",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "千面视频动捕",
+      "name": "千面视频动捕",
+      "url": "https://www.qmai.vip/register?code=moyu",
+      "description": "千面视频动捕,AI动作捕捉软件,上传一段视频，生成高质量3D动作数据",
+      "icon": ""
+    },
+    {
+      "id": "plask ai",
+      "name": "plask ai",
+      "url": "https://plask.ai",
+      "description": "plask ai, ai 3d图片生成工具",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "zeemo",
+      "name": "zeemo",
+      "url": "https://zeemo.ai/?via=moyu",
+      "description": "zeemo,绘影字幕,ai视频翻译工具,自动字幕生成器",
+      "icon": ""
+    },
+    {
+      "id": "彩云小译",
+      "name": "彩云小译",
+      "url": "https://fanyi.caiyunapp.com/#",
+      "description": "彩云小译,网页版,app,插件,在线翻译,基于AI翻译模式的国产翻译工具",
+      "icon": ""
+    },
+    {
+      "id": "网易见外",
+      "name": "网易见外",
+      "url": "https://jianwai.youdao.com",
+      "description": "网易见外工作台,免费吗?收费吗?语音转文字,专业的在线翻译平台",
+      "icon": ""
+    },
+    {
+      "id": "沉浸式翻译",
+      "name": "沉浸式翻译",
+      "url": "https://immersivetranslate.com/?via=moyu",
+      "description": "沉浸式翻译插件,双语网页翻译扩展,支持各大浏览器和设备,视频,网页,文档",
+      "icon": ""
+    },
+    {
+      "id": "绘影字幕",
+      "name": "绘影字幕",
+      "url": "https://huiyingzimu.com",
+      "description": "绘影字幕,视频自动添加字幕,ai字幕翻译,电脑版下载,pc免费版",
+      "icon": ""
+    },
+    {
+      "id": "translate.video",
+      "name": "translate.video",
+      "url": "https://www.translate.video",
+      "description": "translate.video,视频翻译工具,以轻松地将视频翻译成多种语言",
+      "icon": ""
+    },
+    {
+      "id": "象寄翻译",
+      "name": "象寄翻译",
+      "url": "https://www.xiangjifanyi.com/console/register-invite/e886bd2e7a1fb15e",
+      "description": "象寄ai,ai视频字幕翻译软件,图片,商品图,模特换衣,智能背景,海报文案",
+      "icon": ""
+    },
+    {
+      "id": "33字幕网",
+      "name": "33字幕网",
+      "url": "https://www.33subs.com",
+      "description": "33字幕网,功能强大的智能双语字幕工具",
+      "icon": ""
+    },
+    {
+      "id": "鬼手剪辑",
+      "name": "鬼手剪辑",
+      "url": "https://jollytoday.com/index/cn",
+      "description": "鬼手剪辑,ghostcut,AI视频剪辑工具,视频翻译、字幕翻译和视频去字幕",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "AudioNotes",
+      "name": "AudioNotes",
+      "url": "https://www.audionotes.app/?ref=feizhuke.com",
+      "description": "AudioNotes,ai音频的笔记应用,转化为可编辑、可搜索的文字内容",
+      "icon": ""
+    },
+    {
+      "id": "叮当好记",
+      "name": "叮当好记",
+      "url": "https://readlecture.cn/zh?ref=feizhuke.com",
+      "description": "Al音视频图文和总结10X 你的效率：视频/音频图文转录、翻译、总结，思维导图大纲，讲座、 播客、访谈、会议转录和总结",
+      "icon": ""
+    },
+    {
+      "id": "Airgram ai",
+      "name": "Airgram ai",
+      "url": "https://www.airgram.io",
+      "description": "Airgram ai,ai会议助手,自动会议笔记和总结助手",
+      "icon": ""
+    },
+    {
+      "id": "麦耳会记",
+      "name": "麦耳会记",
+      "url": "https://work.duiopen.com",
+      "description": "麦耳会记,ai会议助手,实时录音转写,录音文件转写,Al全文摘要/辅助写作,实时字幕同传",
+      "icon": ""
+    },
+    {
+      "id": "讯飞听见",
+      "name": "讯飞听见",
+      "url": "https://www.iflyrec.com/?ref=feizhuke.com",
+      "description": "讯飞听见,语音,音频,录音,视频转文字工具,同传,字幕,会议,电脑版app下载,翻译",
+      "icon": ""
+    },
+    {
+      "id": "通义听悟",
+      "name": "通义听悟",
+      "url": "https://tingwu.aliyun.com/u/faKXE3J30J300cJ3",
+      "description": "通义听悟,基于阿里云AI大模型,每天自动获得自动两小时听转写时长",
+      "icon": ""
+    },
+    {
+      "id": "fireflies.ai",
+      "name": "fireflies.ai",
+      "url": "https://fireflies.ai/?fpr=moyu",
+      "description": "fireflies.ai,视频会议助手,专业的智能会议记录工具",
+      "icon": ""
+    },
+    {
+      "id": "Noty.ai",
+      "name": "Noty.ai",
+      "url": "https://noty.ai",
+      "description": "Noty.ai,基于ChatGPT 的会议助手,人工智能会议助理",
+      "icon": ""
+    }
+  ]
+]

@@ -1,0 +1,308 @@
+[
+  [
+    {
+      "id": "讯飞翻译",
+      "name": "讯飞翻译",
+      "url": "https://fanyi.xfyun.cn/console/trans/doc?ivu=17448931122",
+      "description": "讯飞翻译,讯飞智能翻译平台,基于人工智能ai,持多种文档格式、文本、语音、图片的互译",
+      "icon": ""
+    },
+    {
+      "id": "彩云小译",
+      "name": "彩云小译",
+      "url": "https://fanyi.caiyunapp.com/#",
+      "description": "彩云小译,网页版,app,插件,在线翻译,基于AI翻译模式的国产翻译工具",
+      "icon": ""
+    },
+    {
+      "id": "有道翻译",
+      "name": "有道翻译",
+      "url": "https://fanyi.youdao.com/index.html#",
+      "description": "网易有道翻译,网页版,在线翻译,下载电脑版,一款便捷易上手的国产翻译工具",
+      "icon": ""
+    },
+    {
+      "id": "网易见外",
+      "name": "网易见外",
+      "url": "https://jianwai.youdao.com",
+      "description": "网易见外工作台,免费吗?收费吗?语音转文字,专业的在线翻译平台",
+      "icon": ""
+    },
+    {
+      "id": "沉浸式翻译",
+      "name": "沉浸式翻译",
+      "url": "https://immersivetranslate.com/?via=moyu",
+      "description": "沉浸式翻译插件,双语网页翻译扩展,支持各大浏览器和设备,视频,网页,文档",
+      "icon": ""
+    },
+    {
+      "id": "Rask Ai",
+      "name": "Rask Ai",
+      "url": "https://app.rask.ai/?utm_source=affilate&via=yisheng",
+      "description": "Rask Ai,一站式本地化视频翻译工具,语音对嘴型,声音克隆,自动生成字幕",
+      "icon": ""
+    },
+    {
+      "id": "谷歌翻译",
+      "name": "谷歌翻译",
+      "url": "https://translate.google.com",
+      "description": "谷歌翻译,在线翻译,google translate下载,插件",
+      "icon": ""
+    },
+    {
+      "id": "Transifex",
+      "name": "Transifex",
+      "url": "https://www.transifex.com",
+      "description": "Transifex,基于Web集成翻译,在线的软件本地化平台",
+      "icon": ""
+    },
+    {
+      "id": "trados",
+      "name": "trados",
+      "url": "https://www.trados.com/cn",
+      "description": "trados,SDL Trados Studio,一款专业AI翻译软件,计算机辅助翻译工具",
+      "icon": ""
+    },
+    {
+      "id": "DeepL",
+      "name": "DeepL",
+      "url": "https://www.deepl.com/translator",
+      "description": "DeepL,ai人工智能翻译在线,软件app下载,号称是“全世界最准确的翻译”",
+      "icon": ""
+    },
+    {
+      "id": "translatewith",
+      "name": "translatewith",
+      "url": "https://translatewith.ai",
+      "description": "translatewith,在线ai翻译软件工具,用ai在几分钟内人工智能翻译,适用于任何网站",
+      "icon": ""
+    },
+    {
+      "id": "SoundView-免费ai视频翻译",
+      "name": "SoundView-免费ai视频翻译",
+      "url": "https://soundviewai.com/invitation?inviteCode=H64MhexbT&from=feizhu",
+      "description": "SoundView,ai短视频本地化场景音色创作平台,可进行多语种视频翻译、配音、创作",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "transmonkey",
+      "name": "transmonkey",
+      "url": "",
+      "description": "transmonkey,一款全能型AI翻译软件,文档,图片,视频,畅通130+语言无界限",
+      "icon": ""
+    },
+    {
+      "id": "网易见外",
+      "name": "网易见外",
+      "url": "https://jianwai.youdao.com",
+      "description": "网易见外工作台,免费吗?收费吗?语音转文字,专业的在线翻译平台",
+      "icon": ""
+    },
+    {
+      "id": "秒翻",
+      "name": "秒翻",
+      "url": "http://personal.miaotranslation.com",
+      "description": "秒翻,翻译工具,软件,app,适用于各类图片、漫画、PDF文档、图文报表",
+      "icon": ""
+    },
+    {
+      "id": "象寄翻译",
+      "name": "象寄翻译",
+      "url": "https://www.xiangjifanyi.com/console/register-invite/e886bd2e7a1fb15e",
+      "description": "象寄ai,ai视频字幕翻译软件,图片,商品图,模特换衣,智能背景,海报文案",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "zeemo",
+      "name": "zeemo",
+      "url": "https://zeemo.ai/?via=moyu",
+      "description": "zeemo,绘影字幕,ai视频翻译工具,自动字幕生成器",
+      "icon": ""
+    },
+    {
+      "id": "彩云小译",
+      "name": "彩云小译",
+      "url": "https://fanyi.caiyunapp.com/#",
+      "description": "彩云小译,网页版,app,插件,在线翻译,基于AI翻译模式的国产翻译工具",
+      "icon": ""
+    },
+    {
+      "id": "网易见外",
+      "name": "网易见外",
+      "url": "https://jianwai.youdao.com",
+      "description": "网易见外工作台,免费吗?收费吗?语音转文字,专业的在线翻译平台",
+      "icon": ""
+    },
+    {
+      "id": "沉浸式翻译",
+      "name": "沉浸式翻译",
+      "url": "https://immersivetranslate.com/?via=moyu",
+      "description": "沉浸式翻译插件,双语网页翻译扩展,支持各大浏览器和设备,视频,网页,文档",
+      "icon": ""
+    },
+    {
+      "id": "绘影字幕",
+      "name": "绘影字幕",
+      "url": "https://huiyingzimu.com",
+      "description": "绘影字幕,视频自动添加字幕,ai字幕翻译,电脑版下载,pc免费版",
+      "icon": ""
+    },
+    {
+      "id": "translate.video",
+      "name": "translate.video",
+      "url": "https://www.translate.video",
+      "description": "translate.video,视频翻译工具,以轻松地将视频翻译成多种语言",
+      "icon": ""
+    },
+    {
+      "id": "象寄翻译",
+      "name": "象寄翻译",
+      "url": "https://www.xiangjifanyi.com/console/register-invite/e886bd2e7a1fb15e",
+      "description": "象寄ai,ai视频字幕翻译软件,图片,商品图,模特换衣,智能背景,海报文案",
+      "icon": ""
+    },
+    {
+      "id": "33字幕网",
+      "name": "33字幕网",
+      "url": "https://www.33subs.com",
+      "description": "33字幕网,功能强大的智能双语字幕工具",
+      "icon": ""
+    },
+    {
+      "id": "鬼手剪辑",
+      "name": "鬼手剪辑",
+      "url": "https://jollytoday.com/index/cn",
+      "description": "鬼手剪辑,ghostcut,AI视频剪辑工具,视频翻译、字幕翻译和视频去字幕",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "transmonkey",
+      "name": "transmonkey",
+      "url": "",
+      "description": "transmonkey,一款全能型AI翻译软件,文档,图片,视频,畅通130+语言无界限",
+      "icon": ""
+    },
+    {
+      "id": "Image/Manga Translator",
+      "name": "Image/Manga Translator",
+      "url": "https://cotrans.touhou.ai",
+      "description": "OCR开源免费图片翻译工具,ai漫画翻译神器下载-Image/Manga Translator",
+      "icon": ""
+    },
+    {
+      "id": "AI Manga Translator",
+      "name": "AI Manga Translator",
+      "url": "https://aimangatranslator.com/zh-CN",
+      "description": "提供准确、高效的漫画图片文字翻译和替换的AI漫画翻译工具",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "transmonkey",
+      "name": "transmonkey",
+      "url": "",
+      "description": "transmonkey,一款全能型AI翻译软件,文档,图片,视频,畅通130+语言无界限",
+      "icon": ""
+    },
+    {
+      "id": "zeemo",
+      "name": "zeemo",
+      "url": "https://zeemo.ai/?via=moyu",
+      "description": "zeemo,绘影字幕,ai视频翻译工具,自动字幕生成器",
+      "icon": ""
+    },
+    {
+      "id": "akool",
+      "name": "akool",
+      "url": "https://akool.com/?via=moyu",
+      "description": "akool,ai换脸,视频翻译,生成,虚拟数字人主播,照片说话,全球领先的人工智能平台",
+      "icon": ""
+    },
+    {
+      "id": "VideoLingo",
+      "name": "VideoLingo",
+      "url": "https://videolingo.io/?ref=feizhuke.com",
+      "description": "VideoLingo,全自动视频搬运工具,自动化下载+ai视频翻译软件+配乐工具app",
+      "icon": ""
+    },
+    {
+      "id": "讯飞翻译",
+      "name": "讯飞翻译",
+      "url": "https://fanyi.xfyun.cn/console/trans/doc?ivu=17448931122",
+      "description": "讯飞翻译,讯飞智能翻译平台,基于人工智能ai,持多种文档格式、文本、语音、图片的互译",
+      "icon": ""
+    },
+    {
+      "id": "彩云小译",
+      "name": "彩云小译",
+      "url": "https://fanyi.caiyunapp.com/#",
+      "description": "彩云小译,网页版,app,插件,在线翻译,基于AI翻译模式的国产翻译工具",
+      "icon": ""
+    },
+    {
+      "id": "网易见外",
+      "name": "网易见外",
+      "url": "https://jianwai.youdao.com",
+      "description": "网易见外工作台,免费吗?收费吗?语音转文字,专业的在线翻译平台",
+      "icon": ""
+    },
+    {
+      "id": "沉浸式翻译",
+      "name": "沉浸式翻译",
+      "url": "https://immersivetranslate.com/?via=moyu",
+      "description": "沉浸式翻译插件,双语网页翻译扩展,支持各大浏览器和设备,视频,网页,文档",
+      "icon": ""
+    },
+    {
+      "id": "Rask Ai",
+      "name": "Rask Ai",
+      "url": "https://app.rask.ai/?utm_source=affilate&via=yisheng",
+      "description": "Rask Ai,一站式本地化视频翻译工具,语音对嘴型,声音克隆,自动生成字幕",
+      "icon": ""
+    },
+    {
+      "id": "SoundView-免费ai视频翻译",
+      "name": "SoundView-免费ai视频翻译",
+      "url": "https://soundviewai.com/invitation?inviteCode=H64MhexbT&from=feizhu",
+      "description": "SoundView,ai短视频本地化场景音色创作平台,可进行多语种视频翻译、配音、创作",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "讯飞翻译",
+      "name": "讯飞翻译",
+      "url": "https://fanyi.xfyun.cn/console/trans/doc?ivu=17448931122",
+      "description": "讯飞翻译,讯飞智能翻译平台,基于人工智能ai,持多种文档格式、文本、语音、图片的互译",
+      "icon": ""
+    },
+    {
+      "id": "有道翻译",
+      "name": "有道翻译",
+      "url": "https://fanyi.youdao.com/index.html#",
+      "description": "网易有道翻译,网页版,在线翻译,下载电脑版,一款便捷易上手的国产翻译工具",
+      "icon": ""
+    },
+    {
+      "id": "simplify ai",
+      "name": "simplify ai",
+      "url": "https://translate.simplifyai.cn",
+      "description": "simplify ai,文献,论文,文档翻译,阅读器",
+      "icon": ""
+    },
+    {
+      "id": "知云文献翻译",
+      "name": "知云文献翻译",
+      "url": "https://www.zhiyunwenxian.cn",
+      "description": "知云文献翻译,在线网页版,下载电脑版,包含多种翻译引擎的PDF阅读翻译软件",
+      "icon": ""
+    }
+  ]
+]

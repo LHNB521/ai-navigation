@@ -1,0 +1,976 @@
+[
+  [
+    {
+      "id": "visily ai",
+      "name": "visily ai",
+      "url": "https://www.visily.ai/?ref=feizhuke.com",
+      "description": "visily ai,AI驱动的UI设计工具,帮你快速生成高保真线框图和原型图",
+      "icon": ""
+    },
+    {
+      "id": "figma ai",
+      "name": "figma ai",
+      "url": "https://www.figma.com/ai/?ref=feizhuke.com",
+      "description": "figma ai,ai设计工具,利用人工智能技术来提升设计师的工作效率和创造力",
+      "icon": ""
+    },
+    {
+      "id": "vizcom",
+      "name": "vizcom",
+      "url": "https://www.vizcom.ai",
+      "description": "vizcom,ai辅助设计,草图可直接生成3D渲染效果图",
+      "icon": ""
+    },
+    {
+      "id": "MarketingBlocks ai",
+      "name": "MarketingBlocks ai",
+      "url": "https://hey.marketingblocks.ai",
+      "description": "MarketingBlocks ai,你的AI营销助理,帮助快速写各类文案",
+      "icon": ""
+    },
+    {
+      "id": "zmoai",
+      "name": "zmoai",
+      "url": "https://imgcreator.zmo.ai?invitationCode=9B8RSXKA",
+      "description": "zmoaiAI绘画网站,ai模特,图片生成与设计工具平台,换背景,室内设计,文生图,图生图",
+      "icon": ""
+    },
+    {
+      "id": "创客贴-免费设计神器",
+      "name": "创客贴-免费设计神器",
+      "url": "https://feizhuke.com/chuangketie",
+      "description": "创客贴,在线设计,抠图,ai商品图,海报设计,海量高品质可商用资源",
+      "icon": ""
+    },
+    {
+      "id": "稿定ai设计-免费设计神器",
+      "name": "稿定ai设计-免费设计神器",
+      "url": "https://feizhuke.com/gaoding",
+      "description": "多场景商业设计平台，20w+原创海报平面模板: 电商海报、新媒体配图、H5、PPT、八千万正版素材",
+      "icon": ""
+    },
+    {
+      "id": "比格设计-海量优质素材",
+      "name": "比格设计-海量优质素材",
+      "url": "https://feizhuke.com/bigesheji2",
+      "description": "0基础也能用，海量优质营销素材，正版商用保障",
+      "icon": ""
+    },
+    {
+      "id": "ProtoPie",
+      "name": "ProtoPie",
+      "url": "https://www.protopie.io/?ref=zwuzngr",
+      "description": "ProtoPie官网中文版,免费版,下载,软硬件交互的高保真原型工具",
+      "icon": ""
+    },
+    {
+      "id": "fabrie ai",
+      "name": "fabrie ai",
+      "url": "https://www.fabrie.cn/ai/imagine",
+      "description": "fabrie ai,AI设计助手,将创意可视化,在协作中精进",
+      "icon": ""
+    },
+    {
+      "id": "Fabrie",
+      "name": "Fabrie",
+      "url": "https://www.fabrie.cn/home",
+      "description": "fabrie,新一代的设计师在线协作平台",
+      "icon": ""
+    },
+    {
+      "id": "模袋云ai",
+      "name": "模袋云ai",
+      "url": "https://app.modaiyun.com/damf/site/cmty/ai-assitant?ref=feizhuke.com",
+      "description": "模袋云ai设计工具,免费不限量创作各类建筑效果图",
+      "icon": ""
+    },
+    {
+      "id": "模袋云",
+      "name": "模袋云",
+      "url": "https://www.modaiyun.com/?ref=feizhuke.com",
+      "description": "模袋云,在线别墅设计神器,自建宅别墅,设计,展示,出图一站式云平台",
+      "icon": ""
+    },
+    {
+      "id": "mastergo",
+      "name": "mastergo",
+      "url": "https://mastergo.com/?ref=feizhuke.com",
+      "description": "mastergo官网,master go,产品原型交互设计平台,在线ui/ux界面设计软件工具",
+      "icon": ""
+    },
+    {
+      "id": "蓝湖",
+      "name": "蓝湖",
+      "url": "https://lanhuapp.com/?ref=feizhuke.com",
+      "description": "蓝湖,高效的产品设计协作平台",
+      "icon": ""
+    },
+    {
+      "id": "墨刀",
+      "name": "墨刀",
+      "url": "https://modao.cc/?ref=feizhuke.com",
+      "description": "墨刀,modao,在线原型设计与协同工具,一体化产品设计协作平台",
+      "icon": ""
+    },
+    {
+      "id": "智绘设计",
+      "name": "智绘设计",
+      "url": "https://taishan.qq.com/brand/?ref=feizhuke.com",
+      "description": "智绘设计,ai,智能化设计生产平台,AI视频剪辑,封面,抠图,人像动漫化",
+      "icon": ""
+    },
+    {
+      "id": "堆友",
+      "name": "堆友",
+      "url": "https://d.design",
+      "description": "堆友,d.design,3D资源全免费,在线设计平台",
+      "icon": ""
+    },
+    {
+      "id": "鹿班ai",
+      "name": "鹿班ai",
+      "url": "https://lubanx.taobao.com/portal/promotion",
+      "description": "鹿班设计,luban鹿班ai,阿里一款智能设计工具,生成各类海报,电商主题,智能抠图",
+      "icon": ""
+    },
+    {
+      "id": "Flair ai",
+      "name": "Flair ai",
+      "url": "https://flair.ai",
+      "description": "Flair ai,人工智能产品图片设计工具软件",
+      "icon": ""
+    },
+    {
+      "id": "Superflow Rewrite",
+      "name": "Superflow Rewrite",
+      "url": "https://www.usesuperflow.com",
+      "description": "Superflow Rewrite,ai人工智能网站UX文案重写工具",
+      "icon": ""
+    },
+    {
+      "id": "AI colors",
+      "name": "AI colors",
+      "url": "https://aicolors.co",
+      "description": "AI colors,一款基于GPT的智能调色板生成工具",
+      "icon": ""
+    },
+    {
+      "id": "Visualize AI",
+      "name": "Visualize AI",
+      "url": "https://visualizeai.pro/?via=29d4wkpiawhwqv3m41ny",
+      "description": "Visualize AI, 根据灵感，在几秒钟将想法可视化的人工智能平台",
+      "icon": ""
+    },
+    {
+      "id": "designs.ai",
+      "name": "designs.ai",
+      "url": "https://designs.ai",
+      "description": "designs.ai官网,ai在线设计网站,logos,视频, 横幅, moc",
+      "icon": ""
+    },
+    {
+      "id": "Magic Design",
+      "name": "Magic Design",
+      "url": "https://www.canva.com/magic-design",
+      "description": "Magic Design,Canva出品的在线AI设计工具",
+      "icon": ""
+    },
+    {
+      "id": "Microsoft Designer",
+      "name": "Microsoft Designer",
+      "url": "https://designer.microsoft.com",
+      "description": "Microsoft Designer,微软推出的人工智能AI图形设计工具",
+      "icon": ""
+    },
+    {
+      "id": "simplified ai",
+      "name": "simplified ai",
+      "url": "https://simplified.com/?fpr=yisheng81",
+      "description": "simplified,全能型ai工具,ai文案写作,视频编辑,社交媒体管理,平面设计等",
+      "icon": ""
+    },
+    {
+      "id": "美图设计室",
+      "name": "美图设计室",
+      "url": "https://design.meitu.com/?ref=feizhuke.com",
+      "description": "美图设计室,AI平面设计,电商,图片编辑,抠图,海报ppt,物体消除,logo,文生图,变清晰,拼图",
+      "icon": ""
+    },
+    {
+      "id": "looka",
+      "name": "looka",
+      "url": "https://looka.com",
+      "description": "looka,ai在线设计网站,logo生成工具",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "觅知网",
+      "name": "觅知网",
+      "url": "https://www.51miz.com",
+      "description": "觅知网,在线设计网站,专注原创版权设计模板图片素材下载",
+      "icon": ""
+    },
+    {
+      "id": "魔力设",
+      "name": "魔力设",
+      "url": "https://www.51mo.com",
+      "description": "魔力设,高效在线设计工具,海报,抠图,ppt,高清正版素材库",
+      "icon": ""
+    },
+    {
+      "id": "Glorify",
+      "name": "Glorify",
+      "url": "https://glorify.com",
+      "description": "Glorify,AI驱动的在线电商图片设计工具",
+      "icon": ""
+    },
+    {
+      "id": "canva",
+      "name": "canva",
+      "url": "https://r.brandreward.com/?key=0234c510bc6d908b28c70ff313743079&url=https://www.canva.com/zh_cn",
+      "description": "canva可画,全能在线设计工具,海报,简历,电商,PPT,H5页面,UI设计",
+      "icon": ""
+    },
+    {
+      "id": "可画",
+      "name": "可画",
+      "url": "https://r.brandreward.com/?key=0234c510bc6d908b28c70ff313743079&url=https://www.canva.com/zh_cn",
+      "description": "可画,canva网页版,在线设计协作平台,平面设计,作图软件,视觉,办公,Logo,海报",
+      "icon": ""
+    },
+    {
+      "id": "fotor懒设计",
+      "name": "fotor懒设计",
+      "url": "https://www.fotor.com.cn",
+      "description": "懒设计官网,fotor app网站,全...",
+      "icon": ""
+    },
+    {
+      "id": "创客贴-免费设计神器",
+      "name": "创客贴-免费设计神器",
+      "url": "https://feizhuke.com/chuangketie",
+      "description": "创客贴,在线设计,抠图,ai商品图,海报设计,海量高品质可商用资源",
+      "icon": ""
+    },
+    {
+      "id": "稿定ai设计-免费设计神器",
+      "name": "稿定ai设计-免费设计神器",
+      "url": "https://feizhuke.com/gaoding",
+      "description": "多场景商业设计平台，20w+原创海报平面模板: 电商海报、新媒体配图、H5、PPT、八千万正版素材",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "稿定ps",
+      "name": "稿定ps",
+      "url": "https://ps.gaoding.com/#/?ref=feizhuke.com",
+      "description": "稿定ps,在线ps网页版,专业精简的在线ps图片处理软件",
+      "icon": ""
+    },
+    {
+      "id": "Photopea",
+      "name": "Photopea",
+      "url": "https://www.photopea.com/?ref=feizhuke.com",
+      "description": "Photopea官网,中文版,在线ps网页版,完美替代Photoshop",
+      "icon": ""
+    },
+    {
+      "id": "pixlr",
+      "name": "pixlr",
+      "url": "https://pixlr.com/cn/?ref=feizhuke.com",
+      "description": "pixlr,优质在线图片处理软件,抠图去背景工具,照片移除物体魔术橡皮擦,ai绘画",
+      "icon": ""
+    },
+    {
+      "id": "magic eraser",
+      "name": "magic eraser",
+      "url": "https://magicstudio.com/zh/magiceraserhttps://magicstudio.com/zh/magiceraser?via=yisheng",
+      "description": "magic eraser,ai魔术橡皮擦,在线极速无痕修图工具,帮你轻松抹除图片多余物体",
+      "icon": ""
+    },
+    {
+      "id": "美图设计室",
+      "name": "美图设计室",
+      "url": "https://design.meitu.com/?ref=feizhuke.com",
+      "description": "美图设计室,AI平面设计,电商,图片编辑,抠图,海报ppt,物体消除,logo,文生图,变清晰,拼图",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "标小智logo设计",
+      "name": "标小智logo设计",
+      "url": "https://www.logosc.cn/?coupon=moyu",
+      "description": "标小智logo神器,logosic在线ai logo生成器,设计",
+      "icon": ""
+    },
+    {
+      "id": "标点狗",
+      "name": "标点狗",
+      "url": "https://www.logoko.com.cn",
+      "description": "标点狗logo设计,logoko标点狗拥有100万图标素材,覆盖细分150多个行业",
+      "icon": ""
+    },
+    {
+      "id": "graphicsprings",
+      "name": "graphicsprings",
+      "url": "https://graphicsprings.com",
+      "description": "graphicsprings,在线logo设计平台,简单易用的工具",
+      "icon": ""
+    },
+    {
+      "id": "logomakr",
+      "name": "logomakr",
+      "url": "https://logomakr.com",
+      "description": "logomakr,专注于为用户提供简单易用的logo设计工具",
+      "icon": ""
+    },
+    {
+      "id": "logo.com",
+      "name": "logo.com",
+      "url": "https://logo.com",
+      "description": "logo.com,ai logo生成工具,人工智能设计标志神器",
+      "icon": ""
+    },
+    {
+      "id": "logoai",
+      "name": "logoai",
+      "url": "https://www.logoai.com",
+      "description": "logoai,专业的logo ai生成工具,人工智能标志神器",
+      "icon": ""
+    },
+    {
+      "id": "标智客ai logo",
+      "name": "标智客ai logo",
+      "url": "https://www.logomaker.com.cn/logo",
+      "description": "标智客ai logo,logo在线制作神器,在线生成设计工具",
+      "icon": ""
+    },
+    {
+      "id": "Turbo logo",
+      "name": "Turbo logo",
+      "url": "https://turbologo.com",
+      "description": "Turbo logo,简单易用的在线ai logo生成器",
+      "icon": ""
+    },
+    {
+      "id": "Free Logo Maker",
+      "name": "Free Logo Maker",
+      "url": "https://www.freelogodesign.org",
+      "description": "Free Logo Maker,ai logo生成器,几分钟内创造属于你的专属标志",
+      "icon": ""
+    },
+    {
+      "id": "tailor brands logo maker",
+      "name": "tailor brands logo maker",
+      "url": "https://www.tailorbrands.com/logo-maker",
+      "description": "tailor brands logo maker,ai标志在线生成网站",
+      "icon": ""
+    },
+    {
+      "id": "U钙网logo设计",
+      "name": "U钙网logo设计",
+      "url": "https://www.uugai.com",
+      "description": "U钙网logo设计,免费在线的logo设计工具,店铺,网站,自媒体头像",
+      "icon": ""
+    },
+    {
+      "id": "ai design",
+      "name": "ai design",
+      "url": "https://ailogo.qq.com",
+      "description": "ai design,腾讯自研的一款ai logo智能设计平台",
+      "icon": ""
+    },
+    {
+      "id": "Al Logo Maker",
+      "name": "Al Logo Maker",
+      "url": "https://www.ailogomaker.io",
+      "description": "Al Logo Maker,人工智能标志生成工具",
+      "icon": ""
+    },
+    {
+      "id": "logo123",
+      "name": "logo123",
+      "url": "https://ai.logo123.com",
+      "description": "logo123,ai logo生成器,简单高效的在线标志设计网站",
+      "icon": ""
+    },
+    {
+      "id": "LogoDiffusion",
+      "name": "LogoDiffusion",
+      "url": "https://logodiffusion.com",
+      "description": "LogoDiffusion,ai logo生成器,人工智能设计工具",
+      "icon": ""
+    },
+    {
+      "id": "brandmark",
+      "name": "brandmark",
+      "url": "https://brandmark.io/?ref=feizhuke.com",
+      "description": "brandmark,AI设计logo设计平台,快速打造专业品牌形象",
+      "icon": ""
+    },
+    {
+      "id": "makelogo ai",
+      "name": "makelogo ai",
+      "url": "https://makelogo.ai",
+      "description": "makelogo ai,AI的Logo设计工具",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "Realibox",
+      "name": "Realibox",
+      "url": "https://www.realibox.com/?ref=feizhuke.com",
+      "description": "Realibox,一站式3D设计与协作平台件,国产照片级GPU渲染器",
+      "icon": ""
+    },
+    {
+      "id": "Reallusion",
+      "name": "Reallusion",
+      "url": "https://www.reallusion.com",
+      "description": "Reallusion,2d,3d虚拟数字角色与动画创作的平台",
+      "icon": ""
+    },
+    {
+      "id": "imagine 3d ai",
+      "name": "imagine 3d ai",
+      "url": "https://lumalabs.ai/dashboard/imagine",
+      "description": "imagine 3d ai,Luma AI 推出的文本到3D模型生成工具",
+      "icon": ""
+    },
+    {
+      "id": "灵动无限",
+      "name": "灵动无限",
+      "url": "https://www.aigc3d.com/?ref=feizhuke.com",
+      "description": "灵动无限,灵魔ai,基于AIGC的批量化、跨平台在线 3D模型的智能生成工具",
+      "icon": ""
+    },
+    {
+      "id": "GET3D",
+      "name": "GET3D",
+      "url": "https://nv-tlabs.github.io/GET3D",
+      "description": "GET3D,输入文字或语音, ai生成一个3D场景",
+      "icon": ""
+    },
+    {
+      "id": "Scenario",
+      "name": "Scenario",
+      "url": "https://www.scenario.com",
+      "description": "Scenario, ai人工智能构建3d游戏场景",
+      "icon": ""
+    },
+    {
+      "id": "DeepMotion",
+      "name": "DeepMotion",
+      "url": "https://www.deepmotion.com",
+      "description": "DeepMotion,ai视频动作捕捉,实时身体追踪,应用于游戏、增强/虚拟现实",
+      "icon": ""
+    },
+    {
+      "id": "kinetix",
+      "name": "kinetix",
+      "url": "https://www.kinetix.tech",
+      "description": "kinetix,AI建模,将视频转为动画建模,免费的动作捕捉解决方案",
+      "icon": ""
+    },
+    {
+      "id": "Pixela.ai",
+      "name": "Pixela.ai",
+      "url": "https://pixela.ai",
+      "description": "Pixela.ai,AI驱动的3D游戏纹理图片生成工具",
+      "icon": ""
+    },
+    {
+      "id": "Luma AI",
+      "name": "Luma AI",
+      "url": "https://lumalabs.ai",
+      "description": "Luma AI,基于NeRF,文字,图片,视频都可ai生成3D模型",
+      "icon": ""
+    },
+    {
+      "id": "Spline AI",
+      "name": "Spline AI",
+      "url": "https://spline.design/ai",
+      "description": "Spline AI,一款在线ai 3d设计软件",
+      "icon": ""
+    },
+    {
+      "id": "3dfy Prompt",
+      "name": "3dfy Prompt",
+      "url": "https://app.3dfy.ai",
+      "description": "3dfy Prompt,3dfy.ai推出了3D模型平台",
+      "icon": ""
+    },
+    {
+      "id": "Mirage",
+      "name": "Mirage",
+      "url": "https://www.mirageml.com",
+      "description": "Mirage,ai 3d视频创作工具",
+      "icon": ""
+    },
+    {
+      "id": "promethean ai",
+      "name": "promethean ai",
+      "url": "https://www.prometheanai.com",
+      "description": "promethean ai,自动创建CG场景,与艺术家合作的人工智能,建立虚拟世界",
+      "icon": ""
+    },
+    {
+      "id": "Ponzu",
+      "name": "Ponzu",
+      "url": "https://www.ponzu.gg",
+      "description": "Ponzu,人工智能ai文本生成3D纹理的工具",
+      "icon": ""
+    },
+    {
+      "id": "g3d ai",
+      "name": "g3d ai",
+      "url": "https://g3d.ai",
+      "description": "g3d ai,{Jedi}, AI驱动的3D资产创建工具",
+      "icon": ""
+    },
+    {
+      "id": "Masterpiece Studio",
+      "name": "Masterpiece Studio",
+      "url": "https://masterpiecestudio.com",
+      "description": "Masterpiece Studio,首个ai人工智能文本到3D生成器",
+      "icon": ""
+    },
+    {
+      "id": "kaedim",
+      "name": "kaedim",
+      "url": "https://www.kaedim3d.com",
+      "description": "kaedim,ai 3d建模网站,帮助用户在几分钟内创建3D模型",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "图生生",
+      "name": "图生生",
+      "url": "http://www.tushengsheng.com/home?inviteCode=HJ3LEDQR",
+      "description": "图生生,电商AI作图工具,快速生成高质量的商品图,模特,满足不同场景需求",
+      "icon": ""
+    },
+    {
+      "id": "SellerPic",
+      "name": "SellerPic",
+      "url": "https://app.sellerpic.ai?fpr=moyu",
+      "description": "SellerPic,跨境电商ai产品图,商品图神器",
+      "icon": ""
+    },
+    {
+      "id": "piccopilot",
+      "name": "piccopilot",
+      "url": "https://www.piccopilot.com/zh?ref=feizhuke.com",
+      "description": "piccopilot,电商AI设计平台,专注于简化电商图片与视频制作流程",
+      "icon": ""
+    },
+    {
+      "id": "linkfox-免费ai商品图",
+      "name": "linkfox-免费ai商品图",
+      "url": "https://feizhuke.com/linkfox",
+      "description": "linkfox ai商品图,listing,产品写作,模特,素材,电商专用,百万卖家的选择-linkfox",
+      "icon": ""
+    },
+    {
+      "id": "Fotographer Al",
+      "name": "Fotographer Al",
+      "url": "https://fotographer.ai/?ref=feizhuke.com",
+      "description": "Fotographer Al,专为电子商务和市场营销而设计的Al商品照片创建服务",
+      "icon": ""
+    },
+    {
+      "id": "AI商拍+抠图",
+      "name": "AI商拍+抠图",
+      "url": "https://feizhuke.com/meijianai-shangpai",
+      "description": "Al智能抠图,零基础3秒抠图,AI创意商拍,10秒搞定电商设计!",
+      "icon": ""
+    },
+    {
+      "id": "PhotoStudio",
+      "name": "PhotoStudio",
+      "url": "https://www.psai.cn/?ref=feizhuke.com",
+      "description": "PhotoStudio ai,ai模特,商品图,极低成本、极高效率商业拍摄",
+      "icon": ""
+    },
+    {
+      "id": "花生图像",
+      "name": "花生图像",
+      "url": "https://www.hsphoto.cn",
+      "description": "花生图像,hsphoto,ai商品图,跨境电商图片翻译,抠图去背景编辑",
+      "icon": ""
+    },
+    {
+      "id": "Pebblely",
+      "name": "Pebblely",
+      "url": "https://pebblely.com/zh/?ref=feizhuke.com",
+      "description": "Pebblely官网中文版,宝贝丽是基于AI的电商产品海报图片生成工具",
+      "icon": ""
+    },
+    {
+      "id": "Pic copilot",
+      "name": "Pic copilot",
+      "url": "https://www.piccopilot.com/home/zh",
+      "description": "Pic copilot,ai商品图,商品背景图生成,图片翻译,模特换肤,基于10亿+营销图训练",
+      "icon": ""
+    },
+    {
+      "id": "VModel商品图",
+      "name": "VModel商品图",
+      "url": "https://vmodel.ai/cn",
+      "description": "VModel,专为电商卖家打造的AI模特商拍工具,在线产品图,商品图生成",
+      "icon": ""
+    },
+    {
+      "id": "千面AI模特",
+      "name": "千面AI模特",
+      "url": "https://aiqianmian.com",
+      "description": "千面AI模特,电商模特图生成工具,产品商品图",
+      "icon": ""
+    },
+    {
+      "id": "ai模特商店",
+      "name": "ai模特商店",
+      "url": "https://www.aimodelshop.com",
+      "description": "ai模特商店,服装模特图,商品场景图,抠图",
+      "icon": ""
+    },
+    {
+      "id": "摹小仙",
+      "name": "摹小仙",
+      "url": "https://www.moxiaoxian.art",
+      "description": "摹小仙,电商ai模特商拍,换服装,高质量的ai商品图,产品营销图生成",
+      "icon": ""
+    },
+    {
+      "id": "fashionlabs",
+      "name": "fashionlabs",
+      "url": "https://www.fashionlabs.cn?registerode=F90259",
+      "description": "AI服装模特、商品图，可商用，低价提升销量神器",
+      "icon": ""
+    },
+    {
+      "id": "超会ai",
+      "name": "超会ai",
+      "url": "https://chaohui.ai",
+      "description": "超会ai,为电商卖家提供强大的Ai商拍和爆款文案生成等能力。",
+      "icon": ""
+    },
+    {
+      "id": "象寄翻译",
+      "name": "象寄翻译",
+      "url": "https://www.xiangjifanyi.com/console/register-invite/e886bd2e7a1fb15e",
+      "description": "象寄ai,ai视频字幕翻译软件,图片,商品图,模特换衣,智能背景,海报文案",
+      "icon": ""
+    },
+    {
+      "id": "PixelForce",
+      "name": "PixelForce",
+      "url": "https://pixel-home.hiforce.net",
+      "description": "PixelForce,AI模特,换装,产品图,商品图,商业拍摄",
+      "icon": ""
+    },
+    {
+      "id": "Pixelcut ai",
+      "name": "Pixelcut ai",
+      "url": "https://create.pixelcut.ai/?ref=feizhuke.com",
+      "description": "Pixelcut,ai图片编辑器,人工智能一键去背景,去除物体,图片增强,产品图",
+      "icon": ""
+    },
+    {
+      "id": "灵动ai",
+      "name": "灵动ai",
+      "url": "https://www.redoon.cn/index?ref=feizhuke.com",
+      "description": "灵动ai,用AI创造专业品质的商品图,生成产品图",
+      "icon": ""
+    },
+    {
+      "id": "绘蛙-免费ai视频",
+      "name": "绘蛙-免费ai视频",
+      "url": "https://feizhuke.com/huiwa",
+      "description": "免费专业ai生图,自媒体,电商图,种草,ai模特-绘蛙,简洁好用的智能图片,文案创作平台,可以通过AI生成商拍图和种草文案",
+      "icon": ""
+    },
+    {
+      "id": "vmake",
+      "name": "vmake",
+      "url": "https://vmake.ai/zh-CN",
+      "description": "vmake,AI照片和视频编辑器生成,增强,去背景,去水印,ai模特,物体消除,商品图",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "PhotoStudio",
+      "name": "PhotoStudio",
+      "url": "https://www.psai.cn/?ref=feizhuke.com",
+      "description": "PhotoStudio ai,ai模特,商品图,极低成本、极高效率商业拍摄",
+      "icon": ""
+    },
+    {
+      "id": "LinkFox-免费ai模特/商品图",
+      "name": "LinkFox-免费ai模特/商品图",
+      "url": "https://feizhuke.com/linkfox",
+      "description": "LinkFox,一款免费的跨境电商聚合服务工具领克狐",
+      "icon": ""
+    },
+    {
+      "id": "VModel商品图",
+      "name": "VModel商品图",
+      "url": "https://vmodel.ai/cn",
+      "description": "VModel,专为电商卖家打造的AI模特商拍工具,在线产品图,商品图生成",
+      "icon": ""
+    },
+    {
+      "id": "千面AI模特",
+      "name": "千面AI模特",
+      "url": "https://aiqianmian.com",
+      "description": "千面AI模特,电商模特图生成工具,产品商品图",
+      "icon": ""
+    },
+    {
+      "id": "ai模特商店",
+      "name": "ai模特商店",
+      "url": "https://www.aimodelshop.com",
+      "description": "ai模特商店,服装模特图,商品场景图,抠图",
+      "icon": ""
+    },
+    {
+      "id": "摹小仙",
+      "name": "摹小仙",
+      "url": "https://www.moxiaoxian.art",
+      "description": "摹小仙,电商ai模特商拍,换服装,高质量的ai商品图,产品营销图生成",
+      "icon": ""
+    },
+    {
+      "id": "fashionlabs",
+      "name": "fashionlabs",
+      "url": "https://www.fashionlabs.cn?registerode=F90259",
+      "description": "AI服装模特、商品图，可商用，低价提升销量神器",
+      "icon": ""
+    },
+    {
+      "id": "超会ai",
+      "name": "超会ai",
+      "url": "https://chaohui.ai",
+      "description": "超会ai,为电商卖家提供强大的Ai商拍和爆款文案生成等能力。",
+      "icon": ""
+    },
+    {
+      "id": "象寄翻译",
+      "name": "象寄翻译",
+      "url": "https://www.xiangjifanyi.com/console/register-invite/e886bd2e7a1fb15e",
+      "description": "象寄ai,ai视频字幕翻译软件,图片,商品图,模特换衣,智能背景,海报文案",
+      "icon": ""
+    },
+    {
+      "id": "PixelForce",
+      "name": "PixelForce",
+      "url": "https://pixel-home.hiforce.net",
+      "description": "PixelForce,AI模特,换装,产品图,商品图,商业拍摄",
+      "icon": ""
+    },
+    {
+      "id": "Lucidpic",
+      "name": "Lucidpic",
+      "url": "https://lucidpic.com/?ref=feizhuke.com",
+      "description": "lucidpic,AI人像绘画,生成真实的人像",
+      "icon": ""
+    },
+    {
+      "id": "Weshop",
+      "name": "Weshop",
+      "url": "https://www.weshop.com/?ref=feizhuke.com",
+      "description": "Weshop,快速生成高质量商品展示图,ai模特,商品图,真人图",
+      "icon": ""
+    },
+    {
+      "id": "zmoai",
+      "name": "zmoai",
+      "url": "https://imgcreator.zmo.ai?invitationCode=9B8RSXKA",
+      "description": "zmoaiAI绘画网站,ai模特,图片生成与设计工具平台,换背景,室内设计,文生图,图生图",
+      "icon": ""
+    },
+    {
+      "id": "vmake",
+      "name": "vmake",
+      "url": "https://vmake.ai/zh-CN",
+      "description": "vmake,AI照片和视频编辑器生成,增强,去背景,去水印,ai模特,物体消除,商品图",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "Paintit.ai",
+      "name": "Paintit.ai",
+      "url": "https://paintit.ai",
+      "description": "Paintit.ai,创新的人工智能驱动的室内设计平台",
+      "icon": ""
+    },
+    {
+      "id": "vizcom",
+      "name": "vizcom",
+      "url": "https://www.vizcom.ai",
+      "description": "vizcom,ai辅助设计,草图可直接生成3D渲染效果图",
+      "icon": ""
+    },
+    {
+      "id": "styldod",
+      "name": "styldod",
+      "url": "https://www.styldod.com",
+      "description": "styldod,ai室内设计工具,专注于提供虚拟家居布置和室内设计服务",
+      "icon": ""
+    },
+    {
+      "id": "reimagine home",
+      "name": "reimagine home",
+      "url": "https://www.reimaginehome.ai",
+      "description": "reimagine home,ai室内设计工具,轻松获取理想的室内装修效果图",
+      "icon": ""
+    },
+    {
+      "id": "真能造",
+      "name": "真能造",
+      "url": "https://feizhuke.com",
+      "description": "真能造AI设计,淘宝推出的ai室内装修工具,快速为用户生成10种不同风格的装修设计图",
+      "icon": ""
+    },
+    {
+      "id": "get floor plan",
+      "name": "get floor plan",
+      "url": "https://getfloorplan.com",
+      "description": "get floor plan,AI生成2D3D建模工具软件,getfloorplan室内设计",
+      "icon": ""
+    },
+    {
+      "id": "interior ai",
+      "name": "interior ai",
+      "url": "https://interiorai.com/?via=moyu",
+      "description": "interior ai,ai室内设计工具,快速生成室内空间设计方案",
+      "icon": ""
+    },
+    {
+      "id": "mnml.ai",
+      "name": "mnml.ai",
+      "url": "https://mnml.ai",
+      "description": "mnml.ai,Architecture Al Render,AI建筑和室内设计助手",
+      "icon": ""
+    },
+    {
+      "id": "varysai",
+      "name": "varysai",
+      "url": "https://varys.ai/?lang=zh",
+      "description": "varysai,ai驱动的空间设计工具,专业的ai室内设计神器",
+      "icon": ""
+    },
+    {
+      "id": "roomgpt",
+      "name": "roomgpt",
+      "url": "https://www.roomgpt.io",
+      "description": "roomgpt,ai室内设计软件工具,一键装修,3秒出效果图",
+      "icon": ""
+    },
+    {
+      "id": "模袋云ai",
+      "name": "模袋云ai",
+      "url": "https://app.modaiyun.com/damf/site/cmty/ai-assitant?ref=feizhuke.com",
+      "description": "模袋云ai设计工具,免费不限量创作各类建筑效果图",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "Maket Al",
+      "name": "Maket Al",
+      "url": "https://www.maket.ai",
+      "description": "Maket Al,ai建筑设计助手,住宅规划生成设计",
+      "icon": ""
+    },
+    {
+      "id": "筑绘通AlphaDraw",
+      "name": "筑绘通AlphaDraw",
+      "url": "https://www.pinlandata.com",
+      "description": "品览ai,筑绘通AlphaDraw,面向工程领域的新一代智能工程设计云平台",
+      "icon": ""
+    },
+    {
+      "id": "mnml.ai",
+      "name": "mnml.ai",
+      "url": "https://mnml.ai",
+      "description": "mnml.ai,Architecture Al Render,AI建筑和室内设计助手",
+      "icon": ""
+    },
+    {
+      "id": "varysai",
+      "name": "varysai",
+      "url": "https://varys.ai/?lang=zh",
+      "description": "varysai,ai驱动的空间设计工具,专业的ai室内设计神器",
+      "icon": ""
+    },
+    {
+      "id": "豆绘ai",
+      "name": "豆绘ai",
+      "url": "https://www.douhuiai.com",
+      "description": "豆绘a,绘画,ai建筑设计,vr全景合成图片,视频,空间设计助手",
+      "icon": ""
+    },
+    {
+      "id": "模袋云ai",
+      "name": "模袋云ai",
+      "url": "https://app.modaiyun.com/damf/site/cmty/ai-assitant?ref=feizhuke.com",
+      "description": "模袋云ai设计工具,免费不限量创作各类建筑效果图",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "Waifu Labs",
+      "name": "Waifu Labs",
+      "url": "https://waifulabs.com",
+      "description": "Waifu Labs人工智能技术生成2D动漫角色头像,官网,入口打不开?汉化版下载",
+      "icon": ""
+    },
+    {
+      "id": "Lucidpic",
+      "name": "Lucidpic",
+      "url": "https://lucidpic.com/?ref=feizhuke.com",
+      "description": "lucidpic,AI人像绘画,生成真实的人像",
+      "icon": ""
+    },
+    {
+      "id": "toonme",
+      "name": "toonme",
+      "url": "https://toonme.com",
+      "description": "toonme,真人卡通动漫头像生成器",
+      "icon": ""
+    },
+    {
+      "id": "profile picture ai",
+      "name": "profile picture ai",
+      "url": "https://www.profilepicture.ai/?via=yisheng",
+      "description": "profile picture ai,人工智能ai头像图片生成器,测评,价格,功能",
+      "icon": ""
+    }
+  ],
+  [
+    {
+      "id": "Fontjoy",
+      "name": "Fontjoy",
+      "url": "https://fontjoy.com",
+      "description": "Fontjoy,一款可帮助设计师生成自己完美字体集的工具",
+      "icon": ""
+    },
+    {
+      "id": "字觅⽹",
+      "name": "字觅⽹",
+      "url": "https://www.mfont.com",
+      "description": "字觅⽹,专注于提供正版字体授权的公司",
+      "icon": ""
+    }
+  ]
+]
