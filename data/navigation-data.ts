@@ -3,6 +3,81 @@ import { Code, BookOpen, Coffee, ShoppingCart, Film, Music, Gamepad2, Newspaper 
 
 export const navigationData: Category[] = [
   {
+    id: "ai-hot",
+    name: "AI热门工具",
+    icon: "Code",
+    subCategories: [
+      {
+        id: "ai-hot-tool",
+        name: "AI热门工具",
+        websites: [
+          {
+            id: "chatgpt1",
+            name: "ChatGPT",
+            url: "https://chatgpt.com",
+            description: "AI聊天机器人",
+            icon: "/placeholder.svg?height=32&width=32",
+          },
+          {
+            id: "chatgpt2",
+            name: "ChatGPT",
+            url: "https://chatgpt.com",
+            description: "AI聊天机器人",
+            icon: "/placeholder.svg?height=32&width=32",
+          },
+          {
+            id: "chatgpt3",
+            name: "ChatGPT",
+            url: "https://chatgpt.com",
+            description: "AI聊天机器人",
+            icon: "/placeholder.svg?height=32&width=32",
+          },
+          {
+            id: "chatgpt4",
+            name: "ChatGPT",
+            url: "https://chatgpt.com",
+            description: "AI聊天机器人",
+            icon: "/placeholder.svg?height=32&width=32",
+          },
+          {
+            id: "chatgpt5",
+            name: "ChatGPT",
+            url: "https://chatgpt.com",
+            description: "AI聊天机器人",
+            icon: "/placeholder.svg?height=32&width=32",
+          },
+          {
+            id: "chatgpt6",
+            name: "ChatGPT",
+            url: "https://chatgpt.com",
+            description: "AI聊天机器人",
+            icon: "/placeholder.svg?height=32&width=32",
+          },
+          {
+            id: "chatgpt7",
+            name: "ChatGPT",
+            url: "https://chatgpt.com",
+            description: "AI聊天机器人",
+            icon: "/placeholder.svg?height=32&width=32",
+          },
+          {
+            id: "chatgpt8",
+            name: "ChatGPT",
+            url: "https://chatgpt.com",
+            description: "AI聊天机器人",
+          },
+          {
+            id: "chatgpt9",
+            name: "ChatGPT",
+            url: "https://chatgpt.com",
+            description: "AI聊天机器人",
+            icon: "/placeholder.svg?height=32&width=32",
+          }
+        ]
+      }
+    ]
+  },
+  {
     id: "development",
     name: "开发工具",
     icon: "Code",
