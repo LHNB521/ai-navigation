@@ -70,7 +70,17 @@ export default function SearchBar() {
 
   // Navigate to category section
   const handleCategoryClick = (categoryId: string, subCategoryId: string) => {
-    router.push(`/#${categoryId}-${subCategoryId}`)
+    router.push(`/#${categoryId}`)
+
+    // Add a small delay to ensure the page has loaded before trying to set the active tab
+    setTimeout(() => {
+      // Create and dispatch a custom event to notify the ContentSection component
+      const event = new CustomEvent("setActiveTab", {
+        detail: { categoryId, subCategoryId },
+      })
+      window.dispatchEvent(event)
+    }, 100)
+
     setIsOpen(false)
   }
 
