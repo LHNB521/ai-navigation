@@ -8,18 +8,18 @@ export function useMediaQuery(query: string): boolean {
   useEffect(() => {
     const media = window.matchMedia(query)
 
-    // 初始检查
+    // Initial check
     setMatches(media.matches)
 
-    // 当媒体查询发生变化时更新匹配
+    // Update matches when the media query changes
     const listener = (event: MediaQueryListEvent) => {
       setMatches(event.matches)
     }
 
-    // 添加监听器
+    // Add listener
     media.addEventListener("change", listener)
 
-    // 清理
+    // Clean up
     return () => {
       media.removeEventListener("change", listener)
     }

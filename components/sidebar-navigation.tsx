@@ -19,7 +19,7 @@ export default function SidebarNavigation({
   const [expandedCategories, setExpandedCategories] = useState<Record<string, boolean>>(
     navigationData.reduce(
       (acc, category) => {
-        acc[category.id] = false
+        acc[category.id] = true
         return acc
       },
       {} as Record<string, boolean>,
@@ -28,7 +28,7 @@ export default function SidebarNavigation({
 
   const toggleCategory = (categoryId: string) => {
     if (collapsed) {
-      // 如果侧边栏折叠，点击分类应该展开侧边栏
+      // If sidebar is collapsed, clicking a category should expand the sidebar
       return
     }
 
@@ -47,9 +47,9 @@ export default function SidebarNavigation({
   }
 
   return (
-    <div className="w-full h-full overflow-auto">
-      <div className={cn("p-4", collapsed && "p-2")}>
-        {!collapsed && <h2 className="text-xl font-bold mb-4">AI工具导航</h2>}
+    <div className="w-full h-full overflow-hidden">
+      <div className={cn("p-4 transition-all duration-300", collapsed && "p-2")}>
+        {!collapsed && <h2 className="text-xl font-bold mb-4 whitespace-nowrap">网站导航</h2>}
         <nav>
           <ul className="space-y-1">
             {navigationData.map((category) => {
@@ -58,7 +58,7 @@ export default function SidebarNavigation({
                 <li key={category.id} className="rounded-md overflow-hidden">
                   <div
                     className={cn(
-                      "flex items-center justify-between p-2 cursor-pointer hover:bg-accent rounded-md",
+                      "flex items-center justify-between p-2 cursor-pointer hover:bg-accent rounded-md transition-all duration-300",
                       collapsed && "justify-center p-3",
                     )}
                     onClick={() => {
@@ -67,14 +67,14 @@ export default function SidebarNavigation({
                     }}
                     title={collapsed ? category.name : undefined}
                   >
-                    <div className={cn("flex items-center gap-2", collapsed && "gap-0")}>
-                      <IconComponent className="h-4 w-4" />
-                      {!collapsed && <span>{category.name}</span>}
+                    <div className={cn("flex items-center gap-2 min-w-0", collapsed && "gap-0")}>
+                      <IconComponent className="h-4 w-4 flex-shrink-0" />
+                      {!collapsed && <span className="truncate">{category.name}</span>}
                     </div>
                     {!collapsed && (
                       <ChevronDown
                         className={cn(
-                          "h-4 w-4 transition-transform",
+                          "h-4 w-4 transition-transform flex-shrink-0",
                           expandedCategories[category.id] ? "transform rotate-180" : "",
                         )}
                       />
@@ -85,7 +85,7 @@ export default function SidebarNavigation({
                       {category.subCategories.map((subCategory) => (
                         <li key={subCategory.id}>
                           <button
-                            className="w-full text-left p-2 text-sm hover:bg-accent rounded-md"
+                            className="w-full text-left p-2 text-sm hover:bg-accent rounded-md truncate"
                             onClick={() => handleSubCategoryClick(category.id, subCategory.id)}
                           >
                             {subCategory.name}

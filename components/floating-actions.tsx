@@ -10,16 +10,16 @@ export default function FloatingActions() {
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
-  // 挂载完成后，我们可以安全地展示依赖客户端特性的用户界面
+  // After mounting, we can safely show the UI that depends on client-side features
   useEffect(() => {
     setMounted(true)
   }, [])
 
-  // 处理滚动事件以显示/隐藏返回顶部按钮
+  // Handle scroll event to show/hide scroll-to-top button
   useEffect(() => {
     const handleScroll = () => {
-      // 当页面向下滚动100像素时显示按钮
-      setShowScrollTop(window.scrollY > 100)
+      // Show button when page is scrolled down 300px
+      setShowScrollTop(window.scrollY > 300)
     }
 
     window.addEventListener("scroll", handleScroll)

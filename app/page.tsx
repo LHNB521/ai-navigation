@@ -18,7 +18,7 @@ export default function Home() {
   const sidebarRef = useRef<HTMLDivElement>(null)
   const router = useRouter()
 
-  // 在移动设备上自动折叠侧边栏
+  // Auto-collapse sidebar on mobile
   useEffect(() => {
     if (isMobile) {
       setSidebarOpen(false)
@@ -27,7 +27,7 @@ export default function Home() {
     }
   }, [isMobile])
 
-  // 在移动设备上，点击侧边栏外部时关闭侧边栏
+  // Close sidebar when clicking outside on mobile
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (isMobile && sidebarOpen && sidebarRef.current && !sidebarRef.current.contains(event.target as Node)) {
@@ -68,7 +68,7 @@ export default function Home() {
       element.scrollIntoView({ behavior: "smooth" })
     }
 
-    // 在移动设备上选择后自动关闭侧边栏
+    // Auto close sidebar after selection on mobile
     if (isMobile) {
       setSidebarOpen(false)
     }
@@ -92,15 +92,16 @@ export default function Home() {
         </div>
       </header>
       <main className="flex flex-1 overflow-hidden relative">
-        {/* 移动设备背景 */}
+        {/* Backdrop for mobile */}
         {isMobile && sidebarOpen && <div className="fixed inset-0 bg-black/50 z-10" aria-hidden="true" />}
 
-        {/* 侧边栏 */}
+        {/* Sidebar */}
         <aside
           ref={sidebarRef}
           className={`
             ${isMobile ? "fixed left-0 top-16 bottom-0 z-20" : "relative"}
             ${sidebarOpen ? (isMobile ? "w-64" : "w-64") : isMobile ? "-translate-x-full" : "w-16"}
+            border-r bg-background overflow-hidden transition-all duration-300 ease-in-out
           `}
         >
           <SidebarNavigation
@@ -110,7 +111,7 @@ export default function Home() {
           />
         </aside>
 
-        {/* 主内容 */}
+        {/* Main content */}
         <div className={`flex-1 overflow-y-auto ${isMobile && sidebarOpen ? "ml-0" : ""}`}>
           <ContentSection
             activeCategoryId={activeCategoryId}
@@ -129,7 +130,7 @@ export default function Home() {
         </div>
       )}
 
-      {/* 添加 FloatingActions 组件 */}
+      {/* Add the FloatingActions component here */}
       <FloatingActions />
     </div>
   )
