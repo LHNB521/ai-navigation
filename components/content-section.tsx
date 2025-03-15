@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react"
 import { navigationData, getIconComponent } from "@/data/navigation-data"
-import WebsiteGrid from "./website-grid"
+import VirtualizedWebsiteGrid from "./virtualized-website-grid"
 import TabsNavigation from "./tabs-navigation"
 
 interface ContentSectionProps {
@@ -93,7 +93,7 @@ export default function ContentSection({ activeCategoryId, activeSubCategoryId, 
                     id={`${category.id}-${activeSubCategory.id}`}
                     className="scroll-mt-16"
                   >
-                    <WebsiteGrid category={category} subCategory={activeSubCategory} limit={true} />
+                    <VirtualizedWebsiteGrid category={category} subCategory={activeSubCategory} limit={true} />
                   </div>
                 )}
               </>

@@ -5,9 +5,9 @@ import { useParams, useRouter } from "next/navigation"
 import { navigationData, getIconComponent } from "@/data/navigation-data"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft } from "lucide-react"
-import WebsiteGrid from "@/components/website-grid"
 import FloatingActions from "@/components/floating-actions"
 import Link from "next/link"
+import VirtualizedWebsiteGrid from "@/components/virtualized-website-grid"
 
 export default function CategoryPage() {
   const params = useParams()
@@ -67,7 +67,7 @@ export default function CategoryPage() {
           <p className="text-muted-foreground">共 {subCategory.websites.length} 个网站</p>
         </div>
 
-        <WebsiteGrid category={category} subCategory={subCategory} limit={false} />
+        <VirtualizedWebsiteGrid category={category} subCategory={subCategory} limit={false} />
       </main>
       <FloatingActions />
     </div>

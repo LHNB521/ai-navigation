@@ -23,6 +23,9 @@ export default function WebsiteCard({ website }: WebsiteCardProps) {
               width={24}
               height={24}
               className="rounded-md w-6 h-6 sm:w-7 sm:h-7 md:w-7 md:h-7"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIGZpbGw9IiNlZWVlZWUiLz48L3N2Zz4="
             />
           </div>
         )}
