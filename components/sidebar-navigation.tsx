@@ -1,23 +1,28 @@
 "use client"
 
 import { useState } from "react"
-import { navigationData, getIconComponent } from "@/data/navigation-data"
 import { ChevronDown } from "lucide-react"
 import { cn } from "@/lib/utils"
+import type { Category } from "@/types/navigation"
+import { getIconComponent } from "@/data/navigation-data"
 
 interface SidebarNavigationProps {
+  categories: Category[]
   onCategoryClick: (categoryId: string) => void
   onSubCategoryClick: (categoryId: string, subCategoryId: string) => void
   collapsed?: boolean
+  loading?: boolean
 }
 
 export default function SidebarNavigation({
+  categories,
   onCategoryClick,
   onSubCategoryClick,
   collapsed = false,
+  loading = false,
 }: SidebarNavigationProps) {
   const [expandedCategories, setExpandedCategories] = useState<Record<string, boolean>>(
-    navigationData.reduce(
+    categories.reduce(
       (acc, category) => {
         acc[category.id] = true
         return acc
@@ -46,14 +51,47 @@ export default function SidebarNavigation({
     onSubCategoryClick(categoryId, subCategoryId)
   }
 
+  if (loading) {
+    return (
+      <div className="w-full h-full overflow-hidden p-4">
+        <div className="animate-pulse space-y-4">
+          {[1, 2, 3, 4, 5].map((i) => (
+            <div key={i} className="h-10 bg-muted rounded-md"></div>
+          ))}
+        </div>
+      </div>
+    )
+  }
+
+  // 对分类进行排序
+  const sortedCategories = [...categories].sort((a, b) => {
+    if (a.order !== undefined && b.order !== undefined) {
+      return a.order - b.order
+    }
+    if (a.order !== undefined) return -1
+    if (b.order !== undefined) return 1
+    return a.name.localeCompare(b.name)
+  })
+
   return (
     <div className="w-full h-full overflow-hidden">
       <div className={cn("p-4 transition-all duration-300", collapsed && "p-2")}>
         {!collapsed && <h2 className="text-xl font-bold mb-4 whitespace-nowrap">网站导航</h2>}
         <nav>
           <ul className="space-y-1">
-            {navigationData.map((category) => {
+            {sortedCategories.map((category) => {
               const IconComponent = getIconComponent(category.icon)
+
+              // 对子分类进行排序
+              const sortedSubCategories = [...category.subCategories].sort((a, b) => {
+                if (a.order !== undefined && b.order !== undefined) {
+                  return a.order - b.order
+                }
+                if (a.order !== undefined) return -1
+                if (b.order !== undefined) return 1
+                return a.name.localeCompare(b.name)
+              })
+
               return (
                 <li key={category.id} className="rounded-md overflow-hidden">
                   <div
@@ -82,7 +120,7 @@ export default function SidebarNavigation({
                   </div>
                   {!collapsed && expandedCategories[category.id] && (
                     <ul className="ml-6 mt-1 space-y-1">
-                      {category.subCategories.map((subCategory) => (
+                      {sortedSubCategories.map((subCategory) => (
                         <li key={subCategory.id}>
                           <button
                             className="w-full text-left p-2 text-sm hover:bg-accent rounded-md truncate"

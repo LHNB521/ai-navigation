@@ -8,15 +8,40 @@ import { useMediaQuery } from "@/hooks/use-media-query"
 import SearchBar from "@/components/search-bar"
 import { useRouter } from "next/navigation"
 import FloatingActions from "@/components/floating-actions"
+import Link from "next/link"
+import { fetchCategories } from "@/lib/api-client"
+import type { Category } from "@/types/navigation"
 
-// Update the Home component to add state for active category and subcategory
 export default function Home() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [activeCategoryId, setActiveCategoryId] = useState<string | undefined>()
   const [activeSubCategoryId, setActiveSubCategoryId] = useState<string | undefined>()
+  const [categories, setCategories] = useState<Category[]>([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+
   const isMobile = useMediaQuery("(max-width: 768px)")
   const sidebarRef = useRef<HTMLDivElement>(null)
   const router = useRouter()
+
+  // 加载分类数据
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        setLoading(true)
+        const data = await fetchCategories()
+        setCategories(data)
+        setError(null)
+      } catch (err) {
+        console.error("Failed to load categories:", err)
+        setError("加载数据失败，请刷新页面重试")
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    loadData()
+  }, [])
 
   // Auto-collapse sidebar on mobile
   useEffect(() => {
@@ -90,6 +115,11 @@ export default function Home() {
         <div className="flex-1 max-w-md hidden md:block">
           <SearchBar />
         </div>
+        <Link href="/admin" passHref>
+          <Button variant="outline" size="sm" className="ml-auto">
+            管理员
+          </Button>
+        </Link>
       </header>
       <main className="flex flex-1 overflow-hidden relative">
         {/* Backdrop for mobile */}
@@ -105,19 +135,33 @@ export default function Home() {
           `}
         >
           <SidebarNavigation
+            categories={categories}
             onCategoryClick={handleCategoryClick}
             onSubCategoryClick={handleSubCategoryClick}
             collapsed={!sidebarOpen}
+            loading={loading}
           />
         </aside>
 
         {/* Main content */}
         <div className={`flex-1 overflow-y-auto ${isMobile && sidebarOpen ? "ml-0" : ""}`}>
-          <ContentSection
-            activeCategoryId={activeCategoryId}
-            activeSubCategoryId={activeSubCategoryId}
-            onTabChange={handleTabChange}
-          />
+          {loading ? (
+            <div className="flex items-center justify-center h-full">
+              <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary"></div>
+            </div>
+          ) : error ? (
+            <div className="flex flex-col items-center justify-center h-full">
+              <p className="text-destructive mb-4">{error}</p>
+              <Button onClick={() => window.location.reload()}>刷新页面</Button>
+            </div>
+          ) : (
+            <ContentSection
+              categories={categories}
+              activeCategoryId={activeCategoryId}
+              activeSubCategoryId={activeSubCategoryId}
+              onTabChange={handleTabChange}
+            />
+          )}
         </div>
       </main>
       {/* Floating search button for mobile */}

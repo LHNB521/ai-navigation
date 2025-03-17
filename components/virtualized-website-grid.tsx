@@ -61,10 +61,22 @@ export default function VirtualizedWebsiteGrid({ category, subCategory, limit = 
   const displayedWebsites = subCategory.websites.slice(0, maxWebsites)
   const hasMore = subCategory.websites.length > maxWebsites
 
+  // 在显示网站之前对它们进行排序
+  const sortedWebsites = [...displayedWebsites].sort((a, b) => {
+    if (a.order !== undefined && b.order !== undefined) {
+      return a.order - b.order
+    }
+    if (a.order !== undefined) return -1
+    if (b.order !== undefined) return 1
+    return a.name.localeCompare(b.name)
+  })
+
   // Split websites into chunks of 10 for virtualization
   const CHUNK_SIZE = 10
-  const websiteChunks = Array.from({ length: Math.ceil(displayedWebsites.length / CHUNK_SIZE) }, (_, i) =>
-    displayedWebsites.slice(i * CHUNK_SIZE, (i + 1) * CHUNK_SIZE),
+
+  // 使用排序后的网站
+  const websiteChunks = Array.from({ length: Math.ceil(sortedWebsites.length / CHUNK_SIZE) }, (_, i) =>
+    sortedWebsites.slice(i * CHUNK_SIZE, (i + 1) * CHUNK_SIZE),
   )
 
   return (

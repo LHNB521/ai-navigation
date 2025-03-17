@@ -1,17 +1,24 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import { navigationData, getIconComponent } from "@/data/navigation-data"
 import VirtualizedWebsiteGrid from "./virtualized-website-grid"
 import TabsNavigation from "./tabs-navigation"
+import type { Category } from "@/types/navigation"
+import { getIconComponent } from "@/data/navigation-data"
 
 interface ContentSectionProps {
+  categories: Category[]
   activeCategoryId?: string
   activeSubCategoryId?: string
   onTabChange?: (categoryId: string, subCategoryId: string) => void
 }
 
-export default function ContentSection({ activeCategoryId, activeSubCategoryId, onTabChange }: ContentSectionProps) {
+export default function ContentSection({
+  categories,
+  activeCategoryId,
+  activeSubCategoryId,
+  onTabChange,
+}: ContentSectionProps) {
   // Store active tab for each category
   const [activeTabsMap, setActiveTabsMap] = useState<Record<string, string>>({})
   const sectionRefs = useRef<Record<string, HTMLElement | null>>({})
@@ -19,13 +26,13 @@ export default function ContentSection({ activeCategoryId, activeSubCategoryId, 
   // Initialize active tabs with first subcategory of each category
   useEffect(() => {
     const initialTabs: Record<string, string> = {}
-    navigationData.forEach((category) => {
+    categories.forEach((category) => {
       if (category.subCategories.length > 0) {
         initialTabs[category.id] = category.subCategories[0].id
       }
     })
     setActiveTabsMap(initialTabs)
-  }, [])
+  }, [categories])
 
   // Update active tab when props change
   useEffect(() => {
@@ -59,13 +66,24 @@ export default function ContentSection({ activeCategoryId, activeSubCategoryId, 
 
   return (
     <div className="w-full p-4 md:p-6 space-y-8 md:space-y-12">
-      {navigationData.map((category) => {
+      {categories.map((category) => {
         const IconComponent = getIconComponent(category.icon)
         const activeTabId =
           activeTabsMap[category.id] || (category.subCategories.length > 0 ? category.subCategories[0].id : "")
+
+        // 对子分类进行排序
+        const sortedSubCategories = [...category.subCategories].sort((a, b) => {
+          if (a.order !== undefined && b.order !== undefined) {
+            return a.order - b.order
+          }
+          if (a.order !== undefined) return -1
+          if (b.order !== undefined) return 1
+          return a.name.localeCompare(b.name)
+        })
+
         const activeSubCategory =
-          category.subCategories.find((sub) => sub.id === activeTabId) ||
-          (category.subCategories.length > 0 ? category.subCategories[0] : null)
+          sortedSubCategories.find((sub) => sub.id === activeTabId) ||
+          (sortedSubCategories.length > 0 ? sortedSubCategories[0] : null)
 
         return (
           <section
@@ -82,7 +100,7 @@ export default function ContentSection({ activeCategoryId, activeSubCategoryId, 
             {category.subCategories.length > 0 && (
               <>
                 <TabsNavigation
-                  subCategories={category.subCategories}
+                  subCategories={sortedSubCategories}
                   activeTab={activeTabId}
                   onTabChange={(tabId) => handleTabChange(category.id, tabId)}
                 />

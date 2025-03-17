@@ -1,5 +1,5 @@
 import type { Website } from "@/types/navigation"
-import { navigationData } from "@/data/navigation-data"
+import { fetchCategories } from "@/lib/api-client"
 
 // Simple fuzzy search function
 export function fuzzySearch(query: string, text: string): boolean {
@@ -22,44 +22,53 @@ export function fuzzySearch(query: string, text: string): boolean {
 }
 
 // Search through all websites
-export function searchWebsites(query: string): Array<{
-  website: Website
-  categoryId: string
-  categoryName: string
-  subCategoryId: string
-  subCategoryName: string
-}> {
-  if (!query || query.trim() === "") return []
-
-  const results: Array<{
+export async function searchWebsites(query: string): Promise<
+  Array<{
     website: Website
     categoryId: string
     categoryName: string
     subCategoryId: string
     subCategoryName: string
-  }> = []
+  }>
+> {
+  if (!query || query.trim() === "") return []
 
-  navigationData.forEach((category) => {
-    category.subCategories.forEach((subCategory) => {
-      subCategory.websites.forEach((website) => {
-        if (
-          fuzzySearch(query, website.name) ||
-          fuzzySearch(query, website.description) ||
-          fuzzySearch(query, category.name) ||
-          fuzzySearch(query, subCategory.name)
-        ) {
-          results.push({
-            website,
-            categoryId: category.id,
-            categoryName: category.name,
-            subCategoryId: subCategory.id,
-            subCategoryName: subCategory.name,
-          })
-        }
+  try {
+    const categories = await fetchCategories()
+
+    const results: Array<{
+      website: Website
+      categoryId: string
+      categoryName: string
+      subCategoryId: string
+      subCategoryName: string
+    }> = []
+
+    categories.forEach((category) => {
+      category.subCategories.forEach((subCategory) => {
+        subCategory.websites.forEach((website) => {
+          if (
+            fuzzySearch(query, website.name) ||
+            fuzzySearch(query, website.description) ||
+            fuzzySearch(query, category.name) ||
+            fuzzySearch(query, subCategory.name)
+          ) {
+            results.push({
+              website,
+              categoryId: category.id,
+              categoryName: category.name,
+              subCategoryId: subCategory.id,
+              subCategoryName: subCategory.name,
+            })
+          }
+        })
       })
     })
-  })
 
-  return results
+    return results
+  } catch (error) {
+    console.error("搜索失败:", error)
+    return []
+  }
 }
 

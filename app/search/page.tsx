@@ -13,13 +13,28 @@ import FloatingActions from "@/components/floating-actions"
 export default function SearchPage() {
   const searchParams = useSearchParams()
   const query = searchParams.get("q") || ""
-  const [results, setResults] = useState<ReturnType<typeof searchWebsites>>([])
+  const [results, setResults] = useState<any[]>([])
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    if (query) {
-      const searchResults = searchWebsites(query)
-      setResults(searchResults)
+    const fetchResults = async () => {
+      if (query) {
+        setLoading(true)
+        setError(null)
+        try {
+          const searchResults = await searchWebsites(query)
+          setResults(searchResults)
+        } catch (err) {
+          console.error("搜索失败:", err)
+          setError("搜索失败，请重试")
+        } finally {
+          setLoading(false)
+        }
+      }
     }
+
+    fetchResults()
   }, [query])
 
   return (
@@ -42,13 +57,21 @@ export default function SearchPage() {
       <main className="container px-4 py-6">
         <div className="mb-6">
           <h2 className="text-2xl font-bold mb-2">
-            {results.length > 0
-              ? `找到 ${results.length} 个与 "${query}" 相关的结果`
-              : `未找到与 "${query}" 相关的结果`}
+            {loading
+              ? "搜索中..."
+              : error
+                ? error
+                : results.length > 0
+                  ? `找到 ${results.length} 个与 "${query}" 相关的结果`
+                  : `未找到与 "${query}" 相关的结果`}
           </h2>
         </div>
 
-        {results.length > 0 ? (
+        {loading ? (
+          <div className="flex justify-center py-12">
+            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary"></div>
+          </div>
+        ) : results.length > 0 ? (
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {results.map((result, index) => (
               <a

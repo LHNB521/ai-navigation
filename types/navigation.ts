@@ -4,12 +4,14 @@ export interface Website {
   url: string
   description: string
   icon?: string
+  order?: number // 添加排序字段
 }
 
 export interface SubCategory {
   id: string
   name: string
   websites: Website[]
+  order?: number // 添加排序字段
 }
 
 export interface Category {
@@ -17,5 +19,6 @@ export interface Category {
   name: string
   icon: string
   subCategories: SubCategory[]
+  order?: number // 添加排序字段
 }
 
