@@ -38,6 +38,7 @@ export default function AdminLoginPage() {
         throw new Error(data.error || "登录失败")
       }
 
+      console.log("登录成功:", data)
       // 登录成功，重定向到管理员页面
       router.push("/admin")
     } catch (error: any) {
