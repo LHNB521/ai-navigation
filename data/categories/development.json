@@ -8,19 +8,12 @@
       "name": "前端开发",
       "websites": [
         {
-          "id": "github",
-          "name": "GitHub",
-          "url": "https://github.com",
-          "description": "代码托管平台",
-          "icon": "/uploads/5a777703-39e6-4b96-8303-d547dca75c90.jpg",
-          "order": 0
-        },
-        {
           "id": "stackoverflow",
           "name": "Stack Overflow",
           "url": "https://stackoverflow.com",
           "description": "开发者问答社区",
-          "icon": "/placeholder.svg?height=32&width=32"
+          "icon": "/uploads/e2460327-700a-4e82-a7d6-14fc11e0bcf8.jpg",
+          "order": 0
         },
         {
           "id": "react",
