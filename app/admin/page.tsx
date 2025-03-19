@@ -71,7 +71,6 @@ export default function AdminPage() {
   // 检查登录状态
   useEffect(() => {
     const token = localStorage.getItem("admin_token")
-    console.log("token", token)
     if (!token) {
       router.push("/login")
     }

@@ -8,12 +8,9 @@ const JWT_SECRET = process.env.JWT_SECRET || "your-secret-key"
 export async function middleware(request: NextRequest) {
   // 只拦截管理员页面的请求，但排除登录页面
   if (!request.nextUrl.pathname.startsWith("/admin") && !request.nextUrl.pathname.startsWith("/login")) {
-    console.log("拦截到了", request.nextUrl)
     // 从Authorization头获取token
     const authHeader = request.headers.get("Authorization")
     const token = authHeader ? authHeader.replace("Bearer ", "") : null
-
-    console.log(token)
 
     // 如果没有令牌，重定向到登录页面
     if (!token) {
