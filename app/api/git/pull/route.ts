@@ -7,26 +7,27 @@ import { gitConfig } from "@/lib/git-config"
 const execPromise = util.promisify(exec)
 
 interface GitConfig {
-  repoPath: string
-  branch: string
+  // repoPath: string
+  // branch: string
   pullStrategy: "merge" | "rebase"
 }
 
 // Function to read Git configuration from environment variables
 function getGitConfig(): GitConfig {
-  const repoPath = process.env.GIT_REPO_PATH || gitConfig.repositoryUrl
-  const branch = process.env.GIT_BRANCH || gitConfig.branch // Default to 'main' if not specified
+  // const repoPath = process.env.GIT_REPO_PATH || gitConfig.repositoryUrl
+  // const branch = process.env.GIT_BRANCH || gitConfig.branch // Default to 'main' if not specified
   const pullStrategy = (process.env.GIT_PULL_STRATEGY || gitConfig.pullStrategy).toLowerCase() as "merge" | "rebase" // Default to 'merge'
 
-  if (!repoPath) {
-    throw new Error("GIT_REPO_PATH environment variable is not defined.")
-  }
+  // if (!repoPath) {
+  //   throw new Error("GIT_REPO_PATH environment variable is not defined.")
+  // }
 
   if (!["merge", "rebase"].includes(pullStrategy)) {
     throw new Error('GIT_PULL_STRATEGY must be either "merge" or "rebase".')
   }
 
-  return { repoPath, branch, pullStrategy }
+  // return { repoPath, branch, pullStrategy }
+  return { pullStrategy }
 }
 
 export async function POST(request: Request) {
