@@ -39,8 +39,8 @@ export async function POST(request: Request) {
     // 执行git pull命令
     const pullCommand =
       gitConfig.pullStrategy === "rebase"
-        ? `git pull --rebase origin ${gitConfig.branch}`
-        : `git pull origin ${gitConfig.branch}`
+        ? `git pull --rebase`
+        : `git pull`
 
     const { stdout, stderr } = await execPromise(pullCommand)
 
