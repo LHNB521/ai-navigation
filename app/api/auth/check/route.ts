@@ -3,7 +3,7 @@ import { cookies } from "next/headers"
 import * as jose from "jose"
 
 // JWT密钥，应该与API路由中使用的相同
-const JWT_SECRET = process.env.JWT_SECRET || "your-secret-key"
+const JWT_SECRET = process.env.JWT_SECRET || "lihao-niubi-yyds"
 
 export async function GET() {
   try {

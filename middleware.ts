@@ -10,9 +10,10 @@ export async function middleware(request: NextRequest) {
   if (request.nextUrl.pathname.startsWith("/admin") && !request.nextUrl.pathname.startsWith("/admin/login")) {
     // 获取Cookie中的令牌
     const token = request.cookies.get("admin_token")?.value
-
+    console.log('token', token)
     // 如果没有令牌，重定向到登录页面
     if (!token) {
+      console.log("没有token")
       const url = new URL("/admin/login", request.url)
       // 保存原始URL作为查询参数，以便登录后重定向回来
       url.searchParams.set("callbackUrl", encodeURIComponent(request.nextUrl.pathname))
