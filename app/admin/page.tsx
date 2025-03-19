@@ -17,6 +17,7 @@ import {
   ChevronsRight,
   AlertCircle,
   Github,
+  Download
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -86,6 +87,8 @@ export default function AdminPage() {
 
   // 在AdminPage组件中添加状态来跟踪Git操作
   const [isGitLoading, setIsGitLoading] = useState(false)
+  // 在AdminPage组件中添加状态来跟踪Git Pull操作
+  const [isGitPullLoading, setIsGitPullLoading] = useState(false)
 
   // 添加处理Git提交的函数
   const handleGitPush = async () => {
@@ -110,6 +113,35 @@ export default function AdminPage() {
       setActionError(error.message || "Git操作失败，请检查控制台日志")
     } finally {
       setIsGitLoading(false)
+    }
+  }
+
+  // 添加处理Git Pull的函数
+  const handleGitPull = async () => {
+    try {
+      setIsGitPullLoading(true)
+      setActionError(null)
+      setActionSuccess(null)
+
+      const response = await fetch("/api/git/pull", {
+        method: "POST",
+      })
+
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error(data.error || "从GitHub拉取代码失败")
+      }
+
+      setActionSuccess("成功从GitHub仓库拉取代码！")
+
+      // 拉取成功后重新加载数据
+      await loadData()
+    } catch (error: any) {
+      console.error("Git Pull操作失败:", error)
+      setActionError(error.message || "Git Pull操作失败，请检查控制台日志")
+    } finally {
+      setIsGitPullLoading(false)
     }
   }
 
@@ -395,10 +427,14 @@ export default function AdminPage() {
             </Button>
           </Link>
           <h1 className="text-xl font-bold">网站导航管理</h1>
-          <div className="ml-auto">
+          <div className="ml-auto flex gap-2">
             <Button variant="outline" className="gap-2" onClick={handleGitPush} disabled={isGitLoading}>
               <Github className="h-4 w-4" />
               {isGitLoading ? "提交中..." : "提交到GitHub"}
+            </Button>
+            <Button variant="outline" className="gap-2" onClick={handleGitPull} disabled={isGitPullLoading}>
+              <Download className="h-4 w-4" />
+              {isGitPullLoading ? "拉取中..." : "拉取GitHub代码"}
             </Button>
           </div>
         </div>

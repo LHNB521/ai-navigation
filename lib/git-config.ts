@@ -11,4 +11,7 @@ export const gitConfig = {
     name: process.env.GIT_AUTHOR_NAME || "LHNB521",
     email: process.env.GIT_AUTHOR_EMAIL || "1767359165@qq.com",
   },
+
+  // 拉取策略
+  pullStrategy: process.env.GIT_PULL_STRATEGY || "merge", // 可选值: 'merge', 'rebase'
 }
