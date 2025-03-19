@@ -16,6 +16,7 @@ import {
   ChevronsLeft,
   ChevronsRight,
   AlertCircle,
+  Github,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -82,6 +83,35 @@ export default function AdminPage() {
     subCategoryId: "",
     order: 0, // 添加排序字段
   })
+
+  // 在AdminPage组件中添加状态来跟踪Git操作
+  const [isGitLoading, setIsGitLoading] = useState(false)
+
+  // 添加处理Git提交的函数
+  const handleGitPush = async () => {
+    try {
+      setIsGitLoading(true)
+      setActionError(null)
+      setActionSuccess(null)
+
+      const response = await fetch("/api/git/push", {
+        method: "POST",
+      })
+
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error(data.error || "提交到GitHub失败")
+      }
+
+      setActionSuccess("成功提交到GitHub仓库！")
+    } catch (error: any) {
+      console.error("Git操作失败:", error)
+      setActionError(error.message || "Git操作失败，请检查控制台日志")
+    } finally {
+      setIsGitLoading(false)
+    }
+  }
 
   // Load data
   const loadData = async () => {
@@ -365,6 +395,12 @@ export default function AdminPage() {
             </Button>
           </Link>
           <h1 className="text-xl font-bold">网站导航管理</h1>
+          <div className="ml-auto">
+            <Button variant="outline" className="gap-2" onClick={handleGitPush} disabled={isGitLoading}>
+              <Github className="h-4 w-4" />
+              {isGitLoading ? "提交中..." : "提交到GitHub"}
+            </Button>
+          </div>
         </div>
       </header>
 
@@ -434,7 +470,7 @@ export default function AdminPage() {
                       </Label>
                       <Select
                         value={formData.categoryId}
-                        onValueChange={(value) => setFormData({ ...formData, categoryId: value })}
+                        onValueChange={(value: any) => setFormData({ ...formData, categoryId: value })}
                       >
                         <SelectTrigger className="col-span-3">
                           <SelectValue placeholder="选择分类" />
@@ -458,7 +494,7 @@ export default function AdminPage() {
                         </Label>
                         <Select
                           value={formData.categoryId}
-                          onValueChange={(value) => setFormData({ ...formData, categoryId: value })}
+                          onValueChange={(value: any) => setFormData({ ...formData, categoryId: value })}
                         >
                           <SelectTrigger className="col-span-3">
                             <SelectValue placeholder="选择分类" />
@@ -479,7 +515,7 @@ export default function AdminPage() {
                         </Label>
                         <Select
                           value={formData.subCategoryId}
-                          onValueChange={(value) => setFormData({ ...formData, subCategoryId: value })}
+                          onValueChange={(value: any) => setFormData({ ...formData, subCategoryId: value })}
                           disabled={!formData.categoryId}
                         >
                           <SelectTrigger className="col-span-3">
@@ -530,7 +566,7 @@ export default function AdminPage() {
                       </Label>
                       <Select
                         value={formData.icon}
-                        onValueChange={(value) => setFormData({ ...formData, icon: value })}
+                        onValueChange={(value: any) => setFormData({ ...formData, icon: value })}
                       >
                         <SelectTrigger className="col-span-3">
                           <SelectValue placeholder="选择图标" />
@@ -836,7 +872,7 @@ export default function AdminPage() {
                   </Label>
                   <Select
                     value={formData.categoryId}
-                    onValueChange={(value) => setFormData({ ...formData, categoryId: value })}
+                    onValueChange={(value: any) => setFormData({ ...formData, categoryId: value })}
                   >
                     <SelectTrigger className="col-span-3">
                       <SelectValue placeholder="选择分类" />
@@ -860,7 +896,7 @@ export default function AdminPage() {
                     </Label>
                     <Select
                       value={formData.categoryId}
-                      onValueChange={(value) => setFormData({ ...formData, categoryId: value })}
+                      onValueChange={(value: any) => setFormData({ ...formData, categoryId: value })}
                     >
                       <SelectTrigger className="col-span-3">
                         <SelectValue placeholder="选择分类" />
@@ -881,7 +917,7 @@ export default function AdminPage() {
                     </Label>
                     <Select
                       value={formData.subCategoryId}
-                      onValueChange={(value) => setFormData({ ...formData, subCategoryId: value })}
+                      onValueChange={(value: any) => setFormData({ ...formData, subCategoryId: value })}
                       disabled={!formData.categoryId}
                     >
                       <SelectTrigger className="col-span-3">
@@ -931,7 +967,7 @@ export default function AdminPage() {
                   <Label htmlFor="icon" className="text-right">
                     图标
                   </Label>
-                  <Select value={formData.icon} onValueChange={(value) => setFormData({ ...formData, icon: value })}>
+                  <Select value={formData.icon} onValueChange={(value: any) => setFormData({ ...formData, icon: value })}>
                     <SelectTrigger className="col-span-3">
                       <SelectValue placeholder="选择图标" />
                     </SelectTrigger>
