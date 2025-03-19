@@ -10,6 +10,9 @@ export async function GET() {
     // 获取Cookie中的令牌
     const c = await cookies()
     const token = c.get("admin_token")?.value
+    // 添加调试日志
+    console.log("Auth check API - Cookie token:", token)
+    console.log("Auth check API - All cookies:", cookies().getAll())
 
     // 如果没有令牌，返回未授权
     if (!token) {
@@ -19,11 +22,18 @@ export async function GET() {
     try {
       // 验证令牌
       const secret = new TextEncoder().encode(JWT_SECRET)
-      await jose.jwtVerify(token, secret)
+      const { payload } = await jose.jwtVerify(token, secret)
 
-      // 令牌有效，返回已授权
-      return NextResponse.json({ authenticated: true })
+      // 令牌有效，返回已授权和用户信息
+      return NextResponse.json({
+        authenticated: true,
+        user: {
+          username: payload.username,
+          role: payload.role,
+        },
+      })
     } catch (error) {
+      console.error("Token verification failed in auth check API:", error)
       // 令牌无效或已过期，返回未授权
       return NextResponse.json({ authenticated: false }, { status: 401 })
     }

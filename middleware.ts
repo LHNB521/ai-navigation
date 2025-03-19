@@ -10,10 +10,13 @@ export async function middleware(request: NextRequest) {
   if (request.nextUrl.pathname.startsWith("/admin") && !request.nextUrl.pathname.startsWith("/admin/login")) {
     // 获取Cookie中的令牌
     const token = request.cookies.get("admin_token")?.value
-    console.log('token', token)
+
+    // 添加调试日志
+    console.log("Middleware - Cookie token:", token)
+    console.log("Middleware - All cookies:", request.cookies.getAll())
+
     // 如果没有令牌，重定向到登录页面
     if (!token) {
-      console.log("没有token")
       const url = new URL("/admin/login", request.url)
       // 保存原始URL作为查询参数，以便登录后重定向回来
       url.searchParams.set("callbackUrl", encodeURIComponent(request.nextUrl.pathname))
@@ -28,6 +31,7 @@ export async function middleware(request: NextRequest) {
       // 令牌有效，继续请求
       return NextResponse.next()
     } catch (error) {
+      console.error("Token verification failed:", error)
       // 令牌无效或已过期，重定向到登录页面
       const url = new URL("/admin/login", request.url)
       url.searchParams.set("callbackUrl", encodeURIComponent(request.nextUrl.pathname))
@@ -38,6 +42,9 @@ export async function middleware(request: NextRequest) {
   // 如果是登录页面，检查用户是否已登录
   if (request.nextUrl.pathname.startsWith("/admin/login")) {
     const token = request.cookies.get("admin_token")?.value
+
+    // 添加调试日志
+    console.log("Login page - Cookie token:", token)
 
     if (token) {
       try {
@@ -51,6 +58,7 @@ export async function middleware(request: NextRequest) {
         const redirectUrl = callbackUrl ? decodeURIComponent(callbackUrl) : "/admin"
         return NextResponse.redirect(new URL(redirectUrl, request.url))
       } catch (error) {
+        console.error("Token verification failed on login page:", error)
         // 令牌无效或已过期，继续访问登录页面
       }
     }

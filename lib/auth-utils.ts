@@ -11,7 +11,6 @@ export const SECOND_PASSWORD = process.env.SECOND_PASSWORD || "lhnb"
 export async function isAuthenticated() {
   const c = await cookies()
   const token = c.get("admin_token")?.value
-  console.log("token", token)
 
   if (!token) {
     return false

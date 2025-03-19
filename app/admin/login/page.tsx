@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState, useEffect } from "react"
-import { useRouter } from "next/navigation"
+import { useRouter, useSearchParams } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -18,6 +18,8 @@ export default function AdminLoginPage() {
   const [loading, setLoading] = useState(false)
   const [checkingAuth, setCheckingAuth] = useState(true)
   const router = useRouter()
+  const searchParams = useSearchParams()
+  const callbackUrl = searchParams.get("callbackUrl") || "/admin"
 
   // 检查用户是否已登录
   useEffect(() => {
@@ -28,11 +30,13 @@ export default function AdminLoginPage() {
           headers: {
             "Content-Type": "application/json",
           },
+          // 确保发送凭据（cookies）
+          credentials: "include",
         })
 
         if (response.ok) {
-          // 用户已登录，重定向到管理员页面
-          router.push("/admin")
+          // 用户已登录，重定向到管理员页面或回调URL
+          window.location.href = decodeURIComponent(callbackUrl)
         }
       } catch (error) {
         console.error("检查登录状态失败:", error)
@@ -42,7 +46,7 @@ export default function AdminLoginPage() {
     }
 
     checkAuthStatus()
-  }, [router])
+  }, [callbackUrl])
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -56,6 +60,8 @@ export default function AdminLoginPage() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ username, password }),
+        // 确保发送凭据（cookies）
+        credentials: "include",
       })
 
       const data = await response.json()
@@ -64,9 +70,9 @@ export default function AdminLoginPage() {
         throw new Error(data.error || "登录失败")
       }
 
-      // 登录成功，重定向到管理员页面
-      // 使用replace而不是push，这样用户不能通过浏览器的后退按钮回到登录页面
-      router.replace("/admin")
+      // 登录成功，使用window.location.href进行硬重定向
+      // 这比router.replace更可靠，特别是在跨域或Cookie问题的情况下
+      window.location.href = decodeURIComponent(callbackUrl)
     } catch (error: any) {
       console.error("登录失败:", error)
       setError(error.message || "用户名或密码错误")

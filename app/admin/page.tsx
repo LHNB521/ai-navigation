@@ -18,7 +18,7 @@ import {
   AlertCircle,
   Github,
   Download,
-  LogOut
+  LogOut,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -179,11 +179,12 @@ export default function AdminPage() {
         headers: {
           "Content-Type": "application/json",
         },
+        credentials: "include", // 确保发送凭据（cookies）
       })
 
       if (response.ok) {
-        // 登出成功，重定向到登录页面
-        router.replace("/admin/login")
+        // 登出成功，使用window.location.href进行硬重定向
+        window.location.href = "/admin/login"
       } else {
         setActionError("登出失败，请重试")
       }
