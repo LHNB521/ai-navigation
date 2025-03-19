@@ -18,6 +18,7 @@ import {
   AlertCircle,
   Github,
   Download,
+  LogOut
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -167,6 +168,28 @@ export default function AdminPage() {
       throw new Error(error.message || "Git Pull操作失败，请检查控制台日志")
     } finally {
       setIsGitPullLoading(false)
+    }
+  }
+
+  // 添加处理登出的函数
+  const handleLogout = async () => {
+    try {
+      const response = await fetch("/api/auth/logout", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+
+      if (response.ok) {
+        // 登出成功，重定向到登录页面
+        router.replace("/admin/login")
+      } else {
+        setActionError("登出失败，请重试")
+      }
+    } catch (error) {
+      console.error("登出失败:", error)
+      setActionError("登出失败，请重试")
     }
   }
 
@@ -460,6 +483,10 @@ export default function AdminPage() {
             <Button variant="outline" className="gap-2" onClick={handleGitPull} disabled={isGitPullLoading}>
               <Download className="h-4 w-4" />
               {isGitPullLoading ? "拉取中..." : "拉取GitHub代码"}
+            </Button>
+            <Button variant="outline" className="gap-2" onClick={handleLogout}>
+              <LogOut className="h-4 w-4" />
+              退出登录
             </Button>
           </div>
         </div>

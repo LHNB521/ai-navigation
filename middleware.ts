@@ -13,7 +13,10 @@ export async function middleware(request: NextRequest) {
 
     // 如果没有令牌，重定向到登录页面
     if (!token) {
-      return NextResponse.redirect(new URL("/admin/login", request.url))
+      const url = new URL("/admin/login", request.url)
+      // 保存原始URL作为查询参数，以便登录后重定向回来
+      url.searchParams.set("callbackUrl", encodeURIComponent(request.nextUrl.pathname))
+      return NextResponse.redirect(url)
     }
 
     try {
@@ -25,7 +28,30 @@ export async function middleware(request: NextRequest) {
       return NextResponse.next()
     } catch (error) {
       // 令牌无效或已过期，重定向到登录页面
-      return NextResponse.redirect(new URL("/admin/login", request.url))
+      const url = new URL("/admin/login", request.url)
+      url.searchParams.set("callbackUrl", encodeURIComponent(request.nextUrl.pathname))
+      return NextResponse.redirect(url)
+    }
+  }
+
+  // 如果是登录页面，检查用户是否已登录
+  if (request.nextUrl.pathname.startsWith("/admin/login")) {
+    const token = request.cookies.get("admin_token")?.value
+
+    if (token) {
+      try {
+        // 验证令牌
+        const secret = new TextEncoder().encode(JWT_SECRET)
+        await jose.jwtVerify(token, secret)
+
+        // 令牌有效，用户已登录，重定向到管理员页面
+        // 检查是否有回调URL
+        const callbackUrl = request.nextUrl.searchParams.get("callbackUrl")
+        const redirectUrl = callbackUrl ? decodeURIComponent(callbackUrl) : "/admin"
+        return NextResponse.redirect(new URL(redirectUrl, request.url))
+      } catch (error) {
+        // 令牌无效或已过期，继续访问登录页面
+      }
     }
   }
 

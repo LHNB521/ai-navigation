@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server"
-import { cookies } from "next/headers"
 import * as jose from "jose"
 
 // 在实际应用中，这些凭据应该存储在环境变量或数据库中
@@ -27,19 +26,21 @@ export async function POST(request: Request) {
       .setExpirationTime("24h")
       .sign(secret)
 
+    // 创建响应对象
+    const response = NextResponse.json({ success: true })
+
     // 设置Cookie
-    const c = await cookies()
-    c.set({
+    response.cookies.set({
       name: "admin_token",
       value: token,
       httpOnly: true,
       path: "/",
       secure: process.env.NODE_ENV === "production",
       maxAge: 60 * 60 * 24, // 24小时
-      sameSite: "strict",
+      sameSite: "lax", // 改为lax以允许跨站点重定向
     })
 
-    return NextResponse.json({ success: true })
+    return response
   } catch (error) {
     console.error("登录处理失败:", error)
     return NextResponse.json({ error: "登录处理失败" }, { status: 500 })
