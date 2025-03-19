@@ -11,10 +11,6 @@ export async function middleware(request: NextRequest) {
     // 获取Cookie中的令牌
     const token = request.cookies.get("admin_token")?.value
 
-    // 添加调试日志
-    console.log("Middleware - Cookie token:", token)
-    console.log("Middleware - All cookies:", request.cookies.getAll())
-
     // 如果没有令牌，重定向到登录页面
     if (!token) {
       const url = new URL("/admin/login", request.url)

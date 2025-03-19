@@ -37,7 +37,7 @@ export async function POST(request: Request) {
       path: "/",
       secure: process.env.NODE_ENV === "production",
       maxAge: 60 * 60 * 24, // 24小时
-      sameSite: "lax", // 使用lax而不是strict，允许跨站点导航时发送Cookie
+      sameSite: "none", // 使用lax而不是strict，允许跨站点导航时发送Cookie
       // 不设置domain，让浏览器自动设置为当前域名
     })
 

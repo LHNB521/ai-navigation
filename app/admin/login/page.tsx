@@ -69,7 +69,6 @@ export default function AdminLoginPage() {
       if (!response.ok) {
         throw new Error(data.error || "登录失败")
       }
-
       // 登录成功，使用window.location.href进行硬重定向
       // 这比router.replace更可靠，特别是在跨域或Cookie问题的情况下
       window.location.href = decodeURIComponent(callbackUrl)
