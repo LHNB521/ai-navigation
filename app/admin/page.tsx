@@ -17,7 +17,7 @@ import {
   ChevronsRight,
   AlertCircle,
   Github,
-  Download
+  Download,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -52,6 +52,7 @@ import {
   deleteWebsite,
 } from "@/lib/api-client"
 import ImageUpload from "@/components/image-upload"
+import SecondVerificationDialog from "@/components/second-verification-dialog"
 
 export default function AdminPage() {
   const router = useRouter()
@@ -66,6 +67,10 @@ export default function AdminPage() {
   const [error, setError] = useState<string | null>(null)
   const [actionError, setActionError] = useState<string | null>(null)
   const [actionSuccess, setActionSuccess] = useState<string | null>(null)
+
+  // 二次验证对话框状态
+  const [isPushVerificationOpen, setIsPushVerificationOpen] = useState(false)
+  const [isPullVerificationOpen, setIsPullVerificationOpen] = useState(false)
 
   // Data states
   const [categories, setCategories] = useState<Category[]>([])
@@ -92,6 +97,12 @@ export default function AdminPage() {
 
   // 添加处理Git提交的函数
   const handleGitPush = async () => {
+    // 打开二次验证对话框
+    setIsPushVerificationOpen(true)
+  }
+
+  // 执行Git Push操作
+  const executeGitPush = async (password: string) => {
     try {
       setIsGitLoading(true)
       setActionError(null)
@@ -99,6 +110,10 @@ export default function AdminPage() {
 
       const response = await fetch("/api/git/push", {
         method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ password }),
       })
 
       const data = await response.json()
@@ -110,7 +125,7 @@ export default function AdminPage() {
       setActionSuccess("成功提交到GitHub仓库！")
     } catch (error: any) {
       console.error("Git操作失败:", error)
-      setActionError(error.message || "Git操作失败，请检查控制台日志")
+      throw new Error(error.message || "Git操作失败，请检查控制台日志")
     } finally {
       setIsGitLoading(false)
     }
@@ -118,6 +133,12 @@ export default function AdminPage() {
 
   // 添加处理Git Pull的函数
   const handleGitPull = async () => {
+    // 打开二次验证对话框
+    setIsPullVerificationOpen(true)
+  }
+
+  // 执行Git Pull操作
+  const executeGitPull = async (password: string) => {
     try {
       setIsGitPullLoading(true)
       setActionError(null)
@@ -125,6 +146,10 @@ export default function AdminPage() {
 
       const response = await fetch("/api/git/pull", {
         method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ password }),
       })
 
       const data = await response.json()
@@ -139,7 +164,7 @@ export default function AdminPage() {
       await loadData()
     } catch (error: any) {
       console.error("Git Pull操作失败:", error)
-      setActionError(error.message || "Git Pull操作失败，请检查控制台日志")
+      throw new Error(error.message || "Git Pull操作失败，请检查控制台日志")
     } finally {
       setIsGitPullLoading(false)
     }
@@ -506,7 +531,7 @@ export default function AdminPage() {
                       </Label>
                       <Select
                         value={formData.categoryId}
-                        onValueChange={(value: any) => setFormData({ ...formData, categoryId: value })}
+                        onValueChange={(value) => setFormData({ ...formData, categoryId: value })}
                       >
                         <SelectTrigger className="col-span-3">
                           <SelectValue placeholder="选择分类" />
@@ -530,7 +555,7 @@ export default function AdminPage() {
                         </Label>
                         <Select
                           value={formData.categoryId}
-                          onValueChange={(value: any) => setFormData({ ...formData, categoryId: value })}
+                          onValueChange={(value) => setFormData({ ...formData, categoryId: value })}
                         >
                           <SelectTrigger className="col-span-3">
                             <SelectValue placeholder="选择分类" />
@@ -551,7 +576,7 @@ export default function AdminPage() {
                         </Label>
                         <Select
                           value={formData.subCategoryId}
-                          onValueChange={(value: any) => setFormData({ ...formData, subCategoryId: value })}
+                          onValueChange={(value) => setFormData({ ...formData, subCategoryId: value })}
                           disabled={!formData.categoryId}
                         >
                           <SelectTrigger className="col-span-3">
@@ -602,7 +627,7 @@ export default function AdminPage() {
                       </Label>
                       <Select
                         value={formData.icon}
-                        onValueChange={(value: any) => setFormData({ ...formData, icon: value })}
+                        onValueChange={(value) => setFormData({ ...formData, icon: value })}
                       >
                         <SelectTrigger className="col-span-3">
                           <SelectValue placeholder="选择图标" />
@@ -908,7 +933,7 @@ export default function AdminPage() {
                   </Label>
                   <Select
                     value={formData.categoryId}
-                    onValueChange={(value: any) => setFormData({ ...formData, categoryId: value })}
+                    onValueChange={(value) => setFormData({ ...formData, categoryId: value })}
                   >
                     <SelectTrigger className="col-span-3">
                       <SelectValue placeholder="选择分类" />
@@ -932,7 +957,7 @@ export default function AdminPage() {
                     </Label>
                     <Select
                       value={formData.categoryId}
-                      onValueChange={(value: any) => setFormData({ ...formData, categoryId: value })}
+                      onValueChange={(value) => setFormData({ ...formData, categoryId: value })}
                     >
                       <SelectTrigger className="col-span-3">
                         <SelectValue placeholder="选择分类" />
@@ -953,7 +978,7 @@ export default function AdminPage() {
                     </Label>
                     <Select
                       value={formData.subCategoryId}
-                      onValueChange={(value: any) => setFormData({ ...formData, subCategoryId: value })}
+                      onValueChange={(value) => setFormData({ ...formData, subCategoryId: value })}
                       disabled={!formData.categoryId}
                     >
                       <SelectTrigger className="col-span-3">
@@ -1003,7 +1028,7 @@ export default function AdminPage() {
                   <Label htmlFor="icon" className="text-right">
                     图标
                   </Label>
-                  <Select value={formData.icon} onValueChange={(value: any) => setFormData({ ...formData, icon: value })}>
+                  <Select value={formData.icon} onValueChange={(value) => setFormData({ ...formData, icon: value })}>
                     <SelectTrigger className="col-span-3">
                       <SelectValue placeholder="选择图标" />
                     </SelectTrigger>
@@ -1093,6 +1118,24 @@ export default function AdminPage() {
           </DialogFooter>
         </DialogContent>
       </Dialog>
+
+      {/* Git Push Verification Dialog */}
+      <SecondVerificationDialog
+        isOpen={isPushVerificationOpen}
+        onClose={() => setIsPushVerificationOpen(false)}
+        onConfirm={executeGitPush}
+        title="提交到GitHub验证"
+        description="请输入验证密码以确认提交到GitHub"
+      />
+
+      {/* Git Pull Verification Dialog */}
+      <SecondVerificationDialog
+        isOpen={isPullVerificationOpen}
+        onClose={() => setIsPullVerificationOpen(false)}
+        onConfirm={executeGitPull}
+        title="拉取GitHub代码验证"
+        description="请输入验证密码以确认从GitHub拉取代码"
+      />
     </div>
   )
 }

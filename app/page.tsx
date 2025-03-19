@@ -115,7 +115,7 @@ export default function Home() {
         <div className="flex-1 max-w-md hidden md:block">
           <SearchBar />
         </div>
-        <Link href="/admin" passHref>
+        <Link href="/admin/login" passHref>
           <Button variant="outline" size="sm" className="ml-auto">
             管理员
           </Button>

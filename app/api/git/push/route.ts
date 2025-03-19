@@ -5,8 +5,19 @@ import { gitConfig } from "@/lib/git-config"
 
 const execPromise = promisify(exec)
 
-export async function POST() {
+// 二次验证密码，应该存储在环境变量中
+const SECOND_PASSWORD = process.env.SECOND_PASSWORD || "lhnb"
+
+export async function POST(request: Request) {
   try {
+    // 获取请求体中的密码
+    const { password } = await request.json()
+
+    // 验证二次密码
+    if (password !== SECOND_PASSWORD) {
+      return NextResponse.json({ error: "验证密码错误" }, { status: 401 })
+    }
+
     // 获取当前时间作为提交信息
     const date = new Date().toISOString()
     const commitMessage = `更新网站导航数据 - ${date}`
@@ -15,7 +26,7 @@ export async function POST() {
     if (gitConfig.author.name && gitConfig.author.email) {
       await execPromise(`git config user.name "${gitConfig.author.name}"`)
       await execPromise(`git config user.email "${gitConfig.author.email}"`)
-      console.log("Git user configured")
+      console.log("Git用户已配置")
     }
 
     // 执行Git命令

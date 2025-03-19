@@ -15,3 +15,4 @@ export const gitConfig = {
   // 拉取策略
   pullStrategy: process.env.GIT_PULL_STRATEGY || "merge", // 可选值: 'merge', 'rebase'
 }
+
