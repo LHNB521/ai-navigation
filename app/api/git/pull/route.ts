@@ -6,7 +6,7 @@ import { gitConfig } from "@/lib/git-config"
 const execPromise = promisify(exec)
 
 // 二次验证密码，应该存储在环境变量中
-const SECOND_PASSWORD = process.env.SECOND_PASSWORD || "lhnb"
+const SECOND_PASSWORD = process.env.SECOND_PASSWORD || "second-password"
 
 export async function POST(request: Request) {
   try {

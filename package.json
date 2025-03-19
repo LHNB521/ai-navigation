@@ -61,9 +61,9 @@
     "fs": "latest",
     "path": "latest",
     "uuid": "latest",
-    "jose": "latest",
     "child_process": "latest",
-    "util": "latest"
+    "util": "latest",
+    "jose": "latest"
   },
   "devDependencies": {
     "@types/node": "^22",

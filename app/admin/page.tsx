@@ -18,7 +18,6 @@ import {
   AlertCircle,
   Github,
   Download,
-  LogOut,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -68,6 +67,15 @@ export default function AdminPage() {
   const [error, setError] = useState<string | null>(null)
   const [actionError, setActionError] = useState<string | null>(null)
   const [actionSuccess, setActionSuccess] = useState<string | null>(null)
+
+  // 检查登录状态
+  useEffect(() => {
+    const token = localStorage.getItem("admin_token")
+    console.log("token", token)
+    if (!token) {
+      router.push("/login")
+    }
+  }, [router])
 
   // 二次验证对话框状态
   const [isPushVerificationOpen, setIsPushVerificationOpen] = useState(false)
@@ -168,29 +176,6 @@ export default function AdminPage() {
       throw new Error(error.message || "Git Pull操作失败，请检查控制台日志")
     } finally {
       setIsGitPullLoading(false)
-    }
-  }
-
-  // 添加处理登出的函数
-  const handleLogout = async () => {
-    try {
-      const response = await fetch("/api/auth/logout", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        credentials: "include", // 确保发送凭据（cookies）
-      })
-
-      if (response.ok) {
-        // 登出成功，使用window.location.href进行硬重定向
-        window.location.href = "/admin/login"
-      } else {
-        setActionError("登出失败，请重试")
-      }
-    } catch (error) {
-      console.error("登出失败:", error)
-      setActionError("登出失败，请重试")
     }
   }
 
@@ -484,10 +469,6 @@ export default function AdminPage() {
             <Button variant="outline" className="gap-2" onClick={handleGitPull} disabled={isGitPullLoading}>
               <Download className="h-4 w-4" />
               {isGitPullLoading ? "拉取中..." : "拉取GitHub代码"}
-            </Button>
-            <Button variant="outline" className="gap-2" onClick={handleLogout}>
-              <LogOut className="h-4 w-4" />
-              退出登录
             </Button>
           </div>
         </div>

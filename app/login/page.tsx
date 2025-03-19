@@ -3,11 +3,11 @@
 import type React from "react"
 
 import { useState, useEffect } from "react"
-import { useRouter, useSearchParams } from "next/navigation"
+import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { AlertCircle } from "lucide-react"
 
@@ -16,37 +16,36 @@ export default function AdminLoginPage() {
   const [password, setPassword] = useState("")
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
-  const [checkingAuth, setCheckingAuth] = useState(true)
   const router = useRouter()
-  const searchParams = useSearchParams()
-  const callbackUrl = searchParams.get("callbackUrl") || "/admin"
 
-  // 检查用户是否已登录
+  // 检查是否已经登录
   useEffect(() => {
-    const checkAuthStatus = async () => {
-      try {
-        const response = await fetch("/api/auth/check", {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          // 确保发送凭据（cookies）
-          credentials: "include",
-        })
-
-        if (response.ok) {
-          // 用户已登录，重定向到管理员页面或回调URL
-          window.location.href = decodeURIComponent(callbackUrl)
+    const checkAuth = async () => {
+      const token = localStorage.getItem("admin_token")
+      if (token) {
+        try {
+          // 验证token是否有效
+          const response = await fetch("/api/auth/verify", {
+            method: "GET",
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          })
+          if (response.ok) {
+            // token有效，重定向到管理页面
+            router.push("/admin")
+          } else {
+            // token无效，清除localStorage
+            localStorage.removeItem("admin_token")
+          }
+        } catch (error) {
+          console.error("验证token失败:", error)
+          localStorage.removeItem("admin_token")
         }
-      } catch (error) {
-        console.error("检查登录状态失败:", error)
-      } finally {
-        setCheckingAuth(false)
       }
     }
-
-    checkAuthStatus()
-  }, [callbackUrl])
+    checkAuth()
+  }, [router])
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -60,8 +59,6 @@ export default function AdminLoginPage() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ username, password }),
-        // 确保发送凭据（cookies）
-        credentials: "include",
       })
 
       const data = await response.json()
@@ -69,24 +66,18 @@ export default function AdminLoginPage() {
       if (!response.ok) {
         throw new Error(data.error || "登录失败")
       }
-      // 登录成功，使用window.location.href进行硬重定向
-      // 这比router.replace更可靠，特别是在跨域或Cookie问题的情况下
-      window.location.href = decodeURIComponent(callbackUrl)
+
+      // 将token存储在localStorage中
+      localStorage.setItem("admin_token", data.token)
+
+      // 登录成功，重定向到管理员页面
+      router.push("/admin")
     } catch (error: any) {
       console.error("登录失败:", error)
       setError(error.message || "用户名或密码错误")
     } finally {
       setLoading(false)
     }
-  }
-
-  // 如果正在检查登录状态，显示加载中
-  if (checkingAuth) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-background">
-        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary"></div>
-      </div>
-    )
   }
 
   return (
@@ -127,11 +118,13 @@ export default function AdminLoginPage() {
                 autoComplete="current-password"
               />
             </div>
-            <Button type="submit" className="w-full" disabled={loading}>
-              {loading ? "登录中..." : "登录"}
-            </Button>
           </form>
         </CardContent>
+        <CardFooter>
+          <Button className="w-full" onClick={handleLogin} disabled={loading}>
+            {loading ? "登录中..." : "登录"}
+          </Button>
+        </CardFooter>
       </Card>
     </div>
   )
