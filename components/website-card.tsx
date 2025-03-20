@@ -7,8 +7,13 @@ interface WebsiteCardProps {
 }
 
 export default function WebsiteCard({ website }: WebsiteCardProps) {
-  // 使用默认图标路径
-  const iconSrc = website.icon || "/placeholder.svg?height=24&width=24"
+  // 使用默认图标路径，确保路径正确
+  const iconSrc =
+    website.icon && website.icon.trim() !== ""
+      ? website.icon.startsWith("/")
+        ? website.icon
+        : `/${website.icon}`
+      : "/placeholder.svg?height=24&width=24"
 
   return (
     <a

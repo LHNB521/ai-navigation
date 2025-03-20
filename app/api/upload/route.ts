@@ -45,7 +45,7 @@ export async function POST(request: NextRequest) {
     const buffer = Buffer.from(await file.arrayBuffer())
     await writeFile(filePath, buffer)
 
-    // 返回文件URL - 使用绝对路径
+    // 返回文件URL - 确保以斜杠开头
     const fileUrl = `/uploads/${fileName}`
 
     return NextResponse.json({ url: fileUrl })

@@ -86,7 +86,7 @@ export default function ImageUpload({ value, onChange, label = "图标" }: Image
           </Button>
         </div>
       ) : (
-        <div className="flex flex-col items-center justify-center w-full h-32 border-2 border-dashed rounded-md border-muted-foreground/25 hover:border-muted-foreground/50 transition-colors">
+        <div className="relative flex flex-col items-center justify-center w-full h-32 border-2 border-dashed rounded-md border-muted-foreground/25 hover:border-muted-foreground/50 transition-colors">
           {isUploading ? (
             <div className="flex flex-col items-center justify-center">
               <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-primary"></div>
@@ -99,6 +99,7 @@ export default function ImageUpload({ value, onChange, label = "图标" }: Image
               <p className="text-xs text-muted-foreground">支持JPG、PNG、GIF、WEBP和SVG格式，最大2MB</p>
             </div>
           )}
+          {/* 修改input的定位，只覆盖上传区域 */}
           <Input
             type="file"
             accept="image/*"

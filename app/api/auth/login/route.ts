@@ -28,7 +28,8 @@ export async function POST(request: Request) {
       .sign(secret)
 
     // 设置Cookie
-    cookies().set({
+    const c = await cookies()
+    c.set({
       name: "admin_token",
       value: token,
       httpOnly: true,

@@ -129,9 +129,15 @@ export default function SearchBar() {
                   >
                     <div className="flex-1 mr-2" onClick={() => handleResultClick(result.website.url)}>
                       <div className="flex items-center">
-                        {/* 修改图片处理逻辑，使用默认图标 */}
+                        {/* 修改图片处理逻辑，确保路径正确 */}
                         <Image
-                          src={result.website.icon || "/placeholder.svg?height=20&width=20"}
+                          src={
+                            result.website.icon && result.website.icon.trim() !== ""
+                              ? result.website.icon.startsWith("/")
+                                ? result.website.icon
+                                : `/${result.website.icon}`
+                              : "/placeholder.svg?height=20&width=20"
+                          }
                           alt={result.website.name}
                           width={20}
                           height={20}

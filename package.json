@@ -60,10 +60,10 @@
     "zod": "^3.24.1",
     "fs": "latest",
     "path": "latest",
-    "uuid": "latest",
+    "jose": "latest",
     "child_process": "latest",
     "util": "latest",
-    "jose": "latest"
+    "uuid": "latest"
   },
   "devDependencies": {
     "@types/node": "^22",
