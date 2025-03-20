@@ -7,7 +7,7 @@ const JWT_SECRET = process.env.JWT_SECRET || "your-secret-key"
 
 export async function middleware(request: NextRequest) {
   // 只拦截管理员页面的请求，但排除登录页面
-  if (request.nextUrl.pathname.startsWith("/admin") && !request.nextUrl.pathname.startsWith("/admin/login")) {
+  if (!request.nextUrl.pathname.startsWith("/admin") && !request.nextUrl.pathname.startsWith("/admin/login")) {
     // 获取Cookie中的令牌
     const token = request.cookies.get("admin_token")?.value
 
