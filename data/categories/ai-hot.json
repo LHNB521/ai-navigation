@@ -1,0 +1,85 @@
+{
+  "id": "ai-hot",
+  "name": "AI热门工具",
+  "icon": "Coffee",
+  "subCategories": [
+    {
+      "id": "ai-hot-ch",
+      "name": "国产AI",
+      "websites": [
+        {
+          "id": "deepseek",
+          "name": "DeepSeek",
+          "url": "https://www.deepseek.com/",
+          "description": "免费超强,火遍全网的国产大模型,deepseek ai,大语言模型驱动的智能助手,超便宜api! DeepSeek超越ChatGPT，登顶美区DeepSeek是目前最火的应用，日常写作、翻译、问答都能轻松搞定，...",
+          "icon": "/uploads/34d81ba1-5e97-4aa1-a8d0-7896915ee1c6.png",
+          "order": 0
+        },
+        {
+          "id": "tongyi",
+          "name": "通义千问",
+          "url": "https://tongyi.aliyun.com/qianwen/",
+          "description": "免费ai智能助手,写作,ppt创作,代码,在线搜索,阅读助手,语音记录...",
+          "icon": "/uploads/e0cb6b1f-ad1a-4151-a980-206696018d26.png",
+          "order": 1
+        },
+        {
+          "id": "xfyun",
+          "name": "讯飞星火",
+          "url": "https://xinghuo.xfyun.cn/desk",
+          "description": "免费ai写作,绘画,搜索,ppt等全能综合智能体!",
+          "icon": "/uploads/b423e274-fc78-41d0-9f17-916ac83201e4.png",
+          "order": 2
+        },
+        {
+          "id": "doubao",
+          "name": "豆包",
+          "url": "https://www.doubao.com/chat/",
+          "description": "免费豆包ai编程助手,秒懂代码,智能编码,项目精解",
+          "icon": "/uploads/bffd1f39-aa01-428c-ad6d-c35cb18479af.png",
+          "order": 3
+        },
+        {
+          "id": "coze",
+          "name": "扣子 coze",
+          "url": "https://www.coze.cn/home",
+          "description": "扣子 coze-字节跳动旗下零代码 AI 应用开发平台",
+          "icon": "/uploads/5709a6eb-cbf3-4028-b0b6-566e944a38da.png",
+          "order": 4
+        },
+        {
+          "id": "yuanbao",
+          "name": "腾讯元宝",
+          "url": "https://yuanbao.tencent.com/",
+          "description": "腾讯元宝,元宝ai网页版,app,电脑版下载,基于混元大模型,支持deepseek满血版",
+          "icon": "/uploads/db8b05f7-b19c-468c-832a-526837f93c42.png",
+          "order": 5
+        },
+        {
+          "id": "yiyan",
+          "name": "文心一言",
+          "url": "https://yiyan.baidu.com/",
+          "description": "百度出品,文心一言是你工作、学习、生活中省时提效的好帮手；是你闲暇时刻娱乐打趣的好伙伴；也是你需要倾诉陪伴时的好朋友。在你人生旅途经历的每个阶段、面对的各种场景中，文心...",
+          "icon": "/uploads/b423834a-8d3a-4e26-950f-5f960f4a651a.png",
+          "order": 7
+        },
+        {
+          "id": "taichu",
+          "name": "紫东太初",
+          "url": "https://taichu-web.ia.ac.cn/#/",
+          "description": "紫东太初大模型,taichu全模态理解能力,文本、语音、图像、视频、信号、3D点云等",
+          "icon": "/uploads/0d666eb1-0159-479d-9f66-e4910973de08.png",
+          "order": 6
+        }
+      ],
+      "order": 0
+    },
+    {
+      "id": "ai-hot-out",
+      "name": "国外AI",
+      "websites": [],
+      "order": 1
+    }
+  ],
+  "order": 0
+}

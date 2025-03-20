@@ -1,0 +1,78 @@
+{
+  "id": "ai-code",
+  "name": "AI开发编程",
+  "icon": "Code",
+  "subCategories": [
+    {
+      "id": "ai-code-tool",
+      "name": "AI编程工具",
+      "websites": [
+        {
+          "id": "trae",
+          "name": "trae ai-免费ai编程",
+          "url": "https://www.trae.com.cn/home",
+          "description": "免费Claude 3.7,3.5和GPT-4o模型,deepseek r1, v3,限时免费!抓紧!-字节跳动推出的免费ai编程产品",
+          "icon": "/uploads/a3c76534-f7a6-4c27-a3dd-26d26efd0190.png",
+          "order": 0
+        },
+        {
+          "id": "cursor",
+          "name": "cursor",
+          "url": "https://www.cursor.com/cn",
+          "description": "cursor,免费gpt4,gpt3.5,基于GPT的ai代码生成器",
+          "icon": "/uploads/aa1e6997-20ad-4956-abae-6caf84ef3081.png",
+          "order": 1
+        },
+        {
+          "id": "windsurf",
+          "name": "windsurf",
+          "url": "https://codeium.com/",
+          "description": "windsurf,Codeium推出的AI编程工具,赋能的下一代集成开发环境(IDE)",
+          "icon": "/uploads/4f8dd42f-dbb7-4701-9d58-b63401b71d20.png",
+          "order": 2
+        }
+      ],
+      "order": 0
+    },
+    {
+      "id": "ai-code-aigc",
+      "name": "AI智能体",
+      "websites": [
+        {
+          "id": "v0",
+          "name": "v0 dev",
+          "url": "https://v0.dev/",
+          "description": "v0 dev,由Vercel 推出的以AI模型生成交互页面的工具",
+          "icon": "/uploads/edb70a1e-d346-4fce-ad6c-4ad1a17044ac.png",
+          "order": 0
+        },
+        {
+          "id": "devv",
+          "name": "devv",
+          "url": "https://devv.ai/zh",
+          "description": "devv搜索引擎,最懂程序员的新一代Al搜索引擎",
+          "icon": "/uploads/bc3675e1-017e-4aad-b9b1-8652e8892ee5.png",
+          "order": 2
+        },
+        {
+          "id": "lovable",
+          "name": "Lovable",
+          "url": "https://lovable.dev/",
+          "description": "Lovable ai,ai代码助手,无需编写代码即可构建高质量软件",
+          "icon": "/uploads/e150cc52-cb75-454a-80ec-7c50ba27b2c6.png",
+          "order": 3
+        },
+        {
+          "id": "same",
+          "name": "same",
+          "url": "https://same.dev/",
+          "description": "Copy any UI",
+          "icon": "/uploads/5152e3d3-66d5-4f1e-9a2c-84cbd712e36e.png",
+          "order": 4
+        }
+      ],
+      "order": 1
+    }
+  ],
+  "order": 5
+}
