@@ -69,7 +69,9 @@ export default function ImageUpload({ value, onChange, label = "图标" }: Image
 
   return (
     <div className="space-y-2">
-      <Label>{label}</Label>
+      <Label>
+        {label} <span className="text-xs text-muted-foreground">(可选)</span>
+      </Label>
 
       {value ? (
         <div className="relative w-full h-32 border rounded-md overflow-hidden">
@@ -112,7 +114,7 @@ export default function ImageUpload({ value, onChange, label = "图标" }: Image
       <div className="flex items-center gap-2">
         <Input
           type="text"
-          placeholder="或输入图片URL"
+          placeholder="或输入图片URL（可选）"
           value={value}
           onChange={(e) => onChange(e.target.value)}
           className="flex-1"

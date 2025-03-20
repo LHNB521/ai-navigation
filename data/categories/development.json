@@ -12,7 +12,8 @@
           "name": "GitHub",
           "url": "https://github.com",
           "description": "代码托管平台",
-          "icon": "/placeholder.svg?height=32&width=32"
+          "icon": "/uploads/94f9cf91-22b4-4263-82cd-3b7f22c3a541.jpg",
+          "order": 0
         },
         {
           "id": "stackoverflow",
@@ -52,4 +53,3 @@
     }
   ]
 }
-

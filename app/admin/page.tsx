@@ -68,14 +68,6 @@ export default function AdminPage() {
   const [actionError, setActionError] = useState<string | null>(null)
   const [actionSuccess, setActionSuccess] = useState<string | null>(null)
 
-  // 检查登录状态
-  useEffect(() => {
-    const token = localStorage.getItem("admin_token")
-    if (!token) {
-      router.push("/login")
-    }
-  }, [router])
-
   // 二次验证对话框状态
   const [isPushVerificationOpen, setIsPushVerificationOpen] = useState(false)
   const [isPullVerificationOpen, setIsPullVerificationOpen] = useState(false)

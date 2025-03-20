@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server"
+import { cookies } from "next/headers"
 import * as jose from "jose"
 
 // 在实际应用中，这些凭据应该存储在环境变量或数据库中
@@ -26,8 +27,18 @@ export async function POST(request: Request) {
       .setExpirationTime("24h")
       .sign(secret)
 
-    // 返回token给客户端，而不是设置Cookie
-    return NextResponse.json({ success: true, token })
+    // 设置Cookie
+    cookies().set({
+      name: "admin_token",
+      value: token,
+      httpOnly: true,
+      path: "/",
+      secure: process.env.NODE_ENV === "production",
+      maxAge: 60 * 60 * 24, // 24小时
+      sameSite: "strict",
+    })
+
+    return NextResponse.json({ success: true })
   } catch (error) {
     console.error("登录处理失败:", error)
     return NextResponse.json({ error: "登录处理失败" }, { status: 500 })

@@ -129,15 +129,14 @@ export default function SearchBar() {
                   >
                     <div className="flex-1 mr-2" onClick={() => handleResultClick(result.website.url)}>
                       <div className="flex items-center">
-                        {result.website.icon && (
-                          <Image
-                            src={result.website.icon || "/placeholder.svg"}
-                            alt={result.website.name}
-                            width={20}
-                            height={20}
-                            className="mr-2 rounded-sm"
-                          />
-                        )}
+                        {/* 修改图片处理逻辑，使用默认图标 */}
+                        <Image
+                          src={result.website.icon || "/placeholder.svg?height=20&width=20"}
+                          alt={result.website.name}
+                          width={20}
+                          height={20}
+                          className="mr-2 rounded-sm"
+                        />
                         <span className="font-medium">{result.website.name}</span>
                       </div>
                       <div className="text-xs text-muted-foreground">{result.website.description}</div>

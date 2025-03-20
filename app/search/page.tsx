@@ -82,15 +82,14 @@ export default function SearchPage() {
                 className="flex flex-col rounded-lg border p-4 hover:border-primary transition-colors"
               >
                 <div className="flex items-center gap-3 mb-2">
-                  {result.website.icon && (
-                    <Image
-                      src={result.website.icon || "/placeholder.svg"}
-                      alt={result.website.name}
-                      width={32}
-                      height={32}
-                      className="rounded-md"
-                    />
-                  )}
+                  {/* 修改图片处理逻辑，使用默认图标 */}
+                  <Image
+                    src={result.website.icon || "/placeholder.svg?height=32&width=32"}
+                    alt={result.website.name}
+                    width={32}
+                    height={32}
+                    className="rounded-md"
+                  />
                   <h3 className="font-medium">{result.website.name}</h3>
                 </div>
                 <p className="text-sm text-muted-foreground mb-2">{result.website.description}</p>

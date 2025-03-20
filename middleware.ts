@@ -7,14 +7,13 @@ const JWT_SECRET = process.env.JWT_SECRET || "your-secret-key"
 
 export async function middleware(request: NextRequest) {
   // 只拦截管理员页面的请求，但排除登录页面
-  if (!request.nextUrl.pathname.startsWith("/admin") && !request.nextUrl.pathname.startsWith("/login")) {
-    // 从Authorization头获取token
-    const authHeader = request.headers.get("Authorization")
-    const token = authHeader ? authHeader.replace("Bearer ", "") : null
+  if (request.nextUrl.pathname.startsWith("/admin") && !request.nextUrl.pathname.startsWith("/admin/login")) {
+    // 获取Cookie中的令牌
+    const token = request.cookies.get("admin_token")?.value
 
     // 如果没有令牌，重定向到登录页面
     if (!token) {
-      return NextResponse.redirect(new URL("/login", request.url))
+      return NextResponse.redirect(new URL("/admin/login", request.url))
     }
 
     try {
@@ -26,7 +25,7 @@ export async function middleware(request: NextRequest) {
       return NextResponse.next()
     } catch (error) {
       // 令牌无效或已过期，重定向到登录页面
-      return NextResponse.redirect(new URL("/login", request.url))
+      return NextResponse.redirect(new URL("/admin/login", request.url))
     }
   }
 
@@ -36,6 +35,6 @@ export async function middleware(request: NextRequest) {
 
 // 配置中间件应用的路径
 export const config = {
-  matcher: ["/admin", "/admin/:path*", "/login"],
+  matcher: ["/admin/:path*"],
 }
 

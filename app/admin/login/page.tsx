@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -17,35 +17,6 @@ export default function AdminLoginPage() {
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
   const router = useRouter()
-
-  // 检查是否已经登录
-  useEffect(() => {
-    const checkAuth = async () => {
-      const token = localStorage.getItem("admin_token")
-      if (token) {
-        try {
-          // 验证token是否有效
-          const response = await fetch("/api/auth/verify", {
-            method: "GET",
-            headers: {
-              Authorization: `Bearer ${token}`,
-            },
-          })
-          if (response.ok) {
-            // token有效，重定向到管理页面
-            router.push("/admin")
-          } else {
-            // token无效，清除localStorage
-            localStorage.removeItem("admin_token")
-          }
-        } catch (error) {
-          console.error("验证token失败:", error)
-          localStorage.removeItem("admin_token")
-        }
-      }
-    }
-    checkAuth()
-  }, [router])
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -66,9 +37,6 @@ export default function AdminLoginPage() {
       if (!response.ok) {
         throw new Error(data.error || "登录失败")
       }
-
-      // 将token存储在localStorage中
-      localStorage.setItem("admin_token", data.token)
 
       // 登录成功，重定向到管理员页面
       router.push("/admin")

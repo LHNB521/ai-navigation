@@ -115,7 +115,7 @@ export default function Home() {
         <div className="flex-1 max-w-md hidden md:block">
           <SearchBar />
         </div>
-        <Link href="/admin" passHref>
+        <Link href="/admin/login" passHref>
           <Button variant="outline" size="sm" className="ml-auto">
             管理员
           </Button>
@@ -129,7 +129,7 @@ export default function Home() {
         <aside
           ref={sidebarRef}
           className={`
-            ${isMobile ? "fixed left-0 top-16 bottom-0 z-20" : "relative"}
+            ${isMobile ? "fixed left-0 top-16 bottom-0 z-20" : "relative"} 
             ${sidebarOpen ? (isMobile ? "w-64" : "w-64") : isMobile ? "-translate-x-full" : "w-16"}
             border-r bg-background overflow-hidden transition-all duration-300 ease-in-out
           `}
