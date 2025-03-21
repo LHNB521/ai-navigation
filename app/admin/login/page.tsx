@@ -10,6 +10,7 @@ import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { AlertCircle } from "lucide-react"
+import { useAuth } from "@/context/auth-context"
 
 export default function AdminLoginPage() {
   const [username, setUsername] = useState("")
@@ -17,6 +18,7 @@ export default function AdminLoginPage() {
   const [error, setError] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
   const router = useRouter()
+  const { login } = useAuth()
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -38,7 +40,10 @@ export default function AdminLoginPage() {
         throw new Error(data.error || "登录失败")
       }
 
-      // 登录成功，重定向到管理员页面
+      // Use the login function from AuthContext
+      login(data.token)
+
+      // Redirect to admin page
       router.push("/admin")
     } catch (error: any) {
       console.error("登录失败:", error)

@@ -53,6 +53,7 @@ import {
 } from "@/lib/api-client"
 import ImageUpload from "@/components/image-upload"
 import SecondVerificationDialog from "@/components/second-verification-dialog"
+import LogoutButton from "@/components/logout-button"
 
 export default function AdminPage() {
   const router = useRouter()
@@ -461,6 +462,7 @@ export default function AdminPage() {
               <Download className="h-4 w-4" />
               {isGitPullLoading ? "拉取中..." : "拉取GitHub代码"}
             </Button>
+            <LogoutButton />
           </div>
         </div>
       </header>

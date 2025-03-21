@@ -6,34 +6,36 @@ import * as jose from "jose"
 const JWT_SECRET = process.env.JWT_SECRET || "your-secret-key"
 
 export async function middleware(request: NextRequest) {
-  // 只拦截管理员页面的请求，但排除登录页面
-  if (!request.nextUrl.pathname.startsWith("/admin") && !request.nextUrl.pathname.startsWith("/admin/login")) {
-    // 获取Cookie中的令牌
-    const token = request.cookies.get("admin_token")?.value
+  // Only apply to admin routes excluding the login page
+  if (request.nextUrl.pathname.startsWith("/admin") && !request.nextUrl.pathname.startsWith("/admin/login")) {
+    // Get the authorization header
+    const authHeader = request.headers.get("authorization")
 
-    // 如果没有令牌，重定向到登录页面
-    if (!token) {
+    // If no authorization header is present, redirect to login
+    if (!authHeader || !authHeader.startsWith("Bearer ")) {
       return NextResponse.redirect(new URL("/admin/login", request.url))
     }
 
+    const token = authHeader.substring(7)
+
     try {
-      // 验证令牌
+      // Verify the token
       const secret = new TextEncoder().encode(JWT_SECRET)
       await jose.jwtVerify(token, secret)
 
-      // 令牌有效，继续请求
+      // Continue the request if token is valid
       return NextResponse.next()
     } catch (error) {
-      // 令牌无效或已过期，重定向到登录页面
+      // Redirect to login if token is invalid
       return NextResponse.redirect(new URL("/admin/login", request.url))
     }
   }
 
-  // 对于其他路径，不做处理
+  // For other routes, just continue
   return NextResponse.next()
 }
 
-// 配置中间件应用的路径
+// Configure which paths should be handled by middleware
 export const config = {
   matcher: ["/admin/:path*"],
 }
