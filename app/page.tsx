@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from "react"
 import SidebarNavigation from "@/components/sidebar-navigation"
 import ContentSection from "@/components/content-section"
-import { Menu, X, Search } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useMediaQuery } from "@/hooks/use-media-query"
 import SearchBar from "@/components/search-bar"
@@ -12,6 +12,7 @@ import Link from "next/link"
 import { fetchCategories } from "@/lib/api-client"
 import type { Category } from "@/types/navigation"
 import { useAuth } from "@/context/auth-context"
+import MobileSearchFloat from "@/components/mobile-search-float"
 
 export default function Home() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
@@ -117,7 +118,7 @@ export default function Home() {
         <div className="flex-1 max-w-md hidden md:block">
           <SearchBar />
         </div>
-        <Link href={isAuthenticated ? "/admin" : "/admin/login"} passHref>
+        <Link className="flex flex-1" href={isAuthenticated ? "/admin" : "/admin/login"} passHref>
           <Button variant="outline" size="sm" className="ml-auto">
             管理员
           </Button>
@@ -131,7 +132,7 @@ export default function Home() {
         <aside
           ref={sidebarRef}
           className={`
-            ${isMobile ? "fixed left-0 top-16 bottom-0 z-20" : "relative"} 
+            ${isMobile ? "fixed left-0 top-16 bottom-0 z-20" : "relative"}
             ${sidebarOpen ? (isMobile ? "w-64" : "w-64") : isMobile ? "-translate-x-full" : "w-16"}
             border-r bg-background overflow-hidden transition-all duration-300 ease-in-out
           `}
@@ -166,15 +167,8 @@ export default function Home() {
           )}
         </div>
       </main>
-      {/* Floating search button for mobile */}
-      {isMobile && (
-        <div className="fixed bottom-4 left-4 z-30 md:hidden">
-          <Button size="icon" className="h-12 w-12 rounded-full shadow-lg" onClick={() => router.push("/search")}>
-            <Search className="h-5 w-5" />
-            <span className="sr-only">搜索</span>
-          </Button>
-        </div>
-      )}
+      {/* Floating search for mobile */}
+      {isMobile && <MobileSearchFloat />}
 
       {/* Add the FloatingActions component here */}
       <FloatingActions />
