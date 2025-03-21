@@ -114,7 +114,7 @@ export default function Home() {
         >
           {sidebarOpen && isMobile ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </Button>
-        <h1 className="text-xl md:text-2xl font-bold truncate mr-4">长江小浩 - 网站导航</h1>
+        <h1 className="text-xl md:text-2xl font-bold truncate mr-4">一行代码 - 导航</h1>
         <div className="flex-1 max-w-md hidden md:block">
           <SearchBar />
         </div>

@@ -452,15 +452,15 @@ export default function AdminPage() {
               <span className="sr-only">返回首页</span>
             </Button>
           </Link>
-          <h1 className="text-xl font-bold">网站导航管理</h1>
+          <h1 className="text-xl font-bold">导航管理</h1>
           <div className="ml-auto flex gap-2">
             <Button variant="outline" className="gap-2" onClick={handleGitPush} disabled={isGitLoading}>
               <Github className="h-4 w-4" />
-              {isGitLoading ? "提交中..." : "提交到GitHub"}
+              {isGitLoading ? "提交中..." : "提交"}
             </Button>
             <Button variant="outline" className="gap-2" onClick={handleGitPull} disabled={isGitPullLoading}>
               <Download className="h-4 w-4" />
-              {isGitPullLoading ? "拉取中..." : "拉取GitHub代码"}
+              {isGitPullLoading ? "拉取中..." : "拉取"}
             </Button>
             <LogoutButton />
           </div>
