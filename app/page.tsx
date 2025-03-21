@@ -11,6 +11,7 @@ import FloatingActions from "@/components/floating-actions"
 import Link from "next/link"
 import { fetchCategories } from "@/lib/api-client"
 import type { Category } from "@/types/navigation"
+import { useAuth } from "@/context/auth-context"
 
 export default function Home() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
@@ -23,6 +24,7 @@ export default function Home() {
   const isMobile = useMediaQuery("(max-width: 768px)")
   const sidebarRef = useRef<HTMLDivElement>(null)
   const router = useRouter()
+  const { isAuthenticated } = useAuth()
 
   // 加载分类数据
   useEffect(() => {
@@ -115,7 +117,7 @@ export default function Home() {
         <div className="flex-1 max-w-md hidden md:block">
           <SearchBar />
         </div>
-        <Link href="/admin/login" passHref>
+        <Link href={isAuthenticated ? "/admin" : "/admin/login"} passHref>
           <Button variant="outline" size="sm" className="ml-auto">
             管理员
           </Button>

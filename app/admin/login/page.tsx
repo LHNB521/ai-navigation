@@ -40,11 +40,11 @@ export default function AdminLoginPage() {
         throw new Error(data.error || "登录失败")
       }
 
-      // Use the login function from AuthContext
+      // 使用 AuthContext 中的 login 函数，它会处理状态更新和路由跳转
       login(data.token)
 
-      // Redirect to admin page
-      router.push("/admin")
+      // 移除这行，避免竞态条件
+      // router.push("/admin")
     } catch (error: any) {
       console.error("登录失败:", error)
       setError(error.message || "用户名或密码错误")

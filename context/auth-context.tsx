@@ -19,10 +19,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   // Initialize authentication state from localStorage on component mount
   useEffect(() => {
-    const storedToken = localStorage.getItem("admin_token")
-    if (storedToken) {
-      setToken(storedToken)
-      setIsAuthenticated(true)
+    // 检查是否在客户端环境
+    if (typeof window !== "undefined") {
+      const storedToken = localStorage.getItem("admin_token")
+      if (storedToken) {
+        setToken(storedToken)
+        setIsAuthenticated(true)
+      }
     }
   }, [])
 
@@ -55,6 +58,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     localStorage.setItem("admin_token", newToken)
     setToken(newToken)
     setIsAuthenticated(true)
+
+    // 给状态更新一点时间后再跳转
+    setTimeout(() => {
+      router.push("/admin")
+    }, 100)
   }
 
   const logout = () => {
